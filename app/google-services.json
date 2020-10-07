@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "708515161587",
+    "firebase_url": "https://utility-melody-291805.firebaseio.com",
+    "project_id": "utility-melody-291805",
+    "storage_bucket": "utility-melody-291805.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708515161587:android:008f56bb0410726a6c9e86",
+        "android_client_info": {
+          "package_name": "com.android.emergencymedicalsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708515161587-ov66119e4crotfk770jtr42qsiji4sb8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFoPvdNnmdf-AGZikTQvT_JigmVQzPdlc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708515161587-ov66119e4crotfk770jtr42qsiji4sb8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
