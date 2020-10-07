@@ -6,7 +6,7 @@ import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 import com.android.emergencymedicalsystem.MyCustomPagerAdapter;
 import com.android.emergencymedicalsystem.R;
-import com.android.emergencymedicalsystem.user.covid.CovidTestCenterActivity;
+import com.android.emergencymedicalsystem.user.covid.CovidActivity;
 import com.android.emergencymedicalsystem.user.nurse.NurseActivity;
 
 import android.content.Intent;
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
         covidLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this, CovidTestCenterActivity.class);
+                Intent intent=new Intent(MainActivity.this, CovidActivity.class);
                 startActivity(intent);
             }
         });

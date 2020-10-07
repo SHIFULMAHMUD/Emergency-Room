@@ -1,6 +1,7 @@
 package com.android.emergencymedicalsystem.remote;
 
 import com.android.emergencymedicalsystem.Constant;
+import com.android.emergencymedicalsystem.model.CovidTestCenter;
 import com.android.emergencymedicalsystem.model.Nurse;
 import com.android.emergencymedicalsystem.model.User;
 
@@ -28,7 +29,9 @@ public interface ApiInterface {
             @Field(Constant.KEY_PASSWORD) String password,
             @Field(Constant.KEY_DIVISION) String division,
             @Field(Constant.KEY_AREA) String area,
-            @Field(Constant.KEY_BLOOD_GROUP) String blood);
+            @Field(Constant.KEY_BLOOD_GROUP) String blood,
+            @Field(Constant.KEY_LATITUDE) String latitude,
+            @Field(Constant.KEY_LONGITUDE) String longitude);
 
 
 
@@ -56,5 +59,18 @@ public interface ApiInterface {
             @Query("name") String name,
             @Query("cell") String cell,
             @Query("hospital") String hospital
+    );
+    @GET("user_latlng.php")
+    Call<List<User>> getUserLatLng(
+            @Query("cell") String cell
+    );
+    @GET("covid_center.php")
+    Call<List<CovidTestCenter>> getCovidTestCenter(
+            @Query("name") String name,
+            @Query("cell") String cell,
+            @Query("address") String address,
+            @Query("facility") String facility,
+            @Query("latitude") String latitude,
+            @Query("longitude") String longitude
     );
 }

@@ -11,42 +11,24 @@ public class User {
     private String cell;
     @SerializedName("password")
     private String password;
-    @SerializedName("account")
-    private String account;
-    @SerializedName("gender")
-    private String gender;
-    @SerializedName("nid")
-    private String nid;
-    @SerializedName("nid_pic")
-    private String nid_pic;
+    @SerializedName("division")
+    private String division;
+    @SerializedName("area")
+    private String area;
+    @SerializedName("blood")
+    private String blood;
+    @SerializedName("latitude")
+    private String latitude;
+    @SerializedName("longitude")
+    private String longitude;
 
     @SerializedName("value")
     private String value;
     @SerializedName("message")
     private String massage;
 
-    @SerializedName("date")
-    private String date;
-    @SerializedName("notice")
-    private String notice;
-    @SerializedName("event")
-    private String event;
-
-    @SerializedName("time")
-    private String time;
-
-
-
-    public String getTime() {
-        return time;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public String getAccount() {
-        return account;
     }
 
     public String getCell() {
@@ -57,16 +39,24 @@ public class User {
         return password;
     }
 
-    public String getGender() {
-        return gender;
+    public String getDivision() {
+        return division;
     }
 
-    public String getNid() {
-        return nid;
+    public String getArea() {
+        return area;
     }
 
-    public String getNidPhoto() {
-        return nid_pic;
+    public String getBlood() {
+        return blood;
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public String getLongitude() {
+        return longitude;
     }
 
     public String getValue() {
@@ -76,14 +66,6 @@ public class User {
     public String getMassage() {
         return massage;
     }
-
-    public String getDate() { return date; }
-
-    public String getNotice() {
-        return notice;
-    }
-
-    public String getEvent() { return event; }
 
 
 }

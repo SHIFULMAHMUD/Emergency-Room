@@ -1,8 +1,11 @@
 package com.android.emergencymedicalsystem.user;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import es.dmoral.toasty.Toasty;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
@@ -15,15 +18,22 @@ import com.android.emergencymedicalsystem.R;
 import com.android.emergencymedicalsystem.model.User;
 import com.android.emergencymedicalsystem.remote.ApiClient;
 import com.android.emergencymedicalsystem.remote.ApiInterface;
+import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationResult;
+import com.google.android.gms.location.LocationServices;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.os.Looper;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -37,10 +47,12 @@ import java.io.File;
 
 public class SignupActivity extends AppCompatActivity {
     LinearLayout linearLayoutGotoLogin;
-    EditText etxtName, etxtCell, etxtPassword,etxtDivision,etxtArea,etxtBloodGroup;
+    private static final int REQUEST_CODE_LOCATION_PERMISSION = 1;
+    EditText etxtName, etxtCell, etxtPassword, etxtDivision, etxtArea, etxtBloodGroup;
     Button btnSignUp;
-    String text,user_name,user_cell,user_password,user_division,user_area,user_bg;
+    String text, user_name, user_cell, user_password, user_division, user_area, user_bg, lat, lng;
     private ProgressDialog loading;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,11 +60,20 @@ public class SignupActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Create New Account");
-        linearLayoutGotoLogin=findViewById(R.id.ll9);
+        //Runtime permissions
+        if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(SignupActivity.this, new String[]{
+                    Manifest.permission.ACCESS_FINE_LOCATION
+            }, REQUEST_CODE_LOCATION_PERMISSION);
+        } else {
+            getLocation();
+        }
+        linearLayoutGotoLogin = findViewById(R.id.ll9);
         linearLayoutGotoLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(SignupActivity.this, LoginActivity.class);
+                Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -63,7 +84,7 @@ public class SignupActivity extends AppCompatActivity {
         etxtDivision = findViewById(R.id.editTextRegisterDivision);
         etxtArea = findViewById(R.id.editTextRegisterArea);
         etxtBloodGroup = findViewById(R.id.editTextBloodGroup);
-        linearLayoutGotoLogin=findViewById(R.id.ll9);
+        linearLayoutGotoLogin = findViewById(R.id.ll9);
         btnSignUp = findViewById(R.id.cirRegisterButton);
         etxtDivision.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -149,7 +170,7 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                final String[] bgList = {"O positive", "O negative","A positive", "A negative","B positive", "B negative","AB positive", "AB negative"};
+                final String[] bgList = {"O positive", "O negative", "A positive", "A negative", "B positive", "B negative", "AB positive", "AB negative"};
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(SignupActivity.this);
                 builder.setTitle("Choose Blood Group");
@@ -228,69 +249,106 @@ public class SignupActivity extends AppCompatActivity {
 
 
                 //validation
-                if (user_name.isEmpty())
-                {
+                if (user_name.isEmpty()) {
                     etxtName.setError("Name can not be empty! ");
                     etxtName.requestFocus();
 
-                }
-
-                else if (user_cell.length()!=11 || !user_cell.startsWith("01"))
-                {
+                } else if (user_cell.length() != 11 || !user_cell.startsWith("01")) {
                     etxtCell.setError("Invalid cell!");
                     etxtCell.requestFocus();
 
-                }
-
-
-                else if (user_password.isEmpty())
-                {
+                } else if (user_password.isEmpty()) {
                     etxtPassword.setError("Password can not be empty! ");
                     etxtPassword.requestFocus();
 
-                }else if ((user_password.length() < 4)) {
+                } else if ((user_password.length() < 4)) {
                     etxtPassword.setError("Password should be more than 3 characters!");
                     etxtPassword.requestFocus();
 
-                }
-                else if (user_division.isEmpty())
-                {
+                } else if (user_division.isEmpty()) {
                     etxtDivision.setError("Division can not be empty! ");
                     etxtDivision.requestFocus();
                     Toasty.error(SignupActivity.this, "Please select Division !", Toast.LENGTH_SHORT).show();
-                }
-                else if (user_area.isEmpty())
-                {
+                } else if (user_area.isEmpty()) {
                     etxtArea.setError("Please select area ! ");
                     etxtArea.requestFocus();
                     Toasty.error(SignupActivity.this, "Please select Area !", Toast.LENGTH_SHORT).show();
-                }
-                else if (user_bg.isEmpty())
-                {
+                } else if (user_bg.isEmpty()) {
                     etxtBloodGroup.setError("Blood Group can't be empty! ");
                     etxtBloodGroup.requestFocus();
                 }
-                else
-                {
-                    //call signup method
-                    sign_up(user_name,user_cell,user_password,user_division,user_area,user_bg);
-                }
+                //Runtime permissions
+                else {
+                    if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.ACCESS_FINE_LOCATION)
+                            != PackageManager.PERMISSION_GRANTED) {
+                        ActivityCompat.requestPermissions(SignupActivity.this, new String[]{
+                                Manifest.permission.ACCESS_FINE_LOCATION
+                        }, REQUEST_CODE_LOCATION_PERMISSION);
+                    } else {
+                        getLocation();
+                    }
 
+                    //call signup method
+                    sign_up(user_name, user_cell, user_password, user_division, user_area, user_bg, lat, lng);
+                }
             }
         });
 
 
     }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == REQUEST_CODE_LOCATION_PERMISSION && grantResults.length > 0) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                getLocation();
+            } else {
+                Toasty.error(this, "Permission Denied!", Toasty.LENGTH_SHORT).show();
+            }
+        }
+    }
+
+    private void getLocation() {
+        final LocationRequest locationRequest = new LocationRequest();
+        locationRequest.setInterval(10000);
+        locationRequest.setFastestInterval(3000);
+        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        LocationServices.getFusedLocationProviderClient(SignupActivity.this).requestLocationUpdates(locationRequest, new LocationCallback() {
+            @Override
+            public void onLocationResult(LocationResult locationResult) {
+                super.onLocationResult(locationResult);
+                LocationServices.getFusedLocationProviderClient(SignupActivity.this).removeLocationUpdates(this);
+                if (locationResult != null && locationResult.getLocations().size() > 0) {
+                    int latestLocationIndex = locationResult.getLocations().size() - 1;
+                    double latitude = locationResult.getLocations().get(latestLocationIndex).getLatitude();
+                    double longitude = locationResult.getLocations().get(latestLocationIndex).getLongitude();
+                    lat = String.valueOf(latitude);
+                    lng = String.valueOf(longitude);
+                }
+            }
+        }, Looper.getMainLooper());
+    }
+
     //signup method
-    private void sign_up(String name,String cell,String password,String division,String area,String blood_group) {
+    private void sign_up(String name,String cell,String password,String division,String area,String blood_group,String latitude,String longitude) {
 
         loading=new ProgressDialog(this);
         loading.setMessage("Please wait....");
         loading.show();
 
         ApiInterface apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
-        Call<User> call = apiInterface.signUp(name, cell,password, division, area,blood_group);
+        Call<User> call = apiInterface.signUp(name, cell,password, division, area,blood_group,latitude,longitude);
         call.enqueue(new Callback<User>() {
             @Override
             public void onResponse(Call<User> call, Response<User> response) {
