@@ -1,7 +1,7 @@
 
+X
+java:S1874"<Remove this use of "FragmentPagerAdapter"; it is deprecated.(‘í›\8á‡ÏÏ.
 =
 java:S1068"'Remove this unused "TAG" private field.(«ª¾Õ
 g
 java:S1874"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(å‰Éõ8ËˆÏÏ.
-X
-java:S1874"<Remove this use of "FragmentPagerAdapter"; it is deprecated.(‘í›\8á‡ÏÏ.

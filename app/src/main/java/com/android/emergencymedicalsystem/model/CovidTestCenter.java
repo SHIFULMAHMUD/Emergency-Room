@@ -3,6 +3,8 @@ package com.android.emergencymedicalsystem.model;
 import com.google.gson.annotations.SerializedName;
 
 public class CovidTestCenter {
+    @SerializedName("id")
+    private String id;
     @SerializedName("name")
     private String name;
     @SerializedName("cell")
@@ -15,6 +17,10 @@ public class CovidTestCenter {
     private String latitude;
     @SerializedName("longitude")
     private String longitude;
+
+    public String getId() {
+        return id;
+    }
 
     public String getName() {
         return name;

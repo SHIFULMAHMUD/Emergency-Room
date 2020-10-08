@@ -2,6 +2,7 @@ package com.android.emergencymedicalsystem.user.covid;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.location.Location;
 import android.os.Bundle;
@@ -24,6 +25,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.List;
@@ -44,6 +46,7 @@ public class CovidTestCenterFragment extends Fragment implements OnMapReadyCallb
     SharedPreferences sharedPreferences;
     public double userLat;
     public double userLong;
+    public String centerId[]=new String[MAX_SIZE];
     public String centerName[]=new String[MAX_SIZE];
     public String centerCell[]=new String[MAX_SIZE];
     public String centerAddress[]=new String[MAX_SIZE];
@@ -82,14 +85,28 @@ public class CovidTestCenterFragment extends Fragment implements OnMapReadyCallb
         apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
 
         getUserLatLngData(getCell);
-        getData("","","","","","");
+        getData("","","","","","","");
 
         return view;
     }
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        getData("","","","","","");
+        getData("","","","","","","");
+        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+
+
+                marker.showInfoWindow();
+                String id=marker.getSnippet();
+                Intent intent=new Intent(getContext(),CovidCenterDetailActivity.class);
+                intent.putExtra("id",id);
+                startActivity(intent);
+                return true;
+            }
+        });
+
     }
     public void getUserLatLngData(String cell) {
         apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
@@ -129,10 +146,10 @@ public class CovidTestCenterFragment extends Fragment implements OnMapReadyCallb
             }
         });
     }
-    public void getData(String name,String cell,String address, String facility, String latitude,String longitude) {
+    public void getData(String id,String name,String cell,String address, String facility, String latitude,String longitude) {
         apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
         Call<List<CovidTestCenter>> call;
-        call = apiInterface.getCovidTestCenter(name,cell,address,facility,latitude,longitude);
+        call = apiInterface.getCovidTestCenter(id,name,cell,address,facility,latitude,longitude);
 
         call.enqueue(new Callback<List<CovidTestCenter>>() {
             @Override
@@ -149,6 +166,7 @@ public class CovidTestCenterFragment extends Fragment implements OnMapReadyCallb
                     } else {
 
                         for (int i = 0; i < latlngData.size(); i++) {
+                            final String center_id = latlngData.get(i).getId();
                             final String center_name = latlngData.get(i).getName();
                             final String center_cell = latlngData.get(i).getCell();
                             final String center_address = latlngData.get(i).getAddress();
@@ -165,6 +183,7 @@ public class CovidTestCenterFragment extends Fragment implements OnMapReadyCallb
                                 centerLongitude[i] = Double.parseDouble(center_longitude);
                             }
                             //insert data into array for put extra
+                            centerId[i]=center_id;
                             centerName[i]=center_name;
                             centerCell[i] = center_cell;
                             centerAddress[i] = center_address;
@@ -185,7 +204,7 @@ public class CovidTestCenterFragment extends Fragment implements OnMapReadyCallb
 
                             {
                                 LatLng sydney = new LatLng(endLatitude,endLongitude);
-                                mMap.addMarker(new MarkerOptions().position(sydney).title(centerName[i]));
+                                mMap.addMarker(new MarkerOptions().position(sydney).title(centerName[i]).snippet(centerId[i]));
                                 mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
                                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(endLatitude,endLongitude),15.0f));
                             }

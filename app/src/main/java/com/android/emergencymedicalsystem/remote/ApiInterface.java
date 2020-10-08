@@ -48,6 +48,11 @@ public interface ApiInterface {
     Call<List<User>> getProfile(
             @Query("cell") String cell
     );
+
+    @GET("get_covid_center.php")
+    Call<List<CovidTestCenter>> getCovidCenter(
+            @Query("id") String id
+    );
     @GET("general_nurse.php")
     Call<List<Nurse>> getGeneralNurse(
             @Query("name") String name,
@@ -66,6 +71,7 @@ public interface ApiInterface {
     );
     @GET("covid_center.php")
     Call<List<CovidTestCenter>> getCovidTestCenter(
+            @Query("id") String id,
             @Query("name") String name,
             @Query("cell") String cell,
             @Query("address") String address,

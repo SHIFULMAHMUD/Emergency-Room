@@ -15,7 +15,8 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning"
         tools:targetApi="m">
-        <activity android:name=".user.covid.CovidActivity"></activity>
+        <activity android:name=".user.covid.CovidCenterDetailActivity"></activity>
+        <activity android:name=".user.covid.CovidActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
