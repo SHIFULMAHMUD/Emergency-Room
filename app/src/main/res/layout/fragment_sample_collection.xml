@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack">
+
+    <ScrollView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ll1"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/image_name"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_person_white"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputName"
+                    style="@style/parent">
+
+                    <EditText
+                        android:id="@+id/editTextName"
+                        style="@style/modifiedNewEditText"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Full Name"
+                        android:textColorHint="@color/colorAccent"
+                        android:backgroundTint="@color/colorAccent"
+                        android:inputType="text"
+                        android:maxLines="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ll2"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/ll1"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/image_cell"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_phone"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputPhone"
+                    style="@style/parent">
+
+                    <EditText
+                        android:id="@+id/editTextPhone"
+                        style="@style/modifiedNewEditText"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Mobile Number"
+                        android:focusable="false"
+                        android:textColorHint="@color/colorAccent"
+                        android:backgroundTint="@color/colorAccent"
+                        android:inputType="phone"
+                        android:maxLines="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ll3"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/ll2"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/image_loc"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_area"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputAddress"
+                    style="@style/parent">
+
+                    <EditText
+                        android:id="@+id/editTextAddress"
+                        style="@style/modifiedNewEditText"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Full Address"
+                        android:textColorHint="@color/colorAccent"
+                        android:backgroundTint="@color/colorAccent"
+                        android:inputType="text"
+                        android:maxLines="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll4"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/ll3"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_bg"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textBg"
+                    style="@style/parent"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/editTextBloodGroup"
+                        android:inputType="text"
+                        android:textColorHint="@color/colorAccent"
+                        android:maxLines="1"
+                        android:focusable="false"
+                        android:backgroundTint="@color/colorAccent"
+                        android:hint="Select Blood Group"
+                        style="@style/modifiedNewEditText"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll5"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/ll4"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_gender_white"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textGender"
+                    style="@style/parent"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/editTextGender"
+                        android:inputType="text"
+                        android:textColorHint="@color/colorAccent"
+                        android:maxLines="1"
+                        android:focusable="false"
+                        android:backgroundTint="@color/colorAccent"
+                        android:hint="Choose Gender"
+                        style="@style/modifiedNewEditText"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ll6"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/ll5"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/image_age"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_person_white"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputAge"
+                    style="@style/parent">
+
+                    <EditText
+                        android:id="@+id/editTextAge"
+                        style="@style/modifiedNewEditText"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Your Age"
+                        android:textColorHint="@color/colorAccent"
+                        android:backgroundTint="@color/colorAccent"
+                        android:inputType="number"
+                        android:maxLines="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/cirSubmitButton"
+                style="@style/registerButton"
+                android:text="Submit"
+                android:layout_below="@+id/ll6"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="15sp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,5 +1,33 @@
 
-r
-java:S1450"\Remove the "layoutManager" field and declare it as a local variable in the relevant methods.(üÉÙ¼
+Y
+java:S1128"7Remove this unused import 'android.widget.ProgressBar'.(³ñÿŸùÿÿÿÿ8Î·Ô–Ñ.
+m	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯Ê˜8Õ¼àšÑ.
+T
+java:S1128"7Remove this unused import 'android.app.ProgressDialog'.(¶ÍÔÓ8ºœ›Ñ.
+m	java:S1176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªä²Ô8Õ¼àšÑ.
+m	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜±˜æ8Õ¼àšÑ.
+m	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷üåÎ8×ºïšÑ.
+}
+java:S1128"[Remove this unused import 'com.android.emergencymedicalsystem.adapter.RecyclerViewAdapter'.(´ìÁîøÿÿÿÿ8µëÕ–Ñ.
 >
-java:S1185'"(Remove this method to simply inherit it.(ßìê¯
+java:S1185)"(Remove this method to simply inherit it.(ßìê¯
+^	java:S125–"<This block of commented-out lines of code should be removed.(ş•»³øÿÿÿÿ8©ã˜›Ñ.
+m
+java:S1128"KRemove this unused import 'androidx.recyclerview.widget.GridLayoutManager'.(î¼çÿüÿÿÿÿ8µëÕ–Ñ.
+m
+java:S1128"KRemove this unused import 'com.android.emergencymedicalsystem.model.Nurse'.(²ÄêŠşÿÿÿÿ8µëÕ–Ñ.
+r	java:S1172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£¢Ë›şÿÿÿÿ8Õ¼àšÑ.
+r	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çØ¤úÿÿÿÿ8‚ñšÑ.
+o
+java:S1128"MRemove this unused import 'androidx.recyclerview.widget.LinearLayoutManager'.(ôœ¹ºıÿÿÿÿ8Õ–Ñ.
+C	java:S131C""Add a default case to this switch.(¼œóÛüÿÿÿÿ8×ºïšÑ.
+I
+java:S1172‡"&Remove these unused method parameters.(ÏÛÖÇøÿÿÿÿ8£Ä™›Ñ.
+m	java:S1173"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú¶Ú¹8Õ¼àšÑ.
+h
+java:S1128"FRemove this unused import 'androidx.recyclerview.widget.RecyclerView'.(Îèòçøÿÿÿÿ8Î·Ô–Ñ.
+m
+java:S1301C"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8×ºïšÑ.
+m	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶®â®8Õ¼àšÑ.
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8µëÕ–Ñ.

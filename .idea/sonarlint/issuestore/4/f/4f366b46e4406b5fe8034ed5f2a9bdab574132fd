@@ -1,104 +1,104 @@
 
+P
+java:S1874Û"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜8€ÜÊÏ.
+C
+java:S16595"!Declare "lng" on a separate line.(·ÎŠÿÿÿÿÿ8‰ˆ™Ğ.
+L
+java:S16593"*Declare "etxtPassword" on a separate line.(¨µ€¦ùÿÿÿÿ8ÑÅ¹ÊÏ.
+t
+java:S37769"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(¨Œşÿÿÿÿ8€ÜÊÏ.
+I
+java:S16595"'Declare "user_cell" on a separate line.(·ÎŠÿÿÿÿÿ8ÑÅ¹ÊÏ.
+C	java:S131e""Add a default case to this switch.(¼œóÛüÿÿÿÿ8€ÜÊÏ.
+u
+java:S3252½"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí8ÛñÅĞ.
+n	java:S117Ø"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï¥á™8”ù“ËÏ.
+F
+java:S1128.")Remove this unused import 'java.io.File'.(†Ğ¥Å8è ”ËÏ.
+l
+java:S1871Ä"IThis case's code block is the same as the block for the case on line 182.(‰ÆÄÎşÿÿÿÿ8£üçËÏ.
+S
+java:S1128""6Remove this unused import 'android.graphics.Typeface'.(ó¬Ü«8ËÁÜÊÏ.
+I
+java:S16595"'Declare "user_area" on a separate line.(·ÎŠÿÿÿÿÿ8±Ç„ËÏ.
+l
+java:S1871¿"IThis case's code block is the same as the block for the case on line 182.(úâúÿÿÿÿ8‡–ŞËÏ.
+n
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8€ÜÊÏ.
+u	java:S1165"TRename this field "user_cell" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÎŠÿÿÿÿÿ8ÑÅ¹ÊÏ.
+k
+java:S1871k"IThis case's code block is the same as the block for the case on line 102.(ªëÅŞúÿÿÿÿ8ØëèÊÏ.
+l
+java:S1871È"IThis case's code block is the same as the block for the case on line 182.(µ»ïşıÿÿÿÿ8÷ØèËÏ.
+u
+java:S3252½"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí8ÛñÅĞ.
+i
+java:S1192r"GDefine a constant instead of duplicating this literal "Cancel" 3 times.(çÄİöøÿÿÿÿ8¯ÊëÊÏ.
+I
+java:S16595"'Declare "user_name" on a separate line.(·ÎŠÿÿÿÿÿ8ÑÅ¹ÊÏ.
 H
 java:S16593"&Declare "etxtCell" on a separate line.(¨µ€¦ùÿÿÿÿ8ÑÅ¹ÊÏ.
+y	java:S1165"XRename this field "user_password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÎŠÿÿÿÿÿ8ÑÅ¹ÊÏ.
+Y	java:S107Ø"<Method has 8 parameters, which is greater than 7 authorized.(Ï¥á™8ÌˆÕ™Ğ.
+C
+java:S16595"!Declare "lat" on a separate line.(·ÎŠÿÿÿÿÿ8‰ˆ™Ğ.
+k	java:S100Ø"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï¥á™8€ÜÊÏ.
+G
+java:S16595"%Declare "user_bg" on a separate line.(·ÎŠÿÿÿÿÿ8•ñ„ËÏ.
+W
+java:S1128)"5Remove this unused import 'android.widget.ImageView'.(ú¯ëàüÿÿÿÿ8ŸÇØÊÏ.
+M
+java:S16595"+Declare "user_password" on a separate line.(·ÎŠÿÿÿÿÿ8ÑÅ¹ÊÏ.
+P
+java:S1128 "4Remove this unused import 'android.graphics.Bitmap'.(¾ì8İ÷’ËÏ.
+L
+java:S16593"*Declare "etxtDivision" on a separate line.(¨µ€¦ùÿÿÿÿ8şŒ×ÊÏ.
+u	java:S1165"TRename this field "user_area" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÎŠÿÿÿÿÿ8±Ç„ËÏ.
+\
+java:S1155Ì">Use isEmpty() to check whether the collection is empty or not.(ß »§8×ÿ ™Ğ.
+H
+java:S16593"&Declare "etxtArea" on a separate line.(¨µ€¦ùÿÿÿÿ8¶°×ÊÏ.
+u	java:S1165"TRename this field "user_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÎŠÿÿÿÿÿ8ÑÅ¹ÊÏ.
+K
+java:S1128
+".Remove this unused import 'okhttp3.MediaType'.(¢¿ÜŠ8ûö”ËÏ.
+Y
+java:S1128"=Remove this unused import 'androidx.appcompat.app.ActionBar'.(·¯z8ËÁÜÊÏ.
+D	java:S131µ""Add a default case to this switch.(¼œóÛüÿÿÿÿ8¯ÊëÊÏ.
+f
+java:S1871Ñ"IThis case's code block is the same as the block for the case on line 182.(û¿48û¯àËÏ.
+s	java:S1165"RRename this field "user_bg" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÎŠÿÿÿÿÿ8•ñ„ËÏ.
 V
 java:S1128+"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8ËÁÜÊÏ.
 ]
 java:S1128!";Remove this unused import 'android.graphics.BitmapFactory'.(âàºÍûÿÿÿÿ8İ÷’ËÏ.
-l
-java:S1871“"IThis case's code block is the same as the block for the case on line 142.(ªëÅŞúÿÿÿÿ8ãİêÊÏ.
-n	java:S117Ø"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï¥á™8”ù“ËÏ.
-u
-java:S3252½"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí8ÛñÅĞ.
-u	java:S1165"TRename this field "user_cell" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÎŠÿÿÿÿÿ8ÑÅ¹ÊÏ.
-O
-java:S1128"2Remove this unused import 'okhttp3.MultipartBody'.(ÕœˆŒ8ûö”ËÏ.
-L
-java:S16593"*Declare "etxtPassword" on a separate line.(¨µ€¦ùÿÿÿÿ8ÑÅ¹ÊÏ.
-S
-java:S18746"6Remove this use of "ProgressDialog"; it is deprecated.(Ï’Ú8¥šºÊÏ.
-t
-java:S37769"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(¨Œşÿÿÿÿ8€ÜÊÏ.
-D	java:S131""Add a default case to this switch.(¼œóÛüÿÿÿÿ8€ÜÊÏ.
-M
-java:S16595"+Declare "user_password" on a separate line.(·ÎŠÿÿÿÿÿ8ÑÅ¹ÊÏ.
-\
-java:S1155Ì">Use isEmpty() to check whether the collection is empty or not.(ß »§8×ÿ ™Ğ.
-S
-java:S1128""6Remove this unused import 'android.graphics.Typeface'.(ó¬Ü«8ËÁÜÊÏ.
-u
-java:S3252½"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí8ÛñÅĞ.
-U
-java:S1135¾"2Complete the task associated to this TODO comment.(áÃæùÿÿÿÿ8ÛñÅĞ.
-Y
-java:S1128"=Remove this unused import 'androidx.appcompat.app.ActionBar'.(·¯z8ËÁÜÊÏ.
-L
-java:S16593"*Declare "etxtDivision" on a separate line.(¨µ€¦ùÿÿÿÿ8şŒ×ÊÏ.
-Y
-java:S1874Ú"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ8€ÜÊÏ.
-m
-java:S1301e"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8€ÜÊÏ.
-W
-java:S1128)"5Remove this unused import 'android.widget.ImageView'.(ú¯ëàüÿÿÿÿ8ŸÇØÊÏ.
-i
-java:S1192r"GDefine a constant instead of duplicating this literal "Cancel" 3 times.(çÄİöøÿÿÿÿ8¯ÊëÊÏ.
-I
-java:S16595"'Declare "user_area" on a separate line.(·ÎŠÿÿÿÿÿ8±Ç„ËÏ.
-l
-java:S1871»"IThis case's code block is the same as the block for the case on line 182.(ªëÅŞúÿÿÿÿ8¯ÊëÊÏ.
-l
-java:S1871Í"IThis case's code block is the same as the block for the case on line 182.(ÌÊëÎüÿÿÿÿ8û¯àËÏ.
-D	java:S131µ""Add a default case to this switch.(¼œóÛüÿÿÿÿ8¯ÊëÊÏ.
-P
-java:S1874Û"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜8€ÜÊÏ.
-l
-java:S1871¿"IThis case's code block is the same as the block for the case on line 182.(úâúÿÿÿÿ8‡–ŞËÏ.
-F
-java:S1128.")Remove this unused import 'java.io.File'.(†Ğ¥Å8è ”ËÏ.
-y	java:S1165"XRename this field "user_division" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÎŠÿÿÿÿÿ8›„ËÏ.
-C	java:S131e""Add a default case to this switch.(¼œóÛüÿÿÿÿ8€ÜÊÏ.
-k	java:S100Ø"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï¥á™8€ÜÊÏ.
-M
-java:S16595"+Declare "user_division" on a separate line.(·ÎŠÿÿÿÿÿ8›„ËÏ.
-k
-java:S1871ù"MThis branch's code block is the same as the block for the branch on line 369.(á¢–¬8€ÜÊÏ.
-R
-java:S1128"0Remove this unused import 'okhttp3.RequestBody'.(ıÂÂöûÿÿÿÿ8ûö”ËÏ.
-s	java:S1165"RRename this field "user_bg" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÎŠÿÿÿÿÿ8•ñ„ËÏ.
-C
-java:S16595"!Declare "lng" on a separate line.(·ÎŠÿÿÿÿÿ8‰ˆ™Ğ.
-f
-java:S1871Ñ"IThis case's code block is the same as the block for the case on line 182.(û¿48û¯àËÏ.
-f
-java:S1871Ö"IThis case's code block is the same as the block for the case on line 182.(ÒñŠ{8û¯àËÏ.
-P
-java:S1128 "4Remove this unused import 'android.graphics.Bitmap'.(¾ì8İ÷’ËÏ.
-l
-java:S1871È"IThis case's code block is the same as the block for the case on line 182.(µ»ïşıÿÿÿÿ8÷ØèËÏ.
-Y	java:S107Ø"<Method has 8 parameters, which is greater than 7 authorized.(Ï¥á™8ÌˆÕ™Ğ.
-n
-java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8€ÜÊÏ.
 N
 java:S16593",Declare "etxtBloodGroup" on a separate line.(¨µ€¦ùÿÿÿÿ8„î×ÊÏ.
-H
-java:S16593"&Declare "etxtArea" on a separate line.(¨µ€¦ùÿÿÿÿ8¶°×ÊÏ.
-u	java:S1165"TRename this field "user_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÎŠÿÿÿÿÿ8ÑÅ¹ÊÏ.
-C
-java:S16595"!Declare "lat" on a separate line.(·ÎŠÿÿÿÿÿ8‰ˆ™Ğ.
-k
-java:S1871k"IThis case's code block is the same as the block for the case on line 102.(ªëÅŞúÿÿÿÿ8ØëèÊÏ.
-I
-java:S16595"'Declare "user_cell" on a separate line.(·ÎŠÿÿÿÿÿ8ÑÅ¹ÊÏ.
-y	java:S1165"XRename this field "user_password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÎŠÿÿÿÿÿ8ÑÅ¹ÊÏ.
-G
-java:S16595"%Declare "user_bg" on a separate line.(·ÎŠÿÿÿÿÿ8•ñ„ËÏ.
-K
-java:S1128
-".Remove this unused import 'okhttp3.MediaType'.(¢¿ÜŠ8ûö”ËÏ.
-u	java:S1165"TRename this field "user_area" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÎŠÿÿÿÿÿ8±Ç„ËÏ.
-I
-java:S16595"'Declare "user_name" on a separate line.(·ÎŠÿÿÿÿÿ8ÑÅ¹ÊÏ.
+U
+java:S1135¾"2Complete the task associated to this TODO comment.(áÃæùÿÿÿÿ8ÛñÅĞ.
 S
 java:S1128%"1Remove this unused import 'android.view.Gravity'.(ÎÎÎıÿÿÿÿ8ËÁÜÊÏ.
+Y
+java:S1874Ú"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ8€ÜÊÏ.
 l
-java:S1871Ä"IThis case's code block is the same as the block for the case on line 182.(‰ÆÄÎşÿÿÿÿ8£üçËÏ.
+java:S1871“"IThis case's code block is the same as the block for the case on line 142.(ªëÅŞúÿÿÿÿ8ãİêÊÏ.
+l
+java:S1871Í"IThis case's code block is the same as the block for the case on line 182.(ÌÊëÎüÿÿÿÿ8û¯àËÏ.
+M
+java:S16595"+Declare "user_division" on a separate line.(·ÎŠÿÿÿÿÿ8›„ËÏ.
+y	java:S1165"XRename this field "user_division" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÎŠÿÿÿÿÿ8›„ËÏ.
+R
+java:S1128"0Remove this unused import 'okhttp3.RequestBody'.(ıÂÂöûÿÿÿÿ8ûö”ËÏ.
+O
+java:S1128"2Remove this unused import 'okhttp3.MultipartBody'.(ÕœˆŒ8ûö”ËÏ.
+S
+java:S18746"6Remove this use of "ProgressDialog"; it is deprecated.(Ï’Ú8¥šºÊÏ.
+f
+java:S1871Ö"IThis case's code block is the same as the block for the case on line 182.(ÒñŠ{8û¯àËÏ.
+k
+java:S1871ù"MThis branch's code block is the same as the block for the branch on line 369.(á¢–¬8€ÜÊÏ.
+l
+java:S1871»"IThis case's code block is the same as the block for the case on line 182.(ªëÅŞúÿÿÿÿ8¯ÊëÊÏ.
+D	java:S131""Add a default case to this switch.(¼œóÛüÿÿÿÿ8€ÜÊÏ.
+m
+java:S1301e"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8€ÜÊÏ.

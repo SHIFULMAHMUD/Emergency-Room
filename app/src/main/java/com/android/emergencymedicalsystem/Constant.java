@@ -9,10 +9,13 @@ public class Constant {
     public static final String KEY_CELL="cell";
     public static final String KEY_DIVISION="division";
     public static final String KEY_AREA="area";
+    public static final String KEY_ADDRESS="address";
     public static final String KEY_BLOOD_GROUP="blood";
     public static final String KEY_LATITUDE="latitude";
     public static final String KEY_LONGITUDE="longitude";
-
+    public static final String KEY_GENDER="gender";
+    public static final String KEY_AGE="age";
+    public static final String KEY_STATUS="status";
 
 
     //share preference

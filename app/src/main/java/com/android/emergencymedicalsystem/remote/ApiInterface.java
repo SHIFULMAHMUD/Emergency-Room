@@ -3,6 +3,7 @@ package com.android.emergencymedicalsystem.remote;
 import com.android.emergencymedicalsystem.Constant;
 import com.android.emergencymedicalsystem.model.CovidTestCenter;
 import com.android.emergencymedicalsystem.model.Nurse;
+import com.android.emergencymedicalsystem.model.Sample;
 import com.android.emergencymedicalsystem.model.User;
 
 import java.util.List;
@@ -33,7 +34,16 @@ public interface ApiInterface {
             @Field(Constant.KEY_LATITUDE) String latitude,
             @Field(Constant.KEY_LONGITUDE) String longitude);
 
-
+    @FormUrlEncoded
+    @POST("sample.php")
+    Call<Sample> collectSample(
+            @Field(Constant.KEY_NAME) String name,
+            @Field(Constant.KEY_CELL) String cell,
+            @Field(Constant.KEY_ADDRESS) String address,
+            @Field(Constant.KEY_BLOOD_GROUP) String blood,
+            @Field(Constant.KEY_GENDER) String gender,
+            @Field(Constant.KEY_AGE) String age,
+            @Field(Constant.KEY_STATUS) String status);
 
     //for login
     @FormUrlEncoded
@@ -53,11 +63,19 @@ public interface ApiInterface {
     Call<List<CovidTestCenter>> getCovidCenter(
             @Query("id") String id
     );
+    @GET("get_isolation_center.php")
+    Call<List<CovidTestCenter>> getIsolationCenter(
+            @Query("id") String id
+    );
     @GET("general_nurse.php")
     Call<List<Nurse>> getGeneralNurse(
             @Query("name") String name,
             @Query("cell") String cell,
             @Query("hospital") String hospital
+    );
+    @GET("get_result.php")
+    Call<List<Sample>> getCovidResult(
+            @Query("cell") String cell
     );
     @GET("covid_nurse.php")
     Call<List<Nurse>> getCovidNurse(
@@ -71,6 +89,16 @@ public interface ApiInterface {
     );
     @GET("covid_center.php")
     Call<List<CovidTestCenter>> getCovidTestCenter(
+            @Query("id") String id,
+            @Query("name") String name,
+            @Query("cell") String cell,
+            @Query("address") String address,
+            @Query("facility") String facility,
+            @Query("latitude") String latitude,
+            @Query("longitude") String longitude
+    );
+    @GET("isolation_center.php")
+    Call<List<CovidTestCenter>> getIsolationCenter(
             @Query("id") String id,
             @Query("name") String name,
             @Query("cell") String cell,
