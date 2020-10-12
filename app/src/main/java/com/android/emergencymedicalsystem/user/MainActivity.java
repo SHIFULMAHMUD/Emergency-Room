@@ -8,6 +8,7 @@ import com.android.emergencymedicalsystem.MyCustomPagerAdapter;
 import com.android.emergencymedicalsystem.R;
 import com.android.emergencymedicalsystem.user.covid.CovidActivity;
 import com.android.emergencymedicalsystem.user.nurse.NurseActivity;
+import com.android.emergencymedicalsystem.user.profile.ProfileActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     int currentPage = 0,NUM_PAGES=4;
     final long DELAY_MS = 1000;//delay in milliseconds before task is to be executed
     final long PERIOD_MS = 5000; // time in milliseconds between successive task executions.
-    LinearLayout sliderDotspanel,nurseLayout,covidLayout;
+    LinearLayout sliderDotspanel,nurseLayout,covidLayout,profileLayout;
     private int dotscount;
     Timer timer;
     private ImageView[] dots;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         sliderDotspanel = (LinearLayout) findViewById(R.id.SliderDots);
         nurseLayout=findViewById(R.id.nurseLayout);
         covidLayout=findViewById(R.id.covidLayout);
+        profileLayout=findViewById(R.id.profile_layout);
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -113,6 +115,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this, CovidActivity.class);
+                startActivity(intent);
+            }
+        });
+        profileLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this, ProfileActivity.class);
                 startActivity(intent);
             }
         });

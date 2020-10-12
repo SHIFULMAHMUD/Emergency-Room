@@ -80,7 +80,7 @@ tools:context=".user.MainActivity">
                 android:weightSum="3">
 
                 <LinearLayout
-                    android:id="@+id/homeId"
+                    android:id="@+id/profile_layout"
                     android:layout_width="0dp"
                     android:layout_height="130dp"
                     android:layout_margin="2dp"

@@ -1,0 +1,48 @@
+
+<	java:S131v""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+W
+java:S1117y"<Rename "password" which hides the field declared at line 32.(Òþæâüÿÿÿÿ
+f
+java:S1301v"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ
+n	java:S116"TRename this field "gender_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÃÑ†ýÿÿÿÿ
+I
+java:S1874²"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜
+U
+java:S1117z":Rename "gender" which hides the field declared at line 32.(¸þäñûÿÿÿÿ
+B
+java:S1659"'Declare "gender_et" on a separate line.(ûÃÑ†ýÿÿÿÿ
+c
+java:S1871T"HThis case's code block is the same as the block for the case on line 79.(ªëÅÞúÿÿÿÿ
+=
+java:S1659 ""Declare "name" on a separate line.(Û’øèøÿÿÿÿ
+<	java:S131N""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+f
+java:S1301N"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ
+k	java:S116"QRename this field "nid_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÃÑ†ýÿÿÿÿ
+L
+java:S1874!"6Remove this use of "ProgressDialog"; it is deprecated.(Ï’ŽÚ
+i	java:S116"URename this field "update_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ÖÑ`
+A
+java:S1659 "&Declare "password" on a separate line.(Û’øèøÿÿÿÿ
+<
+java:S1659 "!Declare "nid" on a separate line.(Û’øèøÿÿÿÿ
+g
+java:S1301Û"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
+H
+java:S1172¯"*Remove this unused method parameter "nid".(Ô¡ÂÇ8ËšãÅÑ.
+?
+java:S1659"$Declare "nid_et" on a separate line.(ûÃÑ†ýÿÿÿÿ
+l	java:S116"RRename this field "name_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÃÑ†ýÿÿÿÿ
+M
+java:S1117{"7Rename "nid" which hides the field declared at line 32.(Û§á
+D
+java:S1659")Declare "password_et" on a separate line.(ûÃÑ†ýÿÿÿÿ
+p	java:S116"VRename this field "password_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÃÑ†ýÿÿÿÿ
+=
+java:S1659 ""Declare "text" on a separate line.(Û’øèøÿÿÿÿ
+R
+java:S1874±"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùþÿÿÿÿ
+?
+java:S1659 "$Declare "gender" on a separate line.(Û’øèøÿÿÿÿ
+M
+java:S1117x"8Rename "name" which hides the field declared at line 32.(›Í·{

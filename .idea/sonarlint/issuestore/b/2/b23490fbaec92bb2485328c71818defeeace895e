@@ -1,33 +1,73 @@
 
-Y
-java:S1128"7Remove this unused import 'android.widget.ProgressBar'.(³ñÿŸùÿÿÿÿ8Î·Ô–Ñ.
-m	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯Ê˜8Õ¼àšÑ.
+j
+java:S1871Y"HThis case's code block is the same as the block for the case on line 85.(úâúÿÿÿÿ8‡°î¯Ñ.
+Z
+java:S1854i"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
+m
+java:S1128"KRemove this unused import 'androidx.recyclerview.widget.GridLayoutManager'.(î¼çÿüÿÿÿÿ8µëÕ–Ñ.
+n
+java:S1301’"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8ª€ô¯Ñ.
+d
+java:S1871k"HThis case's code block is the same as the block for the case on line 85.(û¿48ÆõŞ¯Ñ.
+^	java:S125‹"<This block of commented-out lines of code should be removed.(ş•»³øÿÿÿÿ8©ã˜›Ñ.
+Z
+java:S1854["8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
+j
+java:S1871^"HThis case's code block is the same as the block for the case on line 85.(‰ÆÄÎşÿÿÿÿ8ÆõŞ¯Ñ.
+Z
+java:S1854`"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
+o
+java:S1128"MRemove this unused import 'androidx.recyclerview.widget.LinearLayoutManager'.(ôœ¹ºıÿÿÿÿ8Õ–Ñ.
+U
+java:S1854R"8Remove this useless assignment to local variable "text".(üüäµ8Şªë¯Ñ.
+Z
+java:S1854r"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
+j
+java:S1871g"HThis case's code block is the same as the block for the case on line 85.(ÌÊëÎüÿÿÿÿ8ÆõŞ¯Ñ.
+r	java:S117B"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çØ¤úÿÿÿÿ8‚ñšÑ.
 T
 java:S1128"7Remove this unused import 'android.app.ProgressDialog'.(¶ÍÔÓ8ºœ›Ñ.
-m	java:S1176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªä²Ô8Õ¼àšÑ.
-m	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜±˜æ8Õ¼àšÑ.
-m	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷üåÎ8×ºïšÑ.
+D	java:S131¸""Add a default case to this switch.(¼œóÛüÿÿÿÿ8×ºïšÑ.
+m	java:S117;"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜±˜æ8Õ¼àšÑ.
+Z
+java:S1854m"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
+d
+java:S1871p"HThis case's code block is the same as the block for the case on line 85.(ÒñŠ{8ÜĞî¯Ñ.
+m	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú¶Ú¹8Õ¼àšÑ.
+m
+java:S1128"KRemove this unused import 'com.android.emergencymedicalsystem.model.Nurse'.(²ÄêŠşÿÿÿÿ8µëÕ–Ñ.
+D	java:S131’""Add a default case to this switch.(¼œóÛüÿÿÿÿ8ª€ô¯Ñ.
+Z
+java:S1854W"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
+m	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶®â®8Õ¼àšÑ.
 }
-java:S1128"[Remove this unused import 'com.android.emergencymedicalsystem.adapter.RecyclerViewAdapter'.(´ìÁîøÿÿÿÿ8µëÕ–Ñ.
->
-java:S1185)"(Remove this method to simply inherit it.(ßìê¯
-^	java:S125–"<This block of commented-out lines of code should be removed.(ş•»³øÿÿÿÿ8©ã˜›Ñ.
-m
-java:S1128"KRemove this unused import 'androidx.recyclerview.widget.GridLayoutManager'.(î¼çÿüÿÿÿÿ8µëÕ–Ñ.
-m
-java:S1128"KRemove this unused import 'com.android.emergencymedicalsystem.model.Nurse'.(²ÄêŠşÿÿÿÿ8µëÕ–Ñ.
-r	java:S1172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£¢Ë›şÿÿÿÿ8Õ¼àšÑ.
-r	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çØ¤úÿÿÿÿ8‚ñšÑ.
-o
-java:S1128"MRemove this unused import 'androidx.recyclerview.widget.LinearLayoutManager'.(ôœ¹ºıÿÿÿÿ8Õ–Ñ.
-C	java:S131C""Add a default case to this switch.(¼œóÛüÿÿÿÿ8×ºïšÑ.
-I
-java:S1172‡"&Remove these unused method parameters.(ÏÛÖÇøÿÿÿÿ8£Ä™›Ñ.
-m	java:S1173"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú¶Ú¹8Õ¼àšÑ.
-h
-java:S1128"FRemove this unused import 'androidx.recyclerview.widget.RecyclerView'.(Îèòçøÿÿÿÿ8Î·Ô–Ñ.
-m
-java:S1301C"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8×ºïšÑ.
-m	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶®â®8Õ¼àšÑ.
+java:S1128"[Remove this unused import 'com.android.emergencymedicalsystem.adapter.RecyclerViewAdapter'.(´ìÁîøÿÿÿÿ8µëÕ–Ñ.
+V
+java:S1854•"8Remove this useless assignment to local variable "text".(ŠÛ¤Å8¹ª÷¯Ñ.
 M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8µëÕ–Ñ.
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8µëÕ–Ñ.
+Z
+java:S1854d"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
+r	java:S1176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£¢Ë›şÿÿÿÿ8Õ¼àšÑ.
+m	java:S117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªä²Ô8Õ¼àšÑ.
+n	java:S117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷üåÎ8×ºïšÑ.
+i
+java:S1192w"GDefine a constant instead of duplicating this literal "Cancel" 3 times.(çÄİöøÿÿÿÿ8ª€ô¯Ñ.
+h
+java:S1128"FRemove this unused import 'androidx.recyclerview.widget.RecyclerView'.(Îèòçøÿÿÿÿ8Î·Ô–Ñ.
+>
+java:S1185-"(Remove this method to simply inherit it.(ßìê¯
+t
+java:S37762"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ËÄ•åûÿÿÿÿ8ÆõŞ¯Ñ.
+j
+java:S1871b"HThis case's code block is the same as the block for the case on line 85.(µ»ïşıÿÿÿÿ8ÆõŞ¯Ñ.
+Y
+java:S1128"7Remove this unused import 'android.widget.ProgressBar'.(³ñÿŸùÿÿÿÿ8Î·Ô–Ñ.
+C	java:S131O""Add a default case to this switch.(¼œóÛüÿÿÿÿ8ÆõŞ¯Ñ.
+m	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯Ê˜8Õ¼àšÑ.
+[
+java:S1854š"8Remove this useless assignment to local variable "text".(²·û¢ÿÿÿÿÿ8¹ª÷¯Ñ.
+n
+java:S1301¸"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8×ºïšÑ.
+u
+java:S1128"SRemove this unused import 'com.android.emergencymedicalsystem.user.SignupActivity'.(ĞóØİúÿÿÿÿ8ö¯Ñ.

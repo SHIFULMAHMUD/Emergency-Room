@@ -67,12 +67,27 @@ public interface ApiInterface {
     Call<List<CovidTestCenter>> getIsolationCenter(
             @Query("id") String id
     );
+    @FormUrlEncoded
+    @POST("update_profile.php")
+    Call<User> updateProfile(
+            @Field(Constant.KEY_NAME) String name,
+            @Field(Constant.KEY_CELL) String cell,
+            @Field(Constant.KEY_PASSWORD) String password,
+            @Field(Constant.KEY_BLOOD_GROUP) String blood,
+            @Field(Constant.KEY_DIVISION) String division,
+            @Field(Constant.KEY_AREA) String area);
     @GET("general_nurse.php")
     Call<List<Nurse>> getGeneralNurse(
             @Query("name") String name,
             @Query("cell") String cell,
             @Query("hospital") String hospital
     );
+    @GET("get_dhk_area.php")
+    Call<List<User>> getDhkArea();
+
+    @GET("get_ctg_area.php")
+    Call<List<User>> getCtgArea();
+
     @GET("get_result.php")
     Call<List<Sample>> getCovidResult(
             @Query("cell") String cell

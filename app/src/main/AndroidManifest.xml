@@ -15,8 +15,8 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning"
         tools:targetApi="m">
-        <activity android:name=".user.covid.CovidCenterDetailActivity"/>
-        <activity android:name=".user.covid.IsolationCenterDetailActivity"/>
+        <activity android:name=".user.covid.CovidCenterDetailActivity" />
+        <activity android:name=".user.covid.IsolationCenterDetailActivity" />
         <activity android:name=".user.covid.CovidActivity" />
         <activity android:name=".user.nurse.NurseActivity" />
         <activity android:name=".driver.DriverSignupActivity" />
@@ -24,6 +24,8 @@
         <activity android:name=".user.SignupActivity" />
         <activity android:name=".user.LoginActivity" />
         <activity android:name=".user.MainActivity" />
+        <activity android:name=".user.profile.ProfileActivity" />
+        <activity android:name=".user.profile.UpdateProfileActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

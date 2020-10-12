@@ -1,20 +1,18 @@
 package com.android.emergencymedicalsystem.user;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.GridLayoutManager;
 import es.dmoral.toasty.Toasty;
-import okhttp3.MediaType;
-import okhttp3.MultipartBody;
-import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 import com.android.emergencymedicalsystem.R;
+import com.android.emergencymedicalsystem.adapter.RecyclerViewAdapter;
 import com.android.emergencymedicalsystem.model.User;
 import com.android.emergencymedicalsystem.remote.ApiClient;
 import com.android.emergencymedicalsystem.remote.ApiInterface;
@@ -29,28 +27,27 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Looper;
-import android.view.Gravity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SignupActivity extends AppCompatActivity {
     LinearLayout linearLayoutGotoLogin;
+    private List<User> areaList;
+    ArrayList<String> areaNames  = new ArrayList<String>();
     private static final int REQUEST_CODE_LOCATION_PERMISSION = 1;
     EditText etxtName, etxtCell, etxtPassword, etxtDivision, etxtArea, etxtBloodGroup;
     Button btnSignUp;
-    String text, user_name, user_cell, user_password, user_division, user_area, user_bg, lat, lng;
+    private ApiInterface apiInterface;
+    String text="", user_name, user_cell, user_password, user_division, user_area, user_bg, lat, lng;
     private ProgressDialog loading;
 
     @Override
@@ -69,6 +66,8 @@ public class SignupActivity extends AppCompatActivity {
         } else {
             getLocation();
         }
+        apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
+
         linearLayoutGotoLogin = findViewById(R.id.ll9);
         linearLayoutGotoLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,11 +101,13 @@ public class SignupActivity extends AppCompatActivity {
                             case 0:
                                 etxtDivision.setText(divisionList[position]);
                                 text = divisionList[position];
+                                getDhkAreaData();
                                 break;
 
                             case 1:
                                 etxtDivision.setText(divisionList[position]);
                                 text = divisionList[position];
+                                getCtgAreaData();
                                 break;
                         }
                     }
@@ -126,29 +127,17 @@ public class SignupActivity extends AppCompatActivity {
             }
 
         });
+
         etxtArea.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                final String[] areaList = {"Agrabad", "Gec Circle"};
-
                 AlertDialog.Builder builder = new AlertDialog.Builder(SignupActivity.this);
                 builder.setTitle("Choose Area");
-                builder.setCancelable(false);
-                builder.setItems(areaList, new DialogInterface.OnClickListener() {
+                builder.setItems(areaNames.toArray(new String[0]), new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialog, int position) {
-                        switch (position) {
-                            case 0:
-                                etxtArea.setText(areaList[position]);
-                                text = areaList[position];
-                                break;
+                    public void onClick(DialogInterface dialogInterface, int i) {
 
-                            case 1:
-                                etxtArea.setText(areaList[position]);
-                                text = areaList[position];
-                                break;
-                        }
+                        etxtArea.setText(areaNames.get(i));
                     }
                 });
                 builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -158,7 +147,6 @@ public class SignupActivity extends AppCompatActivity {
                         dialog.dismiss();
                     }
                 });
-
 
                 AlertDialog accountTypeDialog = builder.create();
 
@@ -308,7 +296,42 @@ public class SignupActivity extends AppCompatActivity {
             }
         }
     }
+    public void getDhkAreaData() {
+        Call<List<User>> call = apiInterface.getDhkArea();
+        call.enqueue(new Callback<List<User>>() {
+            @Override
+            public void onResponse(Call<List<User>> call, Response<List<User>> response) {
+                areaList = response.body();
+                areaNames.clear();
+                for (int i = 0; i < areaList.size(); i++) {
+                    areaNames.add(areaList.get(i).getArea());
+                }
+            }
 
+            @Override
+            public void onFailure(Call<List<User>> call, Throwable t) {
+
+            }
+        });
+    }
+    public void getCtgAreaData() {
+        Call<List<User>> call = apiInterface.getCtgArea();
+        call.enqueue(new Callback<List<User>>() {
+            @Override
+            public void onResponse(Call<List<User>> call, Response<List<User>> response) {
+                areaList = response.body();
+                areaNames.clear();
+                for (int i = 0; i < areaList.size(); i++) {
+                    areaNames.add(areaList.get(i).getArea());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<User>> call, Throwable t) {
+
+            }
+        });
+    }
     private void getLocation() {
         final LocationRequest locationRequest = new LocationRequest();
         locationRequest.setInterval(10000);

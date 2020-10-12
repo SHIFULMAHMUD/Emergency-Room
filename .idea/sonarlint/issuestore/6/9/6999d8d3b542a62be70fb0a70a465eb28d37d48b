@@ -1,10 +1,10 @@
 
 Z
 java:S1128"=Remove this unused import 'androidx.core.app.ActivityCompat'.(ş¤—²8äÙŸæÏ.
-`
-java:S1128">Remove this unused import 'android.content.pm.PackageManager'.(€®¥õÿÿÿÿÿ8äÙŸæÏ.
 C
 java:S16597"&Declare "hospital" on a separate line.(ÁÉ¤Â8ÄÿüÒÏ.
 X	java:S125C"<This block of commented-out lines of code should be removed.(•¹‰8ÉÏÏ.
 O
 java:S1128"-Remove this unused import 'android.Manifest'.(¦øïúÿÿÿÿ8ÕİÎæÏ.
+`
+java:S1128">Remove this unused import 'android.content.pm.PackageManager'.(€®¥õÿÿÿÿÿ8äÙŸæÏ.

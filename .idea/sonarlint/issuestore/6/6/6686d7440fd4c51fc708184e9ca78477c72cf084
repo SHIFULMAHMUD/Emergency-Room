@@ -1,0 +1,18 @@
+
+@
+java:S16591"#Declare "blood" on a separate line.(“ÖÑ™8„Ñù°Ñ.
+X	java:S125@"<This block of commented-out lines of code should be removed.(•¹‰8§ìû°Ñ.
+A
+java:S16591"$Declare "status" on a separate line.(“ÖÑ™8„Ñù°Ñ.
+W
+java:S1128	"5Remove this unused import 'android.widget.ImageView'.(ú¯ëàüÿÿÿÿ8øƒø°Ñ.
+>
+java:S16591"!Declare "age" on a separate line.(“ÖÑ™8„Ñù°Ñ.
+N
+java:S1128",Remove this unused import 'android.net.Uri'.(òêû‘ýÿÿÿÿ8Õ†÷°Ñ.
+A
+java:S16591"$Declare "gender" on a separate line.(“ÖÑ™8É¶ú°Ñ.
+?
+java:S16591""Declare "cell" on a separate line.(“ÖÑ™8øƒø°Ñ.
+B
+java:S16591"%Declare "address" on a separate line.(“ÖÑ™8„Ñù°Ñ.
