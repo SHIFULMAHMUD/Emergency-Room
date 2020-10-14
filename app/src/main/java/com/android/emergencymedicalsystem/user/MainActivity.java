@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
+import es.dmoral.toasty.Toasty;
+
+import com.android.emergencymedicalsystem.ConnectionDetector;
 import com.android.emergencymedicalsystem.MyCustomPagerAdapter;
 import com.android.emergencymedicalsystem.R;
 import com.android.emergencymedicalsystem.user.covid.CovidActivity;
@@ -38,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Emergency Medical Service");
+        //Internet connection checker
+        ConnectionDetector cd = new ConnectionDetector(getApplicationContext());
+        // Check if Internet present
+        if (!cd.isConnectingToInternet()) {
+            // Internet Connection is not present
+            Toasty.error(MainActivity.this, "No Internet Connection", Toasty.LENGTH_LONG).show();
+        }
         viewPager = (ViewPager)findViewById(R.id.viewPager);
         sliderDotspanel = (LinearLayout) findViewById(R.id.SliderDots);
         nurseLayout=findViewById(R.id.nurseLayout);

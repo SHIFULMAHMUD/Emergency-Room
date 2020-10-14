@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.android.emergencymedicalsystem.R;
 import com.android.emergencymedicalsystem.model.Nurse;
+import com.android.emergencymedicalsystem.user.nurse.NurseDetailsActivity;
 
 import java.util.List;
 
@@ -64,9 +65,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         @Override
         public void onClick(View view) {
-            /*Intent i = new Intent(context, FlatActivity.class);
-            i.putExtra("flat", nurses.get(getAdapterPosition()).getFlat_no());
-            context.startActivity(i);*/
+            Intent i = new Intent(context, NurseDetailsActivity.class);
+            i.putExtra("name", nurses.get(getAdapterPosition()).getName());
+            i.putExtra("type", nurses.get(getAdapterPosition()).getType());
+            i.putExtra("cell", nurses.get(getAdapterPosition()).getCell());
+            i.putExtra("address", nurses.get(getAdapterPosition()).getAddress());
+            i.putExtra("hospital", nurses.get(getAdapterPosition()).getHospital());
+            i.putExtra("day", nurses.get(getAdapterPosition()).getDay());
+            i.putExtra("time", nurses.get(getAdapterPosition()).getTime());
+            context.startActivity(i);
         }
     }
 }

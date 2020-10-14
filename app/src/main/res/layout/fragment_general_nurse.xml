@@ -8,9 +8,38 @@
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_below="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txt_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textColorHint="@color/colorAccent"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Search Division Name. . . "
+            android:textColor="@color/colorAccent"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimaryDark"
+            android:text="Search" />
+    </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
         android:background="?android:attr/selectableItemBackground"
         android:id="@+id/recycler"
+        android:layout_below="@+id/layout1"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

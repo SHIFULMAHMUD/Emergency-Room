@@ -20,6 +20,9 @@ import com.android.emergencymedicalsystem.Constant;
 import com.android.emergencymedicalsystem.R;
 import com.android.emergencymedicalsystem.user.SignupActivity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import es.dmoral.toasty.Toasty;
@@ -30,6 +33,9 @@ import retrofit2.Response;
 public class UpdateProfileActivity extends AppCompatActivity {
     EditText name_et, password_et, blood_group_et,division_et,area_et;
     Button update_btn;
+    private ApiInterface apiInterface;
+    private List<User> areaList;
+    ArrayList<String> areaNames  = new ArrayList<String>();
     String getCell,text,name,password,blood_group,division,area;
     private ProgressDialog loading;
     @Override
@@ -67,6 +73,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
         blood_group_et.setText(blood_group);
         division_et.setText(division);
         area_et.setText(area);
+        apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
         division_et.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,11 +90,13 @@ public class UpdateProfileActivity extends AppCompatActivity {
                             case 0:
                                 division_et.setText(divisionList[position]);
                                 text = divisionList[position];
+                                getDhkAreaData();
                                 break;
 
                             case 1:
                                 division_et.setText(divisionList[position]);
                                 text = divisionList[position];
+                                getCtgAreaData();
                                 break;
                         }
                     }
@@ -111,25 +120,13 @@ public class UpdateProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                final String[] areaList = {"Agrabad", "Gec Circle"};
-
                 AlertDialog.Builder builder = new AlertDialog.Builder(UpdateProfileActivity.this);
                 builder.setTitle("Choose Area");
-                builder.setCancelable(false);
-                builder.setItems(areaList, new DialogInterface.OnClickListener() {
+                builder.setItems(areaNames.toArray(new String[0]), new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialog, int position) {
-                        switch (position) {
-                            case 0:
-                                area_et.setText(areaList[position]);
-                                text = areaList[position];
-                                break;
+                    public void onClick(DialogInterface dialogInterface, int i) {
 
-                            case 1:
-                                area_et.setText(areaList[position]);
-                                text = areaList[position];
-                                break;
-                        }
+                        area_et.setText(areaNames.get(i));
                     }
                 });
                 builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -139,7 +136,6 @@ public class UpdateProfileActivity extends AppCompatActivity {
                         dialog.dismiss();
                     }
                 });
-
 
                 AlertDialog accountTypeDialog = builder.create();
 
@@ -291,6 +287,42 @@ public class UpdateProfileActivity extends AppCompatActivity {
             }
         });
 
+    }
+    public void getDhkAreaData() {
+        Call<List<User>> call = apiInterface.getDhkArea();
+        call.enqueue(new Callback<List<User>>() {
+            @Override
+            public void onResponse(Call<List<User>> call, Response<List<User>> response) {
+                areaList = response.body();
+                areaNames.clear();
+                for (int i = 0; i < areaList.size(); i++) {
+                    areaNames.add(areaList.get(i).getArea());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<User>> call, Throwable t) {
+
+            }
+        });
+    }
+    public void getCtgAreaData() {
+        Call<List<User>> call = apiInterface.getCtgArea();
+        call.enqueue(new Callback<List<User>>() {
+            @Override
+            public void onResponse(Call<List<User>> call, Response<List<User>> response) {
+                areaList = response.body();
+                areaNames.clear();
+                for (int i = 0; i < areaList.size(); i++) {
+                    areaNames.add(areaList.get(i).getArea());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<User>> call, Throwable t) {
+
+            }
+        });
     }
     private void updateProfile(String name,String cell,String password,String blood,String division,String area) {
 

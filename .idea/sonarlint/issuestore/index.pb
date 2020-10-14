@@ -97,8 +97,6 @@ a
 1app/src/main/res/layout/activity_driver_login.xml,0\7\078765b14d17a24b341d7553977173f01a74c106
 b
 2app/src/main/res/layout/activity_driver_signup.xml,b\d\bd51959b862c040bafa0c522c5a2c251faa8cd82
-Z
-*app/src/main/res/layout/activity_login.xml,1\f\1f7e901185d74bf05f9fcb38f9ed35ea78cd4c6e
 [
 +app/src/main/res/layout/activity_splash.xml,1\3\13b26b9b6631cddf289c5ab7c4e546a180da97d8
 [
@@ -172,12 +170,8 @@ h
 8app/src/main/res/layout/activity_covid_center_detail.xml,e\4\e453694bc8bc453b37080fe23c2baa4375f435bf
 l
 <app/src/main/res/layout/activity_isolation_center_detail.xml,f\5\f57edc006268ec8f23ea383ba229adec2fc9178c
-`
-0app/src/main/res/layout/fragment_covid_nurse.xml,0\1\019e1606235fdb8e1b3a3ddf6bf6535a9d148475
 a
 1app/src/main/res/layout/fragment_covid_result.xml,a\d\adc35d172b009d5b4d9fabebf0c677b8de18bcee
-b
-2app/src/main/res/layout/fragment_general_nurse.xml,b\c\bc746c80843d1ad59decb5fff22c70a44fb966c4
 e
 5app/src/main/res/layout/fragment_isolation_center.xml,6\0\609351e039bce4ad166524959c6ac59bf8479200
 f
@@ -192,3 +186,5 @@ Vapp/src/main/java/com/android/emergencymedicalsystem/user/profile/ProfileActivi
 Lapp/src/main/java/com/android/emergencymedicalsystem/ConnectionDetector.java,7\f\7fc84d4f788927aab2ff38b06867ea6def23867d
 Œ
 \app/src/main/java/com/android/emergencymedicalsystem/user/profile/UpdateProfileActivity.java,3\d\3dae2af30ce4b65798fbe9891c62e7799d0e19cf
+c
+3app/src/main/res/layout/activity_update_profile.xml,2\e\2e5cf45c47aafa41f819d49255e8aa6d64622009

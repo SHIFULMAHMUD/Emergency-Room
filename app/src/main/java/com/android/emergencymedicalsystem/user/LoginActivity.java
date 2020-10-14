@@ -7,11 +7,13 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import com.android.emergencymedicalsystem.ConnectionDetector;
 import com.android.emergencymedicalsystem.Constant;
 import com.android.emergencymedicalsystem.R;
 import com.android.emergencymedicalsystem.model.User;
 import com.android.emergencymedicalsystem.remote.ApiClient;
 import com.android.emergencymedicalsystem.remote.ApiInterface;
+import com.android.emergencymedicalsystem.user.nurse.NurseActivity;
 
 import android.Manifest;
 import android.app.AlertDialog;
@@ -92,7 +94,13 @@ public class LoginActivity extends AppCompatActivity implements TextWatcher,
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+//Internet connection checker
+                ConnectionDetector cd = new ConnectionDetector(getApplicationContext());
+                // Check if Internet present
+                if (!cd.isConnectingToInternet()) {
+                    // Internet Connection is not present
+                    Toasty.error(LoginActivity.this, "No Internet Connection", Toasty.LENGTH_LONG).show();
+                }else {
                 String cell = etxtCell.getText().toString();
                 String password = etxtPassword.getText().toString();
 
@@ -115,6 +123,7 @@ public class LoginActivity extends AppCompatActivity implements TextWatcher,
                     login(cell, password);
                 }
 
+            }
             }
         });
 

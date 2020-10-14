@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.android.emergencymedicalsystem.ConnectionDetector;
 import com.android.emergencymedicalsystem.Constant;
 import com.android.emergencymedicalsystem.R;
 import com.android.emergencymedicalsystem.adapter.RecyclerViewAdapter;
@@ -63,6 +64,13 @@ public class SampleCollectionFragment extends Fragment {
         sharedPreferences =this.getActivity().getSharedPreferences(Constant.SHARED_PREF_NAME, Context.MODE_PRIVATE);
         String getCell = sharedPreferences.getString(Constant.CELL_SHARED_PREF, "Not Available");
         phone_et.setText(getCell);
+        //Internet connection checker
+        ConnectionDetector cd = new ConnectionDetector(getContext());
+        // Check if Internet present
+        if (!cd.isConnectingToInternet()) {
+            // Internet Connection is not present
+            Toasty.error(getContext(), "No Internet Connection", Toasty.LENGTH_LONG).show();
+        }
         Button submit_btn=view.findViewById(R.id.cirSubmitButton);
         bg_et.setOnClickListener(new View.OnClickListener() {
             @Override

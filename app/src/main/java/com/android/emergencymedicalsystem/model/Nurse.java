@@ -9,13 +9,15 @@ public class Nurse {
     private String cell;
     @SerializedName("hospital")
     private String hospital;
+    @SerializedName("type")
+    private String type;
+    @SerializedName("address")
+    private String address;
+    @SerializedName("day")
+    private String day;
+    @SerializedName("time")
+    private String time;
     public Nurse() {
-    }
-
-    public Nurse(String name, String cell, String hospital) {
-        this.name = name;
-        this.cell = cell;
-        this.hospital = hospital;
     }
 
     public String getName() {
@@ -40,5 +42,21 @@ public class Nurse {
 
     public void setHospital(String hospital) {
         this.hospital = hospital;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getDay() {
+        return day;
+    }
+
+    public String getTime() {
+        return time;
     }
 }

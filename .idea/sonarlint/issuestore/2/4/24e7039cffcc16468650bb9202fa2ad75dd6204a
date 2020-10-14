@@ -1,10 +1,10 @@
 
 R
 java:S1128"0Remove this unused import 'okhttp3.RequestBody'.(ıÂÂöûÿÿÿÿ8«º£ËÏ.
-W
-java:S1128"5Remove this unused import 'retrofit2.http.Multipart'.(ù«÷åşÿÿÿÿ8°ÙËÊÏ.
 R
 java:S1128"0Remove this unused import 'retrofit2.http.Part'.(Ì—’Áÿÿÿÿÿ8×ËÏ.
-W	java:S107"<Method has 8 parameters, which is greater than 7 authorized.(Çüœb8âÙÖ™Ğ.
 O
 java:S1128"2Remove this unused import 'okhttp3.MultipartBody'.(ÕœˆŒ8ı–œËÏ.
+W	java:S107"<Method has 8 parameters, which is greater than 7 authorized.(Çüœb8âÙÖ™Ğ.
+W
+java:S1128"5Remove this unused import 'retrofit2.http.Multipart'.(ù«÷åşÿÿÿÿ8°ÙËÊÏ.

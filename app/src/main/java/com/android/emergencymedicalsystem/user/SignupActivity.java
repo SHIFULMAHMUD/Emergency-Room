@@ -11,11 +11,13 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import com.android.emergencymedicalsystem.ConnectionDetector;
 import com.android.emergencymedicalsystem.R;
 import com.android.emergencymedicalsystem.adapter.RecyclerViewAdapter;
 import com.android.emergencymedicalsystem.model.User;
 import com.android.emergencymedicalsystem.remote.ApiClient;
 import com.android.emergencymedicalsystem.remote.ApiInterface;
+import com.android.emergencymedicalsystem.user.nurse.NurseActivity;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
@@ -226,7 +228,13 @@ public class SignupActivity extends AppCompatActivity {
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+//Internet connection checker
+                ConnectionDetector cd = new ConnectionDetector(getApplicationContext());
+                // Check if Internet present
+                if (!cd.isConnectingToInternet()) {
+                    // Internet Connection is not present
+                    Toasty.error(SignupActivity.this, "No Internet Connection", Toasty.LENGTH_LONG).show();
+                }else {
                 //taking values
                 user_name = etxtName.getText().toString();
                 user_cell = etxtCell.getText().toString();
@@ -279,6 +287,7 @@ public class SignupActivity extends AppCompatActivity {
                     //call signup method
                     sign_up(user_name, user_cell, user_password, user_division, user_area, user_bg, lat, lng);
                 }
+            }
             }
         });
 

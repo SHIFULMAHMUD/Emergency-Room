@@ -77,10 +77,10 @@ public interface ApiInterface {
             @Field(Constant.KEY_DIVISION) String division,
             @Field(Constant.KEY_AREA) String area);
     @GET("general_nurse.php")
-    Call<List<Nurse>> getGeneralNurse(
-            @Query("name") String name,
-            @Query("cell") String cell,
-            @Query("hospital") String hospital
+    Call<List<Nurse>> getGeneralNurse();
+    @GET("search_general_nurse.php")
+    Call<List<Nurse>> getSearchGeneralNurse(
+            @Query("text") String text
     );
     @GET("get_dhk_area.php")
     Call<List<User>> getDhkArea();
@@ -93,10 +93,10 @@ public interface ApiInterface {
             @Query("cell") String cell
     );
     @GET("covid_nurse.php")
-    Call<List<Nurse>> getCovidNurse(
-            @Query("name") String name,
-            @Query("cell") String cell,
-            @Query("hospital") String hospital
+    Call<List<Nurse>> getCovidNurse();
+    @GET("search_covid_nurse.php")
+    Call<List<Nurse>> getSearchCovidNurse(
+            @Query("text") String text
     );
     @GET("user_latlng.php")
     Call<List<User>> getUserLatLng(

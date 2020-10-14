@@ -1,48 +1,78 @@
 
-<	java:S131v""Add a default case to this switch.(¼œóÛüÿÿÿÿ
-W
-java:S1117y"<Rename "password" which hides the field declared at line 32.(Òşæâüÿÿÿÿ
-f
-java:S1301v"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ
-n	java:S116"TRename this field "gender_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÃÑ†ıÿÿÿÿ
-I
-java:S1874²"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜
-U
-java:S1117z":Rename "gender" which hides the field declared at line 32.(¸şäñûÿÿÿÿ
-B
-java:S1659"'Declare "gender_et" on a separate line.(ûÃÑ†ıÿÿÿÿ
-c
-java:S1871T"HThis case's code block is the same as the block for the case on line 79.(ªëÅŞúÿÿÿÿ
-=
-java:S1659 ""Declare "name" on a separate line.(Û’øèøÿÿÿÿ
-<	java:S131N""Add a default case to this switch.(¼œóÛüÿÿÿÿ
-f
-java:S1301N"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ
-k	java:S116"QRename this field "nid_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÃÑ†ıÿÿÿÿ
-L
-java:S1874!"6Remove this use of "ProgressDialog"; it is deprecated.(Ï’Ú
-i	java:S116"URename this field "update_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ÖÑ`
-A
-java:S1659 "&Declare "password" on a separate line.(Û’øèøÿÿÿÿ
 <
-java:S1659 "!Declare "nid" on a separate line.(Û’øèøÿÿÿÿ
-g
-java:S1301Û"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
-H
-java:S1172¯"*Remove this unused method parameter "nid".(Ô¡ÂÇ8ËšãÅÑ.
-?
-java:S1659"$Declare "nid_et" on a separate line.(ûÃÑ†ıÿÿÿÿ
-l	java:S116"RRename this field "name_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÃÑ†ıÿÿÿÿ
-M
-java:S1117{"7Rename "nid" which hides the field declared at line 32.(Û§á
-D
-java:S1659")Declare "password_et" on a separate line.(ûÃÑ†ıÿÿÿÿ
-p	java:S116"VRename this field "password_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÃÑ†ıÿÿÿÿ
-=
-java:S1659 ""Declare "text" on a separate line.(Û’øèøÿÿÿÿ
+java:S1659!"&Declare "password" on a separate line.(ğõÑ
+>
+java:S1659")Declare "password_et" on a separate line.(®ãà
+i	java:S116 "URename this field "update_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ÖÑ`
+j
+java:S1871X"HThis case's code block is the same as the block for the case on line 83.(ªëÅŞúÿÿÿÿ8’¯œŞÑ.
+[
+java:S1117í"8Rename "area" which hides the field declared at line 33.(‚ÜŠòüÿÿÿÿ8âæ¡ŞÑ.
 R
-java:S1874±"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ
+java:S1874©"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ
+f	java:S116"RRename this field "name_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ãà
+m	java:S116"RRename this field "area_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ãà8‚Ë„ŞÑ.
+l
+java:S1871¨"IThis case's code block is the same as the block for the case on line 163.(ªëÅŞúÿÿÿÿ8¿·ŞÑ.
+=	java:S131æ""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+t	java:S116"YRename this field "blood_group_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ãà8õë‚ŞÑ.
+C	java:S131R""Add a default case to this switch.(¼œóÛüÿÿÿÿ8ÙšŞÑ.
+N
+java:S1117è"8Rename "name" which hides the field declared at line 33.(›Í·{
+F
+java:S1659!")Declare "blood_group" on a separate line.(ğõÑ8›ÿ…ŞÑ.
+L
+java:S1874""6Remove this use of "ProgressDialog"; it is deprecated.(Ï’Ú
+g
+java:S1301Ó"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
+Y
+java:S1117ì"<Rename "division" which hides the field declared at line 33.(Ã¯g8™†¢ŞÑ.
+8
+java:S1659!""Declare "text" on a separate line.(ğõÑ
+X
+java:S1117ê"<Rename "password" which hides the field declared at line 33.(Òşæâüÿÿÿÿ
+m
+java:S1301R"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8ÙšŞÑ.
+l
+java:S1871µ"IThis case's code block is the same as the block for the case on line 163.(µ»ïşıÿÿÿÿ8ÙšŞÑ.
+l
+java:S1871¬"IThis case's code block is the same as the block for the case on line 163.(úâúÿÿÿÿ8ÏŸŞÑ.
+l
+java:S1871±"IThis case's code block is the same as the block for the case on line 163.(‰ÆÄÎşÿÿÿÿ8ÙšŞÑ.
+i
+java:S1192_"GDefine a constant instead of duplicating this literal "Cancel" 4 times.(çÄİöøÿÿÿÿ8ÙšŞÑ.
+l
+java:S1871€"IThis case's code block is the same as the block for the case on line 123.(ªëÅŞúÿÿÿÿ8•ŞÑ.
+q	java:S116"VRename this field "division_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ãà8‚Ë„ŞÑ.
+I
+java:S1874ª"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜
+g
+java:S1301æ"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ
+C
+java:S1659!"&Declare "division" on a separate line.(ğõÑ8›ÿ…ŞÑ.
+t
+java:S3776$"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(¨Œşÿÿÿÿ8ÙšŞÑ.
+j	java:S116"VRename this field "password_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ãà
+H
+java:S1659",Declare "blood_group_et" on a separate line.(®ãà8õë‚ŞÑ.
+f
+java:S1871Ã"IThis case's code block is the same as the block for the case on line 163.(ÒñŠ{8ÙšŞÑ.
+r	java:S116!"VRename this field "blood_group" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğõÑ8›ÿ…ŞÑ.
+8
+java:S1659!""Declare "name" on a separate line.(ğõÑ
+C	java:S131z""Add a default case to this switch.(¼œóÛüÿÿÿÿ8ÙšŞÑ.
+E
+java:S1659")Declare "division_et" on a separate line.(®ãà8‚Ë„ŞÑ.
 ?
-java:S1659 "$Declare "gender" on a separate line.(Û’øèøÿÿÿÿ
-M
-java:S1117x"8Rename "name" which hides the field declared at line 32.(›Í·{
+java:S1659!""Declare "area" on a separate line.(ğõÑ8›ÿ…ŞÑ.
+f
+java:S1871¾"IThis case's code block is the same as the block for the case on line 163.(û¿48ÙšŞÑ.
+D	java:S131¢""Add a default case to this switch.(¼œóÛüÿÿÿÿ8ÙšŞÑ.
+m
+java:S1301z"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8ÙšŞÑ.
+l
+java:S1871º"IThis case's code block is the same as the block for the case on line 163.(ÌÊëÎüÿÿÿÿ8ÕÃŸŞÑ.
+u
+java:S1128"SRemove this unused import 'com.android.emergencymedicalsystem.user.SignupActivity'.(ĞóØİúÿÿÿÿ8˜ùŞÑ.
+A
+java:S1659"%Declare "area_et" on a separate line.(®ãà8‚Ë„ŞÑ.

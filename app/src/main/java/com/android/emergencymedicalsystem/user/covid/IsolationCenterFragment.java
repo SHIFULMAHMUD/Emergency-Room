@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.android.emergencymedicalsystem.ConnectionDetector;
 import com.android.emergencymedicalsystem.Constant;
 import com.android.emergencymedicalsystem.R;
 import com.android.emergencymedicalsystem.adapter.RecyclerViewAdapter;
@@ -33,6 +34,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import es.dmoral.toasty.Toasty;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -82,9 +84,18 @@ public class IsolationCenterFragment extends Fragment implements OnMapReadyCallb
         mapFragment.getMapAsync(this);
 
         apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
+//Internet connection checker
+        ConnectionDetector cd = new ConnectionDetector(getContext());
+        // Check if Internet present
+        if (!cd.isConnectingToInternet()) {
+            // Internet Connection is not present
+            Toasty.error(getContext(), "No Internet Connection", Toasty.LENGTH_LONG).show();
+        }
+        else {
+            getUserLatLngData(getCell);
+            getData("","","","","","","");
 
-        getUserLatLngData(getCell);
-        getData("","","","","","","");
+        }
 
         return view;
     }

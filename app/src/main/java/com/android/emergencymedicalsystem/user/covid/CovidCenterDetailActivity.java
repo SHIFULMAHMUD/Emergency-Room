@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.emergencymedicalsystem.ConnectionDetector;
 import com.android.emergencymedicalsystem.R;
 import com.android.emergencymedicalsystem.model.CovidTestCenter;
 import com.android.emergencymedicalsystem.remote.ApiClient;
@@ -40,7 +41,14 @@ public class CovidCenterDetailActivity extends AppCompatActivity {
         address_tv=findViewById(R.id.address_tv);
         facility_tv=findViewById(R.id.facility_tv);
         id = getIntent().getStringExtra("id");
+        // Check if Internet present
+        ConnectionDetector cd = new ConnectionDetector(CovidCenterDetailActivity.this);
+        if (!cd.isConnectingToInternet()) {
+            // Internet Connection is not present
+            Toasty.error(CovidCenterDetailActivity.this, "No Internet Connection", Toasty.LENGTH_LONG).show();
+        }else {
         getCovidCenterData(id);
+        }
     }
     public void getCovidCenterData(String id) {
 

@@ -3,10 +3,12 @@ package com.android.emergencymedicalsystem.user.nurse;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
+import es.dmoral.toasty.Toasty;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.android.emergencymedicalsystem.ConnectionDetector;
 import com.android.emergencymedicalsystem.R;
 import com.android.emergencymedicalsystem.adapter.MyPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
@@ -26,7 +28,13 @@ public class NurseActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
         viewPager = findViewById(R.id.simpleViewPager);
         tabLayout = findViewById(R.id.simpleTabLayout);
-
+//Internet connection checker
+        ConnectionDetector cd = new ConnectionDetector(getApplicationContext());
+        // Check if Internet present
+        if (!cd.isConnectingToInternet()) {
+            // Internet Connection is not present
+            Toasty.error(NurseActivity.this, "No Internet Connection", Toasty.LENGTH_LONG).show();
+        }
         setupViewPager();
 
     }

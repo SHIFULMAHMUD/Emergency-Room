@@ -1,27 +1,27 @@
 
-p	java:S116"TRename this field "PERIOD_MS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»‘™ï8®ÃëùÍ.
->
-java:S1170"!Make this final field static too.(»‘™ï8®ÃëùÍ.
 r
 java:S3252b"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ÅÔŞ±ûÿÿÿÿ8ôĞöùÍ.
->
-java:S1170"!Make this final field static too.(Ÿ…÷Š8®ÃëùÍ.
-r	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø‘—Öÿÿÿÿÿ8ôĞöùÍ.
-o	java:S116"SRename this field "DELAY_MS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ…÷Š8®ÃëùÍ.
-K
-java:S1659")Declare "covidLayout" on a separate line.(»÷ã¯şÿÿÿÿ8ºç‹Ğ.
-£
-java:S1186@"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™Î«şÿÿÿÿ8ÇÑñùÍ.
-£
-java:S11860"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ø´´øÿÿÿÿ8ÇÑñùÍ.
-D
-java:S1659"'Declare "NUM_PAGES" on a separate line.(ñÕœ8²ÂêùÍ.
-T
-java:S1197"8Move the array designator from the variable to the type.(÷¬‹(8½¶ßùÍ.
 K
 java:S1659")Declare "nurseLayout" on a separate line.(»÷ã¯şÿÿÿÿ8ÙÅÍÏ.
-r
-java:S3252b"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ÅÔŞ±ûÿÿÿÿ8ôĞöùÍ.
+T
+java:S1197"8Move the array designator from the variable to the type.(÷¬‹(8½¶ßùÍ.
+o	java:S116"SRename this field "DELAY_MS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ…÷Š8®ÃëùÍ.
+D
+java:S1659"'Declare "NUM_PAGES" on a separate line.(ñÕœ8²ÂêùÍ.
+K
+java:S1659")Declare "covidLayout" on a separate line.(»÷ã¯şÿÿÿÿ8ºç‹Ğ.
+p	java:S116"TRename this field "PERIOD_MS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»‘™ï8®ÃëùÍ.
+£
+java:S1186@"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™Î«şÿÿÿÿ8ÇÑñùÍ.
+p	java:S116"TRename this field "NUM_PAGES" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÕœ8²ÂêùÍ.
+>
+java:S1170"!Make this final field static too.(Ÿ…÷Š8®ÃëùÍ.
+>
+java:S1170"!Make this final field static too.(»‘™ï8®ÃëùÍ.
+£
+java:S11860"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ø´´øÿÿÿÿ8ÇÑñùÍ.
 M
 java:S1659"+Declare "profileLayout" on a separate line.(»÷ã¯şÿÿÿÿ8¦èªÁÑ.
-p	java:S116"TRename this field "NUM_PAGES" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÕœ8²ÂêùÍ.
+r
+java:S3252b"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ÅÔŞ±ûÿÿÿÿ8ôĞöùÍ.
+r	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø‘—Öÿÿÿÿÿ8ôĞöùÍ.
