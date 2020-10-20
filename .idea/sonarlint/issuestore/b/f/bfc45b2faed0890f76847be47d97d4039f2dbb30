@@ -1,34 +1,70 @@
 
-X
-java:S1117’":Rename "editor" which hides the field declared at line 48.(Íµ’ı8¯Ç‚ÌÏ.
-Ÿ
-java:S1186²"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(á¬‡İ8¯Ç‚ÌÏ.
-V
-java:S1128"4Remove this unused import 'android.app.AlertDialog'.(ª½øşüÿÿÿÿ8ı†ÌÏ.
-_
-java:S1126P"BReplace this if-then-else statement by a single method invocation.(˜·Øã8¯Ç‚ÌÏ.
-s	java:S116."WRename this field "rem_userpass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó¬Ë8“ŒşËÏ.
-O
-java:S1128"-Remove this unused import 'android.Manifest'.(¦øïúÿÿÿÿ8€íÌÏ.
-L
-java:S1659-"*Declare "etxtPassword" on a separate line.(¾æŠ™şÿÿÿÿ8“ŒşËÏ.
-N
-java:S1128",Remove this unused import 'android.net.Uri'.(òêû‘ıÿÿÿÿ8€íÌÏ.
-S
-java:S1128"6Remove this unused import 'android.provider.Settings'.(Š¯„8€íÌÏ.
+n
+java:S1301†"KReplace this "switch" statement by "if" statements to increase readability.(×ö³–úÿÿÿÿ8¼»ÔıÓ.
+n
+java:S1128""QRemove this unused import 'com.karumi.dexter.listener.PermissionGrantedResponse'.(‹“–ô8„Ü·şÓ.
 ¤
-java:S1186¼"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(×åó«øÿÿÿÿ8¯Ç‚ÌÏ.
-O
-java:S1874"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜8¯Ç‚ÌÏ.
-b
-java:S1117I"ERename "sharedPreferences" which hides the field declared at line 47.(½Ìúğ8¯Ç‚ÌÏ.
-S
-java:S1128""1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8€íÌÏ.
-S
-java:S1874,"6Remove this use of "ProgressDialog"; it is deprecated.(Ï’Ú8“ŒşËÏ.
-^
-java:S1128"<Remove this unused import 'android.content.DialogInterface'.(Š­›¨şÿÿÿÿ8ı†ÌÏ.
+java:S1186õ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(×åó«øÿÿÿÿ8ÛÙºşÓ.
+u
+java:S3252×"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(ù»šû8¬±éüÓ.
+L
+java:S1066b"/Merge this if statement with the enclosing one.(ÜÉÌâ8¼»ÔıÓ.
+u
+java:S3252‰"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(ù»šû8¬±éüÓ.
+`
+java:S1128 "CRemove this unused import 'com.karumi.dexter.listener.DexterError'.(‚åèâ8ğª¹şÓ.
+u
+java:S3252Š"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(Ù«‡ß8¬±éüÓ.
+k
+java:S1128#"IRemove this unused import 'com.karumi.dexter.listener.PermissionRequest'.(ëììåüÿÿÿÿ8ğª¹şÓ.
+I
+java:S1659M"'Declare "longitude" on a separate line.(×¨èÙşÿÿÿÿ8¼»ÔıÓ.
+Y	java:S125»"<This block of commented-out lines of code should be removed.(¸ëÉÜ8™’„Ô.
+s
+java:S1128&"QRemove this unused import 'com.karumi.dexter.listener.single.PermissionListener'.(¾Ë°Éùÿÿÿÿ8„Ü·şÓ.
 M
-java:S1128$"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8€íÌÏ.
+java:S1128D"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ğª¹şÓ.
+s	java:S116R"WRename this field "rem_userpass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó¬Ë8¼»ÔıÓ.
+u
+java:S3252Ø"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(öìò¨8¬±éüÓ.
+U
+java:S1128C"3Remove this unused import 'java.security.Provider'.(×„áãøÿÿÿÿ8¼»ÔıÓ.
+P
+java:S1874¡"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜8¼»ÔıÓ.
+Y
+java:S1874 "6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ8ÛÙºşÓ.
+r
+java:S1128!"PRemove this unused import 'com.karumi.dexter.listener.PermissionDeniedResponse'.(ñÀĞ…ûÿÿÿÿ8„Ü·şÓ.
+L
+java:S1659Q"*Declare "etxtPassword" on a separate line.(¾æŠ™şÿÿÿÿ8¼»ÔıÓ.
+Ÿ
+java:S1186ë"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(á¬‡İ8ÛÙºşÓ.
+S
+java:S1874P"6Remove this use of "ProgressDialog"; it is deprecated.(Ï’Ú8¼»ÔıÓ.
+_
+java:S1126|"BReplace this if-then-else statement by a single method invocation.(˜·Øã8¼»ÔıÓ.
+S
+java:S1128A"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8ÆËÂşÓ.
+u
+java:S1128"XRemove this unused import 'com.android.emergencymedicalsystem.user.nurse.NurseActivity'.(ƒú¿é8©ãƒ¬Ò.
+z
+java:S3252‹"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(ı÷‡Úşÿÿÿÿ8¼»ÔıÓ.
+U
+java:S11286"8Remove this unused import 'android.provider.MediaStore'.(ãçšş8â«ºşÓ.
+W
+java:S1128"5Remove this unused import 'com.karumi.dexter.Dexter'.(¼ÅÉûÿÿÿÿ8ğª¹şÓ.
 X
-java:S1874~"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ8¯Ç‚ÌÏ.
+java:S1117´":Rename "editor" which hides the field declared at line 84.(Íµ’ı8ÛÙºşÓ.
+b
+java:S1117u"ERename "sharedPreferences" which hides the field declared at line 83.(½Ìúğ8¼»ÔıÓ.
+x
+java:S1128$"VRemove this unused import 'com.karumi.dexter.listener.PermissionRequestErrorListener'.(ÙôÂ­ıÿÿÿÿ8ğª¹şÓ.
+[
+java:S1128">Remove this unused import 'com.karumi.dexter.PermissionToken'.(áÿ•Š8ğª¹şÓ.
+v
+java:S1128%"YRemove this unused import 'com.karumi.dexter.listener.multi.MultiplePermissionsListener'.(’µ¥à8ğª¹şÓ.
+z
+java:S3252Ù"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(‹çß»øÿÿÿÿ8¼»ÔıÓ.
+e
+java:S1128"HRemove this unused import 'com.karumi.dexter.MultiplePermissionsReport'.(øÔ·‹8ğª¹şÓ.
+^	java:S125÷"<This block of commented-out lines of code should be removed.(·Áì‹úÿÿÿÿ8¼»ÔıÓ.

@@ -211,7 +211,7 @@
             </LinearLayout>
         </LinearLayout>
         <Button
-            android:textColor="@color/colorLogo"
+            android:textColor="@color/colorBack"
             style="@style/loginButton"
             android:layout_marginTop="35dp"
             android:id="@+id/updateProfileBtn"

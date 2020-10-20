@@ -77,7 +77,11 @@ public class CovidTestCenterFragment extends Fragment implements OnMapReadyCallb
         SharedPreferences sharedPreferences;
         sharedPreferences =getContext().getSharedPreferences(Constant.SHARED_PREF_NAME, Context.MODE_PRIVATE);
         getCell = sharedPreferences.getString(Constant.CELL_SHARED_PREF, "Not Available");
-
+//Fetching latitude, longitude from shared preferences
+        userLatitude = sharedPreferences.getString(Constant.LATITUDE_SHARED_PREF, "Not Available");
+        userLongitude = sharedPreferences.getString(Constant.LONGITUDE_SHARED_PREF, "Not Available");
+        userLat = Double.parseDouble(userLatitude);
+        userLong = Double.parseDouble(userLongitude);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) this.getChildFragmentManager()
                 .findFragmentById(R.id.map);
@@ -92,7 +96,6 @@ public class CovidTestCenterFragment extends Fragment implements OnMapReadyCallb
             Toasty.error(getContext(), "No Internet Connection", Toasty.LENGTH_LONG).show();
         }
         else {
-            getUserLatLngData(getCell);
             getData("","","","","","","");
         }
 
@@ -117,7 +120,7 @@ public class CovidTestCenterFragment extends Fragment implements OnMapReadyCallb
         });
 
     }
-    public void getUserLatLngData(String cell) {
+  /*  public void getUserLatLngData(String cell) {
         apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
         Call<List<User>> call;
         call = apiInterface.getUserLatLng(cell);
@@ -139,10 +142,10 @@ public class CovidTestCenterFragment extends Fragment implements OnMapReadyCallb
                         userLatitude = latlngData.get(0).getLatitude();
                         userLongitude = latlngData.get(0).getLongitude();
                         if (!userLatitude.trim().equals("null")) {
-                            userLat = Double.parseDouble(userLatitude);
+
                         }
                         if (!userLongitude.trim().equals("null")) {
-                            userLong = Double.parseDouble(userLongitude);
+
                         }
                     }
 
@@ -154,7 +157,7 @@ public class CovidTestCenterFragment extends Fragment implements OnMapReadyCallb
 
             }
         });
-    }
+    }*/
     public void getData(String id,String name,String cell,String address, String facility, String latitude,String longitude) {
         apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
         Call<List<CovidTestCenter>> call;

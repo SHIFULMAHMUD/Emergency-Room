@@ -1,6 +1,7 @@
 package com.android.emergencymedicalsystem.remote;
 
 import com.android.emergencymedicalsystem.Constant;
+import com.android.emergencymedicalsystem.model.Ambulance;
 import com.android.emergencymedicalsystem.model.CovidTestCenter;
 import com.android.emergencymedicalsystem.model.Nurse;
 import com.android.emergencymedicalsystem.model.Sample;
@@ -122,4 +123,7 @@ public interface ApiInterface {
             @Query("latitude") String latitude,
             @Query("longitude") String longitude
     );
+
+    @GET("ambulance.php")
+    Call<List<Ambulance>> getAmbulance();
 }

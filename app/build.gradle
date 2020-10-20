@@ -3,15 +3,16 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
-
+    useLibrary 'org.apache.http.legacy'
     defaultConfig {
         applicationId "com.android.emergencymedicalsystem"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {
@@ -39,4 +40,7 @@ dependencies {
     implementation 'com.android.support:design:29.1.1'
     implementation 'com.google.android.gms:play-services-location:17.1.0'
     implementation 'com.google.maps.android:android-maps-utils:0.5+'
+    //https://github.com/Karumi/Dexter
+    // Dexter runtime permissions
+    implementation 'com.karumi:dexter:5.0.0'
 }

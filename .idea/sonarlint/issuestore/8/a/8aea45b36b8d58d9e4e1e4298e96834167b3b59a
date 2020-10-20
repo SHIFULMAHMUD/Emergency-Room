@@ -1,0 +1,35 @@
+
+t
+java:S3252F"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí8†×ˆıÓ.
+t
+java:S3252V"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí8•“‡ıÓ.
+Ÿ
+java:S1186Î"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(­íÖ«8¡‡†ıÓ.
+Ÿ
+java:S1186Ò"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÁïÕÒ8¡‡†ıÓ.
+T
+java:S1135G"2Complete the task associated to this TODO comment.(áÃæùÿÿÿÿ8†×ˆıÓ.
+h
+java:S2184)"FCast one of the operands of this multiplication operation to a "long".(¾Œµûşÿÿÿÿ8¡‡†ıÓ.
+Q
+java:S1066j"/Merge this if statement with the enclosing one.(êÿ×¤ùÿÿÿÿ8¡‡†ıÓ.
+o
+java:S2259k"MA "NullPointerException" could be thrown; "locationManager" is nullable here.(ı¡­Ôûÿÿÿÿ8¡‡†ıÓ.
+t
+java:S3252F"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí8†×ˆıÓ.
+t
+java:S37763"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(øˆ÷Ãùÿÿÿÿ8¡‡†ıÓ.
+T
+java:S1135^"2Complete the task associated to this TODO comment.(ó‘îƒıÿÿÿÿ8…ı‡ıÓ.
+T
+java:S1135W"2Complete the task associated to this TODO comment.(áÃæùÿÿÿÿ8•“‡ıÓ.
+]	java:S125^"<This block of commented-out lines of code should be removed.(ó‘îƒıÿÿÿÿ8…ı‡ıÓ.
+Ÿ
+java:S1186Ö"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(çÅğÙ8¡‡†ıÓ.
+t
+java:S3252V"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí8•“‡ıÓ.
+Ÿ
+java:S1186Ú"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÀÄŞ’8¡‡†ıÓ.
+T
+java:S1135N"2Complete the task associated to this TODO comment.(ó‘îƒıÿÿÿÿ8Ÿ³‰ıÓ.
+]	java:S125N"<This block of commented-out lines of code should be removed.(ó‘îƒıÿÿÿÿ8Ÿ³‰ıÓ.

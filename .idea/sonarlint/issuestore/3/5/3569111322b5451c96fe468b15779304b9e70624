@@ -1,0 +1,7 @@
+
+m
+java:S1301^"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8ÌÏçæÒ.
+y
+java:S1450!"\Remove the "layoutManager" field and declare it as a local variable in the relevant methods.(üÉÙ¼8ÌÏçæÒ.
+g
+java:S1128"JRemove this unused import 'com.android.emergencymedicalsystem.model.User'.(ÒÃÜƒ8³àéÒ.

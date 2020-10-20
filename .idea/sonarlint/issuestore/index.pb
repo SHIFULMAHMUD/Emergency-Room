@@ -5,10 +5,6 @@ P
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
-…
-Uapp/src/main/java/com/android/emergencymedicalsystem/driver/DriverSignupActivity.java,2\5\25ae7bbcf3a3ca48a2086be52171c1c74f6b6150
-„
-Tapp/src/main/java/com/android/emergencymedicalsystem/driver/DriverLoginActivity.java,6\5\65068a1a803d24f62dc5dad392fddbb111b162aa
 x
 Happ/src/main/java/com/android/emergencymedicalsystem/SplashActivity.java,1\5\1564295a72334e6549dca3461ac5704258b53d4e
 z
@@ -93,10 +89,6 @@ Y
 )app/src/main/res/font/source_sans_pro.xml,8\d\8d5868519f3eef9d11d607ac8e9fb5fd8e527029
 P
  app/src/main/res/font/ubuntu.xml,1\0\1050283c6c42d1279fd2e7d3361a42531c9ce33a
-a
-1app/src/main/res/layout/activity_driver_login.xml,0\7\078765b14d17a24b341d7553977173f01a74c106
-b
-2app/src/main/res/layout/activity_driver_signup.xml,b\d\bd51959b862c040bafa0c522c5a2c251faa8cd82
 [
 +app/src/main/res/layout/activity_splash.xml,1\3\13b26b9b6631cddf289c5ab7c4e546a180da97d8
 [
@@ -111,10 +103,6 @@ V
 &app/src/main/res/values/font_certs.xml,8\7\8721b09acc6dcb831485a758e527a36efbbce1ff
 b
 2app/src/main/res/values/ic_launcher_background.xml,1\8\18ccc38e5dffe10da3d8b454d3093a0a4ba78749
-S
-#app/src/main/res/values/strings.xml,d\2\d2281fbb3027de2722081a53408dd77628bf080e
-R
-"app/src/main/res/values/styles.xml,f\7\f79cc2688e29fcbc286fda14ae07b27c9e83690f
 \
 ,app/src/debug/res/values/google_maps_api.xml,c\7\c7ab7bac149c0f83f3f9611a0eb8fdce1aaf3aee
 ^
@@ -178,8 +166,6 @@ f
 6app/src/main/res/layout/fragment_sample_collection.xml,f\7\f78cfff96e7fbc89e06646bde36840a586fc2313
 W
 'app/src/main/res/layout/result_item.xml,d\c\dcca4fe47f2eb0650b2d46e395b68f485e3eb244
-R
-"app/src/main/res/values/colors.xml,9\6\969faa2a5d9f5e8390e958d2c07f2cfd54676e6b
 †
 Vapp/src/main/java/com/android/emergencymedicalsystem/user/profile/ProfileActivity.java,3\0\30eceb66b8d347b5b2e3eeb120ec8b3f75f9fbf1
 |
@@ -188,3 +174,23 @@ Lapp/src/main/java/com/android/emergencymedicalsystem/ConnectionDetector.java,7
 \app/src/main/java/com/android/emergencymedicalsystem/user/profile/UpdateProfileActivity.java,3\d\3dae2af30ce4b65798fbe9891c62e7799d0e19cf
 c
 3app/src/main/res/layout/activity_update_profile.xml,2\e\2e5cf45c47aafa41f819d49255e8aa6d64622009
+‰
+Yapp/src/main/java/com/android/emergencymedicalsystem/user/nurse/NurseDetailsActivity.java,2\c\2c1904a2361cd8e602b3b794721a2da780babf28
+Y
+)app/src/main/res/drawable/ic_calendar.xml,9\8\9848401a437e228ddecbc4d1b91638cdffc99085
+U
+%app/src/main/res/drawable/ic_time.xml,1\8\186b1b7895df62a5d104fdc52afe18423014ee58
+b
+2app/src/main/res/layout/activity_nurse_details.xml,0\8\08ed1d5b38595bb267bf9108c55053a9ed05c6fb
+`
+0app/src/main/res/layout/fragment_covid_nurse.xml,0\1\019e1606235fdb8e1b3a3ddf6bf6535a9d148475
+b
+2app/src/main/res/layout/fragment_general_nurse.xml,b\c\bc746c80843d1ad59decb5fff22c70a44fb966c4
+y
+Iapp/src/main/java/com/android/emergencymedicalsystem/model/Ambulance.java,a\7\a7f15e71df78c5ff725192a65c95b24a12846872
+‚
+Rapp/src/main/java/com/android/emergencymedicalsystem/adapter/AmbulanceAdapter.java,5\9\5936464427ef2f53cceea430bdbecf3c6fd20a8b
+Š
+Zapp/src/main/java/com/android/emergencymedicalsystem/user/ambulance/AmbulanceActivity.java,3\5\3569111322b5451c96fe468b15779304b9e70624
+y
+Iapp/src/main/java/com/android/emergencymedicalsystem/user/GPSTracker.java,8\a\8aea45b36b8d58d9e4e1e4298e96834167b3b59a

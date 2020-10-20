@@ -9,6 +9,7 @@ import es.dmoral.toasty.Toasty;
 import com.android.emergencymedicalsystem.ConnectionDetector;
 import com.android.emergencymedicalsystem.MyCustomPagerAdapter;
 import com.android.emergencymedicalsystem.R;
+import com.android.emergencymedicalsystem.user.ambulance.AmbulanceActivity;
 import com.android.emergencymedicalsystem.user.covid.CovidActivity;
 import com.android.emergencymedicalsystem.user.nurse.NurseActivity;
 import com.android.emergencymedicalsystem.user.profile.ProfileActivity;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     int currentPage = 0,NUM_PAGES=4;
     final long DELAY_MS = 1000;//delay in milliseconds before task is to be executed
     final long PERIOD_MS = 5000; // time in milliseconds between successive task executions.
-    LinearLayout sliderDotspanel,nurseLayout,covidLayout,profileLayout;
+    LinearLayout sliderDotspanel,nurseLayout,covidLayout,profileLayout,ambulanceLayout;
     private int dotscount;
     Timer timer;
     private ImageView[] dots;
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         nurseLayout=findViewById(R.id.nurseLayout);
         covidLayout=findViewById(R.id.covidLayout);
         profileLayout=findViewById(R.id.profile_layout);
+        ambulanceLayout=findViewById(R.id.ambLayoutId);
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -132,6 +134,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this, ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+        ambulanceLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this, AmbulanceActivity.class);
                 startActivity(intent);
             }
         });

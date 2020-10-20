@@ -224,7 +224,7 @@ tools:context=".user.MainActivity">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/incomeListId"
+                    android:id="@+id/ambLayoutId"
                     android:layout_width="0dp"
                     android:layout_height="130dp"
                     android:layout_margin="2dp"

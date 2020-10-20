@@ -25,6 +25,12 @@ public class Constant {
     //This would be used to store the cell of current logged in user
     public static final String CELL_SHARED_PREF = "cell";
 
+    //This would be used to store the cell of current logged in user
+    public static final String LATITUDE_SHARED_PREF = "latitude";
+
+    //This would be used to store the cell of current logged in user
+    public static final String LONGITUDE_SHARED_PREF = "longitude";
+
     //json array name.We will received data in this array
     public static final String JSON_ARRAY = "result";
 }
