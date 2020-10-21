@@ -1,33 +1,33 @@
 
-x
-java:S1450"[Remove the "apiInterface" field and declare it as a local variable in the relevant methods.(ï¹ë›8âï´¼Ğ.
-C
-java:S1659"&Declare "facility" on a separate line.(­ŸõË8š Ã¼Ğ.
-m
-java:S1301b"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8¢»é«Ò.
-B
-java:S1659"%Declare "address" on a separate line.(­ŸõË8š Ã¼Ğ.
-n	java:S116"RRename this field "name_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãùÂ8ä‰¡¶Ğ.
-q	java:S116"URename this field "address_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãùÂ8ä‰¡¶Ğ.
-r	java:S116"VRename this field "facility_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãùÂ8ä‰¡¶Ğ.
-F
-java:S1659")Declare "facility_tv" on a separate line.(ãùÂ8ä‰¡¶Ğ.
+n	java:S116"RRename this field "cell_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãùÂ8ä‰¡¶Ğ.
 £
 java:S1186Y"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯ÁÖ·ÿÿÿÿÿ8¢»é«Ò.
-S
-java:S1128"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8º…Ì¼Ğ.
 J	java:S108E")Either remove or fill this block of code.(¦İãúÿÿÿÿ8¢»é«Ò.
+r	java:S116"VRename this field "facility_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãùÂ8ä‰¡¶Ğ.
+C
+java:S1659"&Declare "facility" on a separate line.(­ŸõË8š Ã¼Ğ.
+x
+java:S1450"[Remove the "apiInterface" field and declare it as a local variable in the relevant methods.(ï¹ë›8âï´¼Ğ.
 O
 java:S1128"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8º…Ì¼Ğ.
-n	java:S116"RRename this field "cell_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãùÂ8ä‰¡¶Ğ.
+n	java:S116"RRename this field "name_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãùÂ8ä‰¡¶Ğ.
+B
+java:S1659"%Declare "address" on a separate line.(­ŸõË8š Ã¼Ğ.
+B
+java:S1659"%Declare "cell_tv" on a separate line.(ãùÂ8ä‰¡¶Ğ.
+?
+java:S1659""Declare "name" on a separate line.(­ŸõË8š Ã¼Ğ.
+q	java:S116"URename this field "address_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãùÂ8ä‰¡¶Ğ.
+m
+java:S1301b"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8¢»é«Ò.
+E
+java:S1659"(Declare "address_tv" on a separate line.(ãùÂ8ä‰¡¶Ğ.
 T
 java:S1128
 "7Remove this unused import 'android.app.ProgressDialog'.(¶ÍÔÓ8ËÖÀ¼Ğ.
-?
-java:S1659""Declare "name" on a separate line.(­ŸõË8š Ã¼Ğ.
+S
+java:S1128"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8º…Ì¼Ğ.
+F
+java:S1659")Declare "facility_tv" on a separate line.(ãùÂ8ä‰¡¶Ğ.
 ?
 java:S1659""Declare "cell" on a separate line.(­ŸõË8š Ã¼Ğ.
-E
-java:S1659"(Declare "address_tv" on a separate line.(ãùÂ8ä‰¡¶Ğ.
-B
-java:S1659"%Declare "cell_tv" on a separate line.(ãùÂ8ä‰¡¶Ğ.

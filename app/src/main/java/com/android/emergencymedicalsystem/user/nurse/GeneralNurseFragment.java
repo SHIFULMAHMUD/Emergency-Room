@@ -73,7 +73,7 @@ else {
             @Override
             public void onClick(View v) {
 
-                String search=txtSearch.getText().toString();
+                String search=txtSearch.getText().toString().trim();
 
                 if (search.isEmpty())
                 {

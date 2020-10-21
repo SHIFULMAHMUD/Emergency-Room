@@ -1,6 +1,7 @@
 package com.android.emergencymedicalsystem.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.TextView;
 
 import com.android.emergencymedicalsystem.R;
 import com.android.emergencymedicalsystem.model.Ambulance;
+import com.android.emergencymedicalsystem.user.ambulance.AmbulanceDetailsActivity;
 
 import java.util.List;
 
@@ -56,11 +58,17 @@ public class AmbulanceAdapter extends RecyclerView.Adapter<AmbulanceAdapter.MyVi
 
         @Override
         public void onClick(View view) {
-            /*Intent i = new Intent(context, EditorActivity.class);
-            i.putExtra("id", contacts.get(getAdapterPosition()).getId());
-            i.putExtra("name", contacts.get(getAdapterPosition()).getName());
-            i.putExtra("email", contacts.get(getAdapterPosition()).getEmail());
-            context.startActivity(i);*/
+            Intent i = new Intent(context, AmbulanceDetailsActivity.class);
+            i.putExtra("name", ambulances.get(getAdapterPosition()).getName());
+            i.putExtra("cell", ambulances.get(getAdapterPosition()).getCell());
+            i.putExtra("type", ambulances.get(getAdapterPosition()).getType());
+            i.putExtra("fair", ambulances.get(getAdapterPosition()).getFair());
+            i.putExtra("reg", ambulances.get(getAdapterPosition()).getV_reg_no());
+            i.putExtra("facility", ambulances.get(getAdapterPosition()).getFacility());
+            i.putExtra("division", ambulances.get(getAdapterPosition()).getDivision());
+            i.putExtra("area", ambulances.get(getAdapterPosition()).getArea());
+            i.putExtra("img", ambulances.get(getAdapterPosition()).getImage());
+            context.startActivity(i);
         }
     }
 }

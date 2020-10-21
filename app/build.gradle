@@ -43,4 +43,5 @@ dependencies {
     //https://github.com/Karumi/Dexter
     // Dexter runtime permissions
     implementation 'com.karumi:dexter:5.0.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
 }

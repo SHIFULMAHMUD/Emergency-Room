@@ -365,7 +365,7 @@ tools:context=".user.MainActivity">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/calculatorId"
+                    android:id="@+id/logoutLayoutId"
                     android:layout_width="0dp"
                     android:layout_height="130dp"
                     android:layout_margin="2dp"

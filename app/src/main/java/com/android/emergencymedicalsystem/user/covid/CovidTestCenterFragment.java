@@ -120,44 +120,7 @@ public class CovidTestCenterFragment extends Fragment implements OnMapReadyCallb
         });
 
     }
-  /*  public void getUserLatLngData(String cell) {
-        apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
-        Call<List<User>> call;
-        call = apiInterface.getUserLatLng(cell);
 
-        call.enqueue(new Callback<List<User>>() {
-            @Override
-            public void onResponse(Call<List<User>> call, Response<List<User>> response) {
-
-
-                if (response.isSuccessful() && response.body() != null) {
-
-                    List<User> latlngData;
-                    latlngData = response.body();
-
-                    if (latlngData.isEmpty()) {
-
-                    } else {
-
-                        userLatitude = latlngData.get(0).getLatitude();
-                        userLongitude = latlngData.get(0).getLongitude();
-                        if (!userLatitude.trim().equals("null")) {
-
-                        }
-                        if (!userLongitude.trim().equals("null")) {
-
-                        }
-                    }
-
-                }
-            }
-
-            @Override
-            public void onFailure(Call<List<User>> call, Throwable t) {
-
-            }
-        });
-    }*/
     public void getData(String id,String name,String cell,String address, String facility, String latitude,String longitude) {
         apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
         Call<List<CovidTestCenter>> call;

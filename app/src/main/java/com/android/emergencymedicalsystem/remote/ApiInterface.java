@@ -77,6 +77,11 @@ public interface ApiInterface {
             @Field(Constant.KEY_BLOOD_GROUP) String blood,
             @Field(Constant.KEY_DIVISION) String division,
             @Field(Constant.KEY_AREA) String area);
+    @FormUrlEncoded
+    @POST("hire_ambulance.php")
+    Call<Ambulance> hireAmbulance(
+            @Field(Constant.KEY_CELL) String cell,
+            @Field(Constant.KEY_REQUEST) String request);
     @GET("general_nurse.php")
     Call<List<Nurse>> getGeneralNurse();
     @GET("search_general_nurse.php")
@@ -126,4 +131,10 @@ public interface ApiInterface {
 
     @GET("ambulance.php")
     Call<List<Ambulance>> getAmbulance();
+
+    @GET("search_ambulance.php")
+    Call<List<Ambulance>> getSearchAmbulance(
+            @Query("division") String division,
+            @Query("area") String area
+    );
 }

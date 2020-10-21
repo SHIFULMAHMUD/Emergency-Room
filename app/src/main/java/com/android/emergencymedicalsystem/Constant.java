@@ -3,7 +3,7 @@ package com.android.emergencymedicalsystem;
 public class Constant {
 
     public static final String BASE_URL = "http://finalproject24.com/emergency_service/android/";
-
+    public static final String IMAGE_URL = "http://finalproject24.com/emergency_service/android/my_images/";
     public static final String KEY_NAME="name";
     public static final String KEY_PASSWORD="password";
     public static final String KEY_CELL="cell";
@@ -16,6 +16,7 @@ public class Constant {
     public static final String KEY_GENDER="gender";
     public static final String KEY_AGE="age";
     public static final String KEY_STATUS="status";
+    public static final String KEY_REQUEST="request";
 
 
     //share preference

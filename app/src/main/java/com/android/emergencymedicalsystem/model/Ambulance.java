@@ -21,7 +21,14 @@ public class Ambulance {
     private String fair;
     @SerializedName("v_reg_no")
     private String v_reg_no;
-
+    @SerializedName("facility")
+    private String facility;
+    @SerializedName("image")
+    private String image;
+    @SerializedName("request")
+    private String request;
+    @SerializedName("status")
+    private String status;
     @SerializedName("value")
     private String value;
     @SerializedName("message")
@@ -67,5 +74,19 @@ public class Ambulance {
         return massage;
     }
 
+    public String getFacility() {
+        return facility;
+    }
 
+    public String getImage() {
+        return image;
+    }
+
+    public String getRequest() {
+        return request;
+    }
+
+    public String getStatus() {
+        return status;
+    }
 }
