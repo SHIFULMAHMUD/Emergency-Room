@@ -21,7 +21,8 @@ public class User {
     private String latitude;
     @SerializedName("longitude")
     private String longitude;
-
+    @SerializedName("status")
+    private String status;
     @SerializedName("value")
     private String value;
     @SerializedName("message")
@@ -67,5 +68,7 @@ public class User {
         return massage;
     }
 
-
+    public String getStatus() {
+        return status;
+    }
 }

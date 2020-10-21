@@ -175,7 +175,7 @@ public class CovidTestCenterFragment extends Fragment implements OnMapReadyCallb
                             float distance=results[0];
                             int kilometer= (int) (distance/1000);
 
-                            if(kilometer<=5)
+                            if(kilometer<=20)
 
                             {
                                 LatLng sydney = new LatLng(endLatitude,endLongitude);

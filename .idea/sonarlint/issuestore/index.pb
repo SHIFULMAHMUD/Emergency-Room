@@ -190,3 +190,11 @@ Rapp/src/main/java/com/android/emergencymedicalsystem/adapter/AmbulanceAdapter.j
 Zapp/src/main/java/com/android/emergencymedicalsystem/user/ambulance/AmbulanceActivity.java,3\5\3569111322b5451c96fe468b15779304b9e70624
 ‘
 aapp/src/main/java/com/android/emergencymedicalsystem/user/ambulance/AmbulanceDetailsActivity.java,d\c\dc0443872901e3bb6ab1743059e2a3faba2af7bb
+T
+$app/src/main/res/drawable/ic_amb.xml,b\c\bc073e6286bb6e4a58923aed843cbf6d6ad4a5c8
+Z
+*app/src/main/res/drawable/ic_ambulance.xml,b\6\b68d279c9f8a0fdbe8c9a66febe1967aab7ff914
+V
+&app/src/main/res/drawable/ic_money.xml,6\d\6d497be051949ee2425442f8060e96108720ab45
+f
+6app/src/main/res/layout/activity_ambulance_details.xml,e\f\ef35907b6edde64c5bf9fe7afb08e7385e9f8ac8

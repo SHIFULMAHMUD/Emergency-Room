@@ -82,10 +82,21 @@ public interface ApiInterface {
     Call<Ambulance> hireAmbulance(
             @Field(Constant.KEY_CELL) String cell,
             @Field(Constant.KEY_REQUEST) String request);
+    @FormUrlEncoded
+    @POST("update_status.php")
+    Call<User> updateStatus(
+            @Field(Constant.KEY_CELL) String cell,
+            @Field(Constant.KEY_STATUS) String status);
     @GET("general_nurse.php")
     Call<List<Nurse>> getGeneralNurse();
     @GET("search_general_nurse.php")
     Call<List<Nurse>> getSearchGeneralNurse(
+            @Query("text") String text
+    );
+    @GET("get_donor.php")
+    Call<List<User>> getDonor();
+    @GET("get_search_donor.php")
+    Call<List<User>> getSearchDonor(
             @Query("text") String text
     );
     @GET("get_dhk_area.php")

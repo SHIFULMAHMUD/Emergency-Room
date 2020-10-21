@@ -47,7 +47,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/profile_name_tv"
-                    android:hint="Wiliam Snoe"
                     android:textColor="#fff"
                     android:textStyle="bold"
                     android:textSize="24sp"/>
@@ -87,8 +86,7 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:id="@+id/blood_group_tv"
-                    android:textColor="@android:color/white"
-                    android:hint="Renter"/>
+                    android:textColor="@android:color/white" />
             </LinearLayout>
             <LinearLayout
                 android:layout_marginTop="25dp"
@@ -109,7 +107,7 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="20dp"
                     android:textColor="@android:color/white"
-                    android:text="Phone:"/>
+                    android:text="Phone :"/>
                 <TextView
                     android:textStyle="bold"
                     android:layout_gravity="center_vertical"
@@ -117,8 +115,7 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:id="@+id/profile_cell_tv"
-                    android:textColor="@android:color/white"
-                    android:hint="+266 225 225"/>
+                    android:textColor="@android:color/white" />
             </LinearLayout>
             <LinearLayout
                 android:layout_marginTop="25dp"
@@ -147,8 +144,7 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:id="@+id/division_tv"
-                    android:textColor="@android:color/white"
-                    android:hint="Chittagong"/>
+                    android:textColor="@android:color/white" />
             </LinearLayout>
             <LinearLayout
                 android:layout_marginTop="25dp"
@@ -177,8 +173,7 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:id="@+id/area_tv"
-                    android:textColor="@android:color/white"
-                    android:hint="Area"/>
+                    android:textColor="@android:color/white" />
             </LinearLayout>
             <LinearLayout
                 android:layout_marginTop="25dp"
@@ -199,7 +194,7 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="20dp"
                     android:textColor="@android:color/white"
-                    android:text="Password:"/>
+                    android:text="Password :"/>
                 <TextView
                     android:textStyle="bold"
                     android:layout_gravity="center_vertical"
@@ -209,11 +204,45 @@
                     android:textColor="@android:color/white"
                     android:text="******"/>
             </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:text="Blood Donation Availability :">
+            </TextView>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/radiogroup_blood"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/text_in_time">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/rb1"
+                    android:textColor="@android:color/white"
+                    android:text="Available"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/rb2"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/white"
+                    android:text="Not Available"
+                    />
+            </RadioGroup>
         </LinearLayout>
         <Button
             android:textColor="@color/colorBack"
             style="@style/loginButton"
             android:layout_marginTop="35dp"
+            android:layout_marginBottom="30dp"
             android:id="@+id/updateProfileBtn"
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
