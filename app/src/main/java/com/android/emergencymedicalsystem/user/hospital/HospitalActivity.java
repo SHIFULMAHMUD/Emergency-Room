@@ -1,4 +1,11 @@
-package com.android.emergencymedicalsystem.user.covid;
+package com.android.emergencymedicalsystem.user.hospital;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import es.dmoral.toasty.Toasty;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,16 +13,13 @@ import android.content.SharedPreferences;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.view.MenuItem;
 import android.widget.ProgressBar;
 
 import com.android.emergencymedicalsystem.ConnectionDetector;
 import com.android.emergencymedicalsystem.Constant;
 import com.android.emergencymedicalsystem.R;
 import com.android.emergencymedicalsystem.model.CovidTestCenter;
-import com.android.emergencymedicalsystem.model.User;
 import com.android.emergencymedicalsystem.remote.ApiClient;
 import com.android.emergencymedicalsystem.remote.ApiInterface;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -28,99 +32,80 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.List;
 
-import androidx.fragment.app.Fragment;
-import es.dmoral.toasty.Toasty;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-
-
-public class IsolationCenterFragment extends Fragment implements OnMapReadyCallback {
+public class HospitalActivity extends AppCompatActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
-    int MAX_SIZE=999;
-    String getCell,userLatitude,userLongitude;
+    int MAX_SIZE = 999;
+    String getCell, userLatitude, userLongitude;
     SharedPreferences sharedPreferences;
     public double userLat;
     public double userLong;
-    public String centerId[]=new String[MAX_SIZE];
-    public String centerName[]=new String[MAX_SIZE];
-    public String centerCell[]=new String[MAX_SIZE];
-    public String centerAddress[]=new String[MAX_SIZE];
-    public String centerFacility[]=new String[MAX_SIZE];
-    public double centerLatitude[]=new double[MAX_SIZE];
-    public double centerLongitude[]=new double[MAX_SIZE];
-    private List<User> userLatLngList;
+    public String centerId[] = new String[MAX_SIZE];
+    public String centerName[] = new String[MAX_SIZE];
+    public String centerCell[] = new String[MAX_SIZE];
+    public String centerAddress[] = new String[MAX_SIZE];
+    public double centerLatitude[] = new double[MAX_SIZE];
+    public double centerLongitude[] = new double[MAX_SIZE];
     private ApiInterface apiInterface;
     private ProgressBar progressBar;
-    public IsolationCenterFragment() {
-// Required empty public constructor
-    }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-// Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_isolation_center, container, false);
-        progressBar = view.findViewById(R.id.progressBar);
-
+        setContentView(R.layout.activity_hospital);
+        progressBar = findViewById(R.id.progressBar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Nearby Hospitals");
+        getSupportActionBar().setHomeButtonEnabled(true); //for back button
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
 //Fetching cell from shared preferences
         SharedPreferences sharedPreferences;
-        sharedPreferences =getContext().getSharedPreferences(Constant.SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences(Constant.SHARED_PREF_NAME, Context.MODE_PRIVATE);
         getCell = sharedPreferences.getString(Constant.CELL_SHARED_PREF, "Not Available");
 //Fetching latitude, longitude from shared preferences
         userLatitude = sharedPreferences.getString(Constant.LATITUDE_SHARED_PREF,"22.3237516");
         userLongitude = sharedPreferences.getString(Constant.LONGITUDE_SHARED_PREF, "91.8091193");
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) this.getChildFragmentManager()
+        SupportMapFragment mapFragment = (SupportMapFragment) this.getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
         apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
 //Internet connection checker
-        ConnectionDetector cd = new ConnectionDetector(getContext());
+        ConnectionDetector cd = new ConnectionDetector(HospitalActivity.this);
         // Check if Internet present
         if (!cd.isConnectingToInternet()) {
             // Internet Connection is not present
-            Toasty.error(getContext(), "No Internet Connection", Toasty.LENGTH_LONG).show();
-        }
-        else {
-
-            getData("","","","","","","");
-
+            Toasty.error(HospitalActivity.this, "No Internet Connection", Toasty.LENGTH_LONG).show();
+        } else {
+            getData();
         }
 
-        return view;
     }
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        getData("","","","","","","");
+        getData();
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
 
-
                 marker.showInfoWindow();
-                String id=marker.getSnippet();
-                Intent intent=new Intent(getContext(),IsolationCenterDetailActivity.class);
-                intent.putExtra("id",id);
+                String id = marker.getSnippet();
+                Intent intent = new Intent(HospitalActivity.this, HospitalDetailsActivity.class);
+                intent.putExtra("id", id);
                 startActivity(intent);
                 return true;
             }
         });
 
     }
-
-    public void getData(String id,String name,String cell,String address, String facility, String latitude,String longitude) {
+    public void getData(){
         apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
         Call<List<CovidTestCenter>> call;
-        call = apiInterface.getIsolationCenter(id,name,cell,address,facility,latitude,longitude);
+        call = apiInterface.getHospital();
 
         call.enqueue(new Callback<List<CovidTestCenter>>() {
             @Override
@@ -141,44 +126,38 @@ public class IsolationCenterFragment extends Fragment implements OnMapReadyCallb
                             final String center_name = latlngData.get(i).getName();
                             final String center_cell = latlngData.get(i).getCell();
                             final String center_address = latlngData.get(i).getAddress();
-                            final String center_facility = latlngData.get(i).getFacility();
                             final String center_latitude = latlngData.get(i).getLatitude();
                             final String center_longitude = latlngData.get(i).getLongitude();
 
-                            if (!center_latitude.trim().equals("null"))
-                            {
+                            if (!center_latitude.trim().equals("null")) {
                                 centerLatitude[i] = Double.parseDouble(center_latitude);
                             }
-                            if (!center_longitude.trim().equals("null"))
-                            {
+                            if (!center_longitude.trim().equals("null")) {
                                 centerLongitude[i] = Double.parseDouble(center_longitude);
                             }
                             //insert data into array for put extra
-                            centerId[i]=center_id;
-                            centerName[i]=center_name;
+                            centerId[i] = center_id;
+                            centerName[i] = center_name;
                             centerCell[i] = center_cell;
                             centerAddress[i] = center_address;
-                            centerFacility[i] = center_facility;
                             userLat = Double.parseDouble(userLatitude);
                             userLong = Double.parseDouble(userLongitude);
-                            double startLatitude=userLat;
-                            double startLongitude=userLong;
-                            double endLatitude=centerLatitude[i];
-                            double endLongitude=centerLongitude[i];
+                            double startLatitude = userLat;
+                            double startLongitude = userLong;
+                            double endLatitude = centerLatitude[i];
+                            double endLongitude = centerLongitude[i];
 
                             //calculate distance //
-                            float[]results=new float[1];
-                            Location.distanceBetween(startLatitude,startLongitude,endLatitude,endLongitude,results);
-                            float distance=results[0];
-                            int kilometer= (int) (distance/1000);
+                            float[] results = new float[1];
+                            Location.distanceBetween(startLatitude, startLongitude, endLatitude, endLongitude, results);
+                            float distance = results[0];
+                            int kilometer = (int) (distance / 1000);
 
-                            if(kilometer<=20)
-
-                            {
-                                LatLng sydney = new LatLng(endLatitude,endLongitude);
+                            if (kilometer <= 20) {
+                                LatLng sydney = new LatLng(endLatitude, endLongitude);
                                 mMap.addMarker(new MarkerOptions().position(sydney).title(centerName[i]).snippet(centerId[i]));
                                 mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-                                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(endLatitude,endLongitude),15.0f));
+                                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(endLatitude, endLongitude), 15.0f));
                             }
 
                         }
@@ -192,5 +171,16 @@ public class IsolationCenterFragment extends Fragment implements OnMapReadyCallb
 
             }
         });
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                // app icon in action bar clicked; goto parent activity.
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

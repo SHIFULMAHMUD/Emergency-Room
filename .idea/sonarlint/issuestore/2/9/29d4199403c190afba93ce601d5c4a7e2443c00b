@@ -1,0 +1,27 @@
+
+y
+java:S1450+"\Remove the "layoutManager" field and declare it as a local variable in the relevant methods.(üÉÙ¼8ÃÓ±ŞÔ.
+M
+java:S1128&"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ôêâÔ.
+^
+java:S1128"<Remove this unused import 'android.content.DialogInterface'.(Š­›¨şÿÿÿÿ8Ê£ôŞÔ.
+V
+java:S1128"4Remove this unused import 'android.app.AlertDialog'.(ª½øşüÿÿÿÿ8Ê£ôŞÔ.
+e
+java:S1128"HRemove this unused import 'com.android.emergencymedicalsystem.Constant'.(‹ªÜÅ8ÅÖöŞÔ.
+n
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8É‘¶àÔ.
+‚
+java:S1128$"`Remove this unused import 'com.android.emergencymedicalsystem.user.ambulance.AmbulanceActivity'.(çÄáëıÿÿÿÿ8Ê£ôŞÔ.
+q
+java:S1128"ORemove this unused import 'com.android.emergencymedicalsystem.model.Ambulance'.(ô¨Ö…úÿÿÿÿ8âÔ.
+m
+java:S1128 "KRemove this unused import 'com.android.emergencymedicalsystem.model.Nurse'.(²ÄêŠşÿÿÿÿ8ç˜ŠßÔ.
+z
+java:S1128"XRemove this unused import 'com.android.emergencymedicalsystem.adapter.AmbulanceAdapter'.(ê„îÚøÿÿÿÿ8®ÇÔßÔ.
+}
+java:S1128"[Remove this unused import 'com.android.emergencymedicalsystem.adapter.RecyclerViewAdapter'.(´ìÁîøÿÿÿÿ8×îÕßÔ.
+Z
+java:S1128">Remove this unused import 'android.content.SharedPreferences'.(íÎÉr8ÅÖöŞÔ.
+Q
+java:S1128"4Remove this unused import 'android.content.Context'.(©Ê‰è8ÅÖöŞÔ.

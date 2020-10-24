@@ -1,0 +1,52 @@
+
+Ÿ
+java:S1186¿"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨‰ïÃ8ıÁÑıÔ.
+j
+java:S1192w"HDefine a constant instead of duplicating this literal "onClick" 6 times.(çÑÃğıÿÿÿÿ8ãÒÌıÔ.
+R
+java:S1874­"/Remove this use of "Builder"; it is deprecated.(£şÙ‚øÿÿÿÿ8ãÒÌıÔ.
+s	java:S116˜"QRename this field "School" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©Æòóşÿÿÿÿ8ãÒÌıÔ.
+Z
+java:S1874­"7Remove this use of "GoogleApiClient"; it is deprecated.(£şÙ‚øÿÿÿÿ8ãÒÌıÔ.
+p	java:S116†"SRename this field "Hospital" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÕ´²8ãÒÌıÔ.
+d
+java:S1874$"BRemove this use of "OnConnectionFailedListener"; it is deprecated.(Ú¾Ñƒøÿÿÿÿ8ãÒÌıÔ.
+s	java:S117Œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜êÊˆşÿÿÿÿ8ãÒÌıÔ.
+Y
+java:S1874+"7Remove this use of "GoogleApiClient"; it is deprecated.(Ò¢í¤ûÿÿÿÿ8ãÒÌıÔ.
+[
+java:S1197"8Move the array designator from the variable to the type.(ÿÃ²şÿÿÿÿ8ãÒÌıÔ.
+V
+java:S1874¾"8Remove this use of "FusedLocationApi"; it is deprecated.(ª»„8«¿ÍıÔ.
+9
+java:S3626¶"Remove this redundant jump.(ûÁİ…8ãÒÌıÔ.
+P
+java:S1199 "-Extract this nested code block into a method.(èüü‚úÿÿÿÿ8ãÒÌıÔ.
+Ÿ
+java:S1186ø"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Õ˜å¨8ãÒÌıÔ.
+Y
+java:S1874$"7Remove this use of "GoogleApiClient"; it is deprecated.(Ú¾Ñƒøÿÿÿÿ8ãÒÌıÔ.
+j	java:S100H"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëî¤Å8ãÒÌıÔ.
+t
+java:S1192w"RDefine a constant instead of duplicating this literal "Button is Clicked" 3 times.(çÑÃğıÿÿÿÿ8ãÒÌıÔ.
+~
+java:S3923ƒ"[Remove this conditional structure or edit its code blocks so that they're not all the same.(éŒõ¦üÿÿÿÿ8ãÒÌıÔ.
+D	java:S131Ÿ""Add a default case to this switch.(×ö³–úÿÿÿÿ8ãÒÌıÔ.
+V
+java:S1874ğ"8Remove this use of "FusedLocationApi"; it is deprecated.(€È½Ã8«¿ÍıÔ.
+b
+java:S1128"ERemove this unused import 'androidx.appcompat.app.AppCompatActivity'.(€¶£î8ûÈıÔ.
+w	java:S116*"[Rename this field "PROXIMITY_RADIUS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÕâ“8ãÒÌıÔ.
+s	java:S117¡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜êÊˆşÿÿÿÿ8ãÒÌıÔ.
+Y
+java:S1874#"7Remove this use of "GoogleApiClient"; it is deprecated.(ÛâúÌşÿÿÿÿ8ƒËÊıÔ.
+u
+java:S1192Ö"RDefine a constant instead of duplicating this literal "onLocationChanged" 4 times.(îĞ´ôıÿÿÿÿ8ãÒÌıÔ.
+¤
+java:S1186Ğ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(³ÆÌ¶øÿÿÿÿ8ãÒÌıÔ.
+n
+java:S1301Ÿ"KReplace this "switch" statement by "if" statements to increase readability.(×ö³–úÿÿÿÿ8ãÒÌıÔ.
+v	java:S116t"URename this field "Restaurant" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÊÏÂùÿÿÿÿ8ãÒÌıÔ.
+]
+java:S1874#";Remove this use of "ConnectionCallbacks"; it is deprecated.(ÛâúÌşÿÿÿÿ8ƒËÊıÔ.
+r	java:S117z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜êÊˆşÿÿÿÿ8ãÒÌıÔ.

@@ -10,8 +10,10 @@ import com.android.emergencymedicalsystem.ConnectionDetector;
 import com.android.emergencymedicalsystem.MyCustomPagerAdapter;
 import com.android.emergencymedicalsystem.R;
 import com.android.emergencymedicalsystem.user.ambulance.AmbulanceActivity;
+import com.android.emergencymedicalsystem.user.bloodbank.BloodBankActivity;
 import com.android.emergencymedicalsystem.user.blooddonor.BloodDonorActivity;
 import com.android.emergencymedicalsystem.user.covid.CovidActivity;
+import com.android.emergencymedicalsystem.user.hospital.HospitalActivity;
 import com.android.emergencymedicalsystem.user.nurse.NurseActivity;
 import com.android.emergencymedicalsystem.user.profile.ProfileActivity;
 
@@ -32,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     int currentPage = 0,NUM_PAGES=4;
     final long DELAY_MS = 1000;//delay in milliseconds before task is to be executed
     final long PERIOD_MS = 5000; // time in milliseconds between successive task executions.
-    LinearLayout sliderDotspanel,nurseLayout,covidLayout,profileLayout,ambulanceLayout,logoutLayout,donorLayout;
+    LinearLayout sliderDotspanel,nurseLayout,covidLayout,profileLayout,ambulanceLayout,logoutLayout,donorLayout,hospitalLayout,bloodBankLayout;
     private int dotscount;
     Timer timer;
     private ImageView[] dots;
@@ -58,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
         ambulanceLayout=findViewById(R.id.ambLayoutId);
         logoutLayout=findViewById(R.id.logoutLayoutId);
         donorLayout=findViewById(R.id.donorLayoutId);
+        hospitalLayout=findViewById(R.id.hospitalLayoutId);
+        bloodBankLayout=findViewById(R.id.bloodBankLayoutId);
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -159,6 +163,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this, BloodDonorActivity.class);
+                startActivity(intent);
+            }
+        });
+        hospitalLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this, HospitalActivity.class);
+                startActivity(intent);
+            }
+        });
+        bloodBankLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this, BloodBankActivity.class);
                 startActivity(intent);
             }
         });

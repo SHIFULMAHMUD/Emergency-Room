@@ -1,4 +1,4 @@
-package com.android.emergencymedicalsystem.user.covid;
+package com.android.emergencymedicalsystem.user.bloodbank;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -13,54 +13,54 @@ import android.widget.TextView;
 
 import com.android.emergencymedicalsystem.ConnectionDetector;
 import com.android.emergencymedicalsystem.R;
-import com.android.emergencymedicalsystem.model.CovidTestCenter;
+import com.android.emergencymedicalsystem.model.Hospital;
 import com.android.emergencymedicalsystem.remote.ApiClient;
 import com.android.emergencymedicalsystem.remote.ApiInterface;
+import com.android.emergencymedicalsystem.user.hospital.HospitalDetailsActivity;
 
 import java.util.List;
 
-public class CovidCenterDetailActivity extends AppCompatActivity {
-    TextView name_tv,cell_tv,address_tv,facility_tv;
-    String id,name,cell,address,facility;
+public class BloodBankDetailsActivity extends AppCompatActivity {
+    TextView name_tv,cell_tv,address_tv;
+    String id,name,cell,address;
     private ApiInterface apiInterface;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_covid_center_detail);
+        setContentView(R.layout.activity_blood_bank_details);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("COVID Test Center");
+        getSupportActionBar().setTitle("Nearby Blood Bank");
         getSupportActionBar().setHomeButtonEnabled(true); //for back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
         name_tv=findViewById(R.id.center_name_tv);
         cell_tv=findViewById(R.id.center_cell_tv);
         address_tv=findViewById(R.id.address_tv);
-        facility_tv=findViewById(R.id.facility_tv);
+
         id = getIntent().getStringExtra("id");
         // Check if Internet present
-        ConnectionDetector cd = new ConnectionDetector(CovidCenterDetailActivity.this);
+        ConnectionDetector cd = new ConnectionDetector(BloodBankDetailsActivity.this);
         if (!cd.isConnectingToInternet()) {
             // Internet Connection is not present
-            Toasty.error(CovidCenterDetailActivity.this, "No Internet Connection", Toasty.LENGTH_LONG).show();
+            Toasty.error(BloodBankDetailsActivity.this, "No Internet Connection", Toasty.LENGTH_LONG).show();
         }else {
-        getCovidCenterData(id);
+            getHospitalData(id);
         }
     }
-    public void getCovidCenterData(String id) {
+    public void getHospitalData(String id) {
 
         apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
-        Call<List<CovidTestCenter>> call;
-        call = apiInterface.getCovidCenter(id);
+        Call<List<Hospital>> call;
+        call = apiInterface.getBloodBank(id);
 
-        call.enqueue(new Callback<List<CovidTestCenter>>() {
+        call.enqueue(new Callback<List<Hospital>>() {
             @Override
-            public void onResponse(Call<List<CovidTestCenter>> call, Response<List<CovidTestCenter>> response) {
+            public void onResponse(Call<List<Hospital>> call, Response<List<Hospital>> response) {
 
 
                 if (response.isSuccessful() && response.body() != null) {
 
-                    List<CovidTestCenter> profileData;
+                    List<Hospital> profileData;
                     profileData = response.body();
 
                     if (profileData.isEmpty()) {
@@ -71,24 +71,21 @@ public class CovidCenterDetailActivity extends AppCompatActivity {
                         name = profileData.get(0).getName();
                         cell = profileData.get(0).getCell();
                         address = profileData.get(0).getAddress();
-                        facility = profileData.get(0).getFacility();
 
                         name_tv.setText(name);
                         cell_tv.setText(cell);
                         address_tv.setText(address);
-                        facility_tv.setText(facility);
+
                     }
 
                 }
             }
 
             @Override
-            public void onFailure(Call<List<CovidTestCenter>> call, Throwable t) {
+            public void onFailure(Call<List<Hospital>> call, Throwable t) {
 
             }
         });
-
-
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

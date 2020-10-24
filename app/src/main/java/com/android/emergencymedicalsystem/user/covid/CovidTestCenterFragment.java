@@ -6,17 +6,14 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.location.Location;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import com.android.emergencymedicalsystem.ConnectionDetector;
 import com.android.emergencymedicalsystem.Constant;
 import com.android.emergencymedicalsystem.R;
-import com.android.emergencymedicalsystem.adapter.RecyclerViewAdapter;
 import com.android.emergencymedicalsystem.model.CovidTestCenter;
 import com.android.emergencymedicalsystem.model.User;
 import com.android.emergencymedicalsystem.remote.ApiClient;
@@ -32,9 +29,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.util.List;
 
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import es.dmoral.toasty.Toasty;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -78,10 +72,9 @@ public class CovidTestCenterFragment extends Fragment implements OnMapReadyCallb
         sharedPreferences =getContext().getSharedPreferences(Constant.SHARED_PREF_NAME, Context.MODE_PRIVATE);
         getCell = sharedPreferences.getString(Constant.CELL_SHARED_PREF, "Not Available");
 //Fetching latitude, longitude from shared preferences
-        userLatitude = sharedPreferences.getString(Constant.LATITUDE_SHARED_PREF, "Not Available");
-        userLongitude = sharedPreferences.getString(Constant.LONGITUDE_SHARED_PREF, "Not Available");
-        userLat = Double.parseDouble(userLatitude);
-        userLong = Double.parseDouble(userLongitude);
+        userLatitude = sharedPreferences.getString(Constant.LATITUDE_SHARED_PREF,"22.3237516");
+        userLongitude = sharedPreferences.getString(Constant.LONGITUDE_SHARED_PREF, "91.8091193");
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) this.getChildFragmentManager()
                 .findFragmentById(R.id.map);
@@ -163,7 +156,8 @@ public class CovidTestCenterFragment extends Fragment implements OnMapReadyCallb
                             centerCell[i] = center_cell;
                             centerAddress[i] = center_address;
                             centerFacility[i] = center_facility;
-
+                            userLat = Double.parseDouble(userLatitude);
+                            userLong = Double.parseDouble(userLongitude);
                             double startLatitude=userLat;
                             double startLongitude=userLong;
                             double endLatitude=centerLatitude[i];

@@ -15,7 +15,11 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning"
         tools:targetApi="m">
-        <activity android:name=".user.blooddonor.DonorDetailsActivity"></activity>
+        <activity android:name=".user.bloodbank.BloodBankDetailsActivity"></activity>
+        <activity android:name=".user.bloodbank.BloodBankActivity" />
+        <activity android:name=".user.hospital.HospitalDetailsActivity" />
+        <activity android:name=".user.hospital.HospitalActivity" />
+        <activity android:name=".user.blooddonor.DonorDetailsActivity" />
         <activity android:name=".user.blooddonor.BloodDonorActivity" />
         <activity android:name=".user.ambulance.AmbulanceDetailsActivity" />
         <activity android:name=".user.ambulance.AmbulanceActivity" />

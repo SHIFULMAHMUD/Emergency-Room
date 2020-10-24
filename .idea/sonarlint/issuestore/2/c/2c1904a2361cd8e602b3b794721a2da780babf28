@@ -1,36 +1,36 @@
 
-A
-java:S1659"%Declare "cell_tv" on a separate line.(øë¿\8ÎÔÑ©Ò.
-m	java:S116"RRename this field "type_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øë¿\8ÎÔÑ©Ò.
-m	java:S116"RRename this field "time_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øë¿\8ÎÔÑ©Ò.
-H
-java:S1659"&Declare "hospital" on a separate line.(›Äµøúÿÿÿÿ8¥ïË©Ò.
+C
+java:S1659"!Declare "day" on a separate line.(›Äµøúÿÿÿÿ8¥ïË©Ò.
 m
 java:S1301="KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8¯êªÒ.
-D
-java:S1659""Declare "time" on a separate line.(›Äµøúÿÿÿÿ8¥ïË©Ò.
+m	java:S116"RRename this field "cell_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øë¿\8ÎÔÑ©Ò.
 l	java:S116"QRename this field "day_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øë¿\8ÎÔÑ©Ò.
+G
+java:S1659"%Declare "address" on a separate line.(›Äµøúÿÿÿÿ8¥ïË©Ò.
 „
 java:S1128"bRemove this unused import 'com.android.emergencymedicalsystem.user.profile.UpdateProfileActivity'.(Î”Õüÿÿÿÿ8Ì«Ç©Ò.
 D
-java:S1659"(Declare "address_tv" on a separate line.(øë¿\8ÎÔÑ©Ò.
-@
-java:S1659"$Declare "day_tv" on a separate line.(øë¿\8ÎÔÑ©Ò.
-m	java:S116"RRename this field "cell_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øë¿\8ÎÔÑ©Ò.
+java:S1659""Declare "time" on a separate line.(›Äµøúÿÿÿÿ8¥ïË©Ò.
 D
 java:S1659""Declare "cell" on a separate line.(›Äµøúÿÿÿÿ8¥ïË©Ò.
-E
-java:S1659")Declare "hospital_tv" on a separate line.(øë¿\8ÎÔÑ©Ò.
-D
-java:S1659""Declare "type" on a separate line.(›Äµøúÿÿÿÿ8¥ïË©Ò.
 p	java:S116"URename this field "address_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øë¿\8ÎÔÑ©Ò.
-q	java:S116"VRename this field "hospital_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øë¿\8ÎÔÑ©Ò.
-G
-java:S1659"%Declare "address" on a separate line.(›Äµøúÿÿÿÿ8¥ïË©Ò.
-C
-java:S1659"!Declare "day" on a separate line.(›Äµøúÿÿÿÿ8¥ïË©Ò.
+m	java:S116"RRename this field "type_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øë¿\8ÎÔÑ©Ò.
 A
-java:S1659"%Declare "time_tv" on a separate line.(øë¿\8ÎÔÑ©Ò.
-m	java:S116"RRename this field "name_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øë¿\8ÎÔÑ©Ò.
+java:S1659"%Declare "cell_tv" on a separate line.(øë¿\8ÎÔÑ©Ò.
 A
 java:S1659"%Declare "type_tv" on a separate line.(øë¿\8ÎÔÑ©Ò.
+E
+java:S1659")Declare "hospital_tv" on a separate line.(øë¿\8ÎÔÑ©Ò.
+H
+java:S1659"&Declare "hospital" on a separate line.(›Äµøúÿÿÿÿ8¥ïË©Ò.
+A
+java:S1659"%Declare "time_tv" on a separate line.(øë¿\8ÎÔÑ©Ò.
+D
+java:S1659"(Declare "address_tv" on a separate line.(øë¿\8ÎÔÑ©Ò.
+m	java:S116"RRename this field "time_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øë¿\8ÎÔÑ©Ò.
+m	java:S116"RRename this field "name_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øë¿\8ÎÔÑ©Ò.
+@
+java:S1659"$Declare "day_tv" on a separate line.(øë¿\8ÎÔÑ©Ò.
+q	java:S116"VRename this field "hospital_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øë¿\8ÎÔÑ©Ò.
+D
+java:S1659""Declare "type" on a separate line.(›Äµøúÿÿÿÿ8¥ïË©Ò.

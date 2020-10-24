@@ -191,7 +191,7 @@ tools:context=".user.MainActivity">
                 android:weightSum="3">
 
                 <LinearLayout
-                    android:id="@+id/allSummaryId"
+                    android:id="@+id/hospitalLayoutId"
                     android:layout_width="0dp"
                     android:layout_height="130dp"
                     android:layout_margin="2dp"
@@ -299,7 +299,7 @@ tools:context=".user.MainActivity">
                 android:weightSum="3">
 
                 <LinearLayout
-                    android:id="@+id/wkHistoryId"
+                    android:id="@+id/bloodBankLayoutId"
                     android:layout_width="0dp"
                     android:layout_height="130dp"
                     android:layout_margin="2dp"

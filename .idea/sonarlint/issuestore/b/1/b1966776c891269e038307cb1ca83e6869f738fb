@@ -1,0 +1,31 @@
+
+p	java:S116"TRename this field "status_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–åáİ8¦ó¹âÔ.
+D
+java:S1659""Declare "area" on a separate line.(í Èàşÿÿÿÿ8ƒ˜¸âÔ.
+o	java:S116"SRename this field "group_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–åáİ8Àÿ¸âÔ.
+n	java:S116"RRename this field "name_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–åáİ8Å©“âÔ.
+m	java:S116"QRename this field "div_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–åáİ8Û¬¹âÔ.
+C
+java:S1659"&Declare "group_tv" on a separate line.(–åáİ8Àÿ¸âÔ.
+m
+java:S1301:"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8™½”âÔ.
+E
+java:S1659"#Declare "group" on a separate line.(í Èàşÿÿÿÿ8ÓË·âÔ.
+F
+java:S1659"$Declare "status" on a separate line.(í Èàşÿÿÿÿ8ÙÒ¸âÔ.
+A
+java:S1659"$Declare "div_tv" on a separate line.(–åáİ8Û¬¹âÔ.
+D
+java:S1659"'Declare "status_tv" on a separate line.(–åáİ8¦ó¹âÔ.
+D
+java:S1659""Declare "cell" on a separate line.(í Èàşÿÿÿÿ8Å©“âÔ.
+n	java:S116"RRename this field "area_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–åáİ8ÔÎ¹âÔ.
+
+java:S1128"_Remove this unused import 'com.android.emergencymedicalsystem.user.nurse.NurseDetailsActivity'.(ÍÒ‡öıÿÿÿÿ8êŞ•âÔ.
+B
+java:S1659"%Declare "area_tv" on a separate line.(–åáİ8ÔÎ¹âÔ.
+B
+java:S1659"%Declare "cell_tv" on a separate line.(–åáİ8Å©“âÔ.
+H
+java:S1659"&Declare "division" on a separate line.(í Èàşÿÿÿÿ8ƒ˜¸âÔ.
+n	java:S116"RRename this field "cell_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–åáİ8Å©“âÔ.

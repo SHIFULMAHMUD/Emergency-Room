@@ -3,21 +3,18 @@ package com.android.emergencymedicalsystem.remote;
 import com.android.emergencymedicalsystem.Constant;
 import com.android.emergencymedicalsystem.model.Ambulance;
 import com.android.emergencymedicalsystem.model.CovidTestCenter;
+import com.android.emergencymedicalsystem.model.Hospital;
 import com.android.emergencymedicalsystem.model.Nurse;
 import com.android.emergencymedicalsystem.model.Sample;
 import com.android.emergencymedicalsystem.model.User;
 
 import java.util.List;
 
-import okhttp3.MultipartBody;
-import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
-import retrofit2.http.Multipart;
 import retrofit2.http.POST;
-import retrofit2.http.Part;
 import retrofit2.http.Query;
 
 public interface ApiInterface {
@@ -62,6 +59,14 @@ public interface ApiInterface {
 
     @GET("get_covid_center.php")
     Call<List<CovidTestCenter>> getCovidCenter(
+            @Query("id") String id
+    );
+    @GET("get_hospital.php")
+    Call<List<Hospital>> getHospital(
+            @Query("id") String id
+    );
+    @GET("get_bloodbank.php")
+    Call<List<Hospital>> getBloodBank(
             @Query("id") String id
     );
     @GET("get_isolation_center.php")
@@ -129,6 +134,10 @@ public interface ApiInterface {
             @Query("latitude") String latitude,
             @Query("longitude") String longitude
     );
+    @GET("hospital.php")
+    Call<List<CovidTestCenter>> getHospital();
+    @GET("bloodbank.php")
+    Call<List<CovidTestCenter>> getBloodBank();
     @GET("isolation_center.php")
     Call<List<CovidTestCenter>> getIsolationCenter(
             @Query("id") String id,
