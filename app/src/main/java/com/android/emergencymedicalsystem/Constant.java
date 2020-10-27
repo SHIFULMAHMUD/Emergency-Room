@@ -17,6 +17,15 @@ public class Constant {
     public static final String KEY_AGE="age";
     public static final String KEY_STATUS="status";
     public static final String KEY_REQUEST="request";
+    public static final String KEY_PASSENGER_CELL="passenger_cell";
+    public static final String KEY_TIME="time";
+    public static final String KEY_AMOUNT="amount";
+    public static final String KEY_COMMENT="comment";
+    public static final String KEY_TRX_ID="trxid";
+    public static final String KEY_CARD_NUMBER="cardnumber";
+    public static final String KEY_CARD_CVC="cardcvc";
+    public static final String KEY_CARD_HOLDER="cardholdername";
+    public static final String KEY_CARD_EXPIRY="cardexpirydate";
 
 
     //share preference

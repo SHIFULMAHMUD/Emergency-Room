@@ -3,8 +3,10 @@ package com.android.emergencymedicalsystem.model;
 import com.google.gson.annotations.SerializedName;
 
 public class Ambulance {
-
-
+    @SerializedName("time")
+    private String time;
+    @SerializedName("passenger_cell")
+    private String passenger_cell;
     @SerializedName("name")
     private String name;
     @SerializedName("cell")
@@ -88,5 +90,13 @@ public class Ambulance {
 
     public String getStatus() {
         return status;
+    }
+
+    public String getPassenger_cell() {
+        return passenger_cell;
+    }
+
+    public String getTime() {
+        return time;
     }
 }

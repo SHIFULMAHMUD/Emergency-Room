@@ -9,8 +9,10 @@ import retrofit2.Response;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -36,6 +38,7 @@ public class AmbulanceDetailsActivity extends AppCompatActivity {
     String name, type,cell, fair,reg_no,facility,division,area,image;
     ImageView amb_image;
     Button hireBtn;
+    String getCell;
     private ProgressDialog loading;
     TextView name_tv,type_tv,cell_tv,fair_tv,reg_no_tv,facility_tv,div_tv,area_tv;
     @Override
@@ -54,6 +57,10 @@ public class AmbulanceDetailsActivity extends AppCompatActivity {
             // Internet Connection is not present
             Toasty.error(AmbulanceDetailsActivity.this, "No Internet Connection", Toasty.LENGTH_LONG).show();
         }
+        //Fetching cell from shared preferences
+        SharedPreferences sharedPreferences;
+        sharedPreferences =getSharedPreferences(Constant.SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        getCell = sharedPreferences.getString(Constant.CELL_SHARED_PREF, "Not Available");
         name = getIntent().getStringExtra("name");
         type = getIntent().getStringExtra("type");
         cell = getIntent().getStringExtra("cell");
@@ -97,9 +104,10 @@ public class AmbulanceDetailsActivity extends AppCompatActivity {
                         switch (position) {
                             case 0:
                                 String request = "Pending";
+                                String time = "Null";
                                 String cell = cell_tv.getText().toString();
                                     //call login method
-                                    hireAmbulance(cell, request);
+                                    hireAmbulance(cell, request,time,getCell);
 
 
                                 break;
@@ -124,7 +132,7 @@ public class AmbulanceDetailsActivity extends AppCompatActivity {
             }
         });
     }
-    private void hireAmbulance(String cell, String request) {
+    private void hireAmbulance(String cell, String request,String time,String usercell) {
 
         loading=new ProgressDialog(this);
         loading.setMessage("Please wait....");
@@ -132,7 +140,7 @@ public class AmbulanceDetailsActivity extends AppCompatActivity {
 
         ApiInterface apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
 
-        Call<Ambulance> call = apiInterface.hireAmbulance(cell, request);
+        Call<Ambulance> call = apiInterface.hireAmbulance(cell, request,time,usercell);
         call.enqueue(new Callback<Ambulance>() {
             @Override
             public void onResponse(Call<Ambulance> call, Response<Ambulance> response) {

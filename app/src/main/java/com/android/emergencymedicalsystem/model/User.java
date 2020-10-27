@@ -4,7 +4,6 @@ import com.google.gson.annotations.SerializedName;
 
 public class User {
 
-
     @SerializedName("name")
     private String name;
     @SerializedName("cell")

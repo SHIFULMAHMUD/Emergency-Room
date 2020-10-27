@@ -1,8 +1,8 @@
 
 m
 java:S1301<"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8Êûß Ğ.
+
+java:S1128"_Remove this unused import 'com.android.emergencymedicalsystem.user.nurse.GeneralNurseFragment'.(¯È‘ùÿÿÿÿ8±îå Ğ.
 z
 java:S1128"]Remove this unused import 'com.android.emergencymedicalsystem.user.nurse.CovidNurseFragment'.(àçÉ§8¨©æ Ğ.
 ]	java:S1252"<This block of commented-out lines of code should be removed.(¨î÷ôúÿÿÿÿ8òğ“¡Ğ.
-
-java:S1128"_Remove this unused import 'com.android.emergencymedicalsystem.user.nurse.GeneralNurseFragment'.(¯È‘ùÿÿÿÿ8±îå Ğ.

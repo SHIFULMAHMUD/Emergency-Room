@@ -121,6 +121,7 @@ tools:context=".user.covid.IsolationCenterDetailActivity">
                 android:layout_height="wrap_content"
                 android:paddingLeft="5dp"
                 android:id="@+id/center_cell_tv"
+                android:autoLink="phone"
                 android:textColor="@android:color/white"
                 android:hint="+266 225 225"/>
         </LinearLayout>

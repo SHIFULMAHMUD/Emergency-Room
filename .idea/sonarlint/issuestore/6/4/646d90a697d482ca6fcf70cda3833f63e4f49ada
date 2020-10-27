@@ -1,9 +1,0 @@
-
-b
-java:S2259."EA "NullPointerException" could be thrown; "iStream" is nullable here.(ÀÙõù8ï¼İıÔ.
-i
-java:S1858("G"data" is already a string, there's no need to call "toString()" on it.(’ÏÈÍıÿÿÿÿ8ï¼İıÔ.
-|
-java:S1149 "_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰8ï¼İıÔ.
-L
-java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8ÇÑŞıÔ.

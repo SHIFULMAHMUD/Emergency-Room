@@ -1,35 +1,39 @@
 
-r
-java:S3252s"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ÅÔŞ±ûÿÿÿÿ8ôĞöùÍ.
-p	java:S116!"TRename this field "NUM_PAGES" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÕœ8²ÂêùÍ.
-K
-java:S1659$")Declare "donorLayout" on a separate line.(ŸˆÒñüÿÿÿÿ8ÛšàÔ.
-r	java:S117Y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø‘—Öÿÿÿÿÿ8ôĞöùÍ.
-p	java:S116#"TRename this field "PERIOD_MS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»‘™ï8®ÃëùÍ.
-M
-java:S1659$"+Declare "profileLayout" on a separate line.(ŸˆÒñüÿÿÿÿ8¦èªÁÑ.
-£
-java:S1186A"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ø´´øÿÿÿÿ8ÇÑñùÍ.
-K
-java:S1659$")Declare "nurseLayout" on a separate line.(ŸˆÒñüÿÿÿÿ8ÙÅÍÏ.
-O
-java:S1659$"-Declare "ambulanceLayout" on a separate line.(ŸˆÒñüÿÿÿÿ8“¦ĞêÒ.
+r	java:S117]"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø‘—Öÿÿÿÿÿ8ôĞöùÍ.
+J
+java:S1659&"-Declare "bloodBankLayout" on a separate line.(…Ä¯ô8ó±‘ÏÕ.
+F
+java:S1659&")Declare "nurseLayout" on a separate line.(…Ä¯ô8ÙÅÍÏ.
+J
+java:S1659&"-Declare "ambulanceLayout" on a separate line.(…Ä¯ô8“¦ĞêÒ.
 D
-java:S1659!"'Declare "NUM_PAGES" on a separate line.(ñÕœ8²ÂêùÍ.
-L
-java:S1659$"*Declare "logoutLayout" on a separate line.(ŸˆÒñüÿÿÿÿ8„™Å¤Ô.
->
-java:S1170#"!Make this final field static too.(»‘™ï8®ÃëùÍ.
-N
-java:S1659$",Declare "hospitalLayout" on a separate line.(ŸˆÒñüÿÿÿÿ8²À‚şÔ.
-o	java:S116""SRename this field "DELAY_MS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ…÷Š8®ÃëùÍ.
->
-java:S1170""!Make this final field static too.(Ÿ…÷Š8®ÃëùÍ.
-T
-java:S1197"8Move the array designator from the variable to the type.(÷¬‹(8½¶ßùÍ.
+java:S1659#"'Declare "NUM_PAGES" on a separate line.(ñÕœ8²ÂêùÍ.
+p	java:S116%"TRename this field "PERIOD_MS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»‘™ï8®ÃëùÍ.
 £
-java:S1186Q"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™Î«şÿÿÿÿ8ÇÑñùÍ.
+java:S1186U"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™Î«şÿÿÿÿ8ÇÑñùÍ.
+H
+java:S1659&"+Declare "paymentLayout" on a separate line.(…Ä¯ô8§˜‹£Ö.
+T
+java:S1197!"8Move the array designator from the variable to the type.(÷¬‹(8½¶ßùÍ.
+£
+java:S1186E"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ø´´øÿÿÿÿ8ÇÑñùÍ.
 r
-java:S3252s"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ÅÔŞ±ûÿÿÿÿ8ôĞöùÍ.
-K
-java:S1659$")Declare "covidLayout" on a separate line.(ŸˆÒñüÿÿÿÿ8ºç‹Ğ.
+java:S3252w"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ÅÔŞ±ûÿÿÿÿ8ôĞöùÍ.
+I
+java:S1659&",Declare "hospitalLayout" on a separate line.(…Ä¯ô8²À‚şÔ.
+o	java:S116$"SRename this field "DELAY_MS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ…÷Š8®ÃëùÍ.
+H
+java:S1659&"+Declare "profileLayout" on a separate line.(…Ä¯ô8¦èªÁÑ.
+G
+java:S1659&"*Declare "logoutLayout" on a separate line.(…Ä¯ô8„™Å¤Ô.
+F
+java:S1659&")Declare "donorLayout" on a separate line.(…Ä¯ô8ÛšàÔ.
+>
+java:S1170$"!Make this final field static too.(Ÿ…÷Š8®ÃëùÍ.
+>
+java:S1170%"!Make this final field static too.(»‘™ï8®ÃëùÍ.
+r
+java:S3252w"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ÅÔŞ±ûÿÿÿÿ8ôĞöùÍ.
+p	java:S116#"TRename this field "NUM_PAGES" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÕœ8²ÂêùÍ.
+F
+java:S1659&")Declare "covidLayout" on a separate line.(…Ä¯ô8ºç‹Ğ.

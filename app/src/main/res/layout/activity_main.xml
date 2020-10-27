@@ -332,7 +332,7 @@ tools:context=".user.MainActivity">
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/languageId"
+                    android:id="@+id/paymentLayoutId"
                     android:layout_width="0dp"
                     android:layout_height="130dp"
                     android:layout_margin="2dp"

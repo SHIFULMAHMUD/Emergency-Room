@@ -15,6 +15,7 @@ import com.android.emergencymedicalsystem.user.blooddonor.BloodDonorActivity;
 import com.android.emergencymedicalsystem.user.covid.CovidActivity;
 import com.android.emergencymedicalsystem.user.hospital.HospitalActivity;
 import com.android.emergencymedicalsystem.user.nurse.NurseActivity;
+import com.android.emergencymedicalsystem.user.payment.PaymentActivity;
 import com.android.emergencymedicalsystem.user.profile.ProfileActivity;
 
 import android.content.Intent;
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     int currentPage = 0,NUM_PAGES=4;
     final long DELAY_MS = 1000;//delay in milliseconds before task is to be executed
     final long PERIOD_MS = 5000; // time in milliseconds between successive task executions.
-    LinearLayout sliderDotspanel,nurseLayout,covidLayout,profileLayout,ambulanceLayout,logoutLayout,donorLayout,hospitalLayout,bloodBankLayout;
+    LinearLayout sliderDotspanel,nurseLayout,covidLayout,profileLayout,ambulanceLayout,logoutLayout,donorLayout,hospitalLayout,bloodBankLayout,paymentLayout;
     private int dotscount;
     Timer timer;
     private ImageView[] dots;
@@ -62,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         donorLayout=findViewById(R.id.donorLayoutId);
         hospitalLayout=findViewById(R.id.hospitalLayoutId);
         bloodBankLayout=findViewById(R.id.bloodBankLayoutId);
+        paymentLayout=findViewById(R.id.paymentLayoutId);
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -177,6 +179,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this, BloodBankActivity.class);
+                startActivity(intent);
+            }
+        });
+        paymentLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this, PaymentActivity.class);
                 startActivity(intent);
             }
         });

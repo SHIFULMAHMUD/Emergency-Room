@@ -5,6 +5,7 @@ import com.android.emergencymedicalsystem.model.Ambulance;
 import com.android.emergencymedicalsystem.model.CovidTestCenter;
 import com.android.emergencymedicalsystem.model.Hospital;
 import com.android.emergencymedicalsystem.model.Nurse;
+import com.android.emergencymedicalsystem.model.Payment;
 import com.android.emergencymedicalsystem.model.Sample;
 import com.android.emergencymedicalsystem.model.User;
 
@@ -33,6 +34,29 @@ public interface ApiInterface {
             @Field(Constant.KEY_LONGITUDE) String longitude);
 
     @FormUrlEncoded
+    @POST("bkash_payment.php")
+    Call<Payment> payment(
+            @Field(Constant.KEY_NAME) String name,
+            @Field(Constant.KEY_CELL) String cell,
+            @Field(Constant.KEY_ADDRESS) String address,
+            @Field(Constant.KEY_AMOUNT) String amount,
+            @Field(Constant.KEY_TRX_ID) String trxid,
+            @Field(Constant.KEY_COMMENT) String comment);
+
+    @FormUrlEncoded
+    @POST("card_payment.php")
+    Call<Payment> paymentCard(
+            @Field(Constant.KEY_NAME) String name,
+            @Field(Constant.KEY_CELL) String cell,
+            @Field(Constant.KEY_ADDRESS) String address,
+            @Field(Constant.KEY_AMOUNT) String amount,
+            @Field(Constant.KEY_CARD_NUMBER) String cardnumber,
+            @Field(Constant.KEY_CARD_CVC) String cardcvc,
+            @Field(Constant.KEY_CARD_HOLDER) String cardholdername,
+            @Field(Constant.KEY_CARD_EXPIRY) String cardexpirydate,
+            @Field(Constant.KEY_COMMENT) String comment);
+
+    @FormUrlEncoded
     @POST("sample.php")
     Call<Sample> collectSample(
             @Field(Constant.KEY_NAME) String name,
@@ -55,6 +79,10 @@ public interface ApiInterface {
     @GET("profile.php")
     Call<List<User>> getProfile(
             @Query("cell") String cell
+    );
+    @GET("get_fair.php")
+    Call<List<Ambulance>> getFair(
+            @Query("passenger_cell") String passenger_cell
     );
 
     @GET("get_covid_center.php")
@@ -86,7 +114,9 @@ public interface ApiInterface {
     @POST("hire_ambulance.php")
     Call<Ambulance> hireAmbulance(
             @Field(Constant.KEY_CELL) String cell,
-            @Field(Constant.KEY_REQUEST) String request);
+            @Field(Constant.KEY_REQUEST) String request,
+            @Field(Constant.KEY_TIME) String time,
+            @Field(Constant.KEY_PASSENGER_CELL) String passenger_cell);
     @FormUrlEncoded
     @POST("update_status.php")
     Call<User> updateStatus(
