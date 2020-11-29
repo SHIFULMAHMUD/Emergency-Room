@@ -1,3 +1,7 @@
 
-]	java:S1070"<Method has 9 parameters, which is greater than 7 authorized.(Õ¬îÉşÿÿÿÿ8¤»»¢Ö.
-W	java:S107"<Method has 8 parameters, which is greater than 7 authorized.(Çüœb8âÙÖ™Ğ.
+Y	java:S107²"<Method has 9 parameters, which is greater than 7 authorized.(®¿Êÿ8şÕ°Êß.
+s	java:S117°"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£ø§şûÿÿÿÿ8†©ÎÄÖ.
+_	java:S107ú"=Method has 13 parameters, which is greater than 7 authorized.(Àô¡ïùÿÿÿÿ8şÕ°Êß.
+]	java:S107U"<Method has 9 parameters, which is greater than 7 authorized.(Õ¬îÉşÿÿÿÿ8¤»»¢Ö.
+W	java:S107"<Method has 9 parameters, which is greater than 7 authorized.(Çüœb8âÙÖ™Ğ.
+s	java:S117‰"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô¶Îşÿÿÿÿ8¥Ã’ÆÖ.

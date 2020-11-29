@@ -3,6 +3,8 @@ package com.android.emergencymedicalsystem.model;
 import com.google.gson.annotations.SerializedName;
 
 public class CovidTestCenter {
+    @SerializedName("website")
+    private String website;
     @SerializedName("id")
     private String id;
     @SerializedName("name")
@@ -44,5 +46,9 @@ public class CovidTestCenter {
 
     public String getLongitude() {
         return longitude;
+    }
+
+    public String getWebsite() {
+        return website;
     }
 }

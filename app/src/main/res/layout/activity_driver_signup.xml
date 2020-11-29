@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorBack"
+tools:context=".driver.DriverSignupActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_layout">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ll1"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/toolbar_layout"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/image_name"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_person_white"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputName"
+            style="@style/parent">
+
+            <EditText
+                android:id="@+id/editTextRegisterName"
+                style="@style/modifiedNewEditText"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Ambulance Name"
+                android:textColorHint="@color/colorAccent"
+                android:backgroundTint="@color/colorAccent"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ll2"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/ll1"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/image_cell"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_phone"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputPhone"
+            style="@style/parent">
+
+            <EditText
+                android:id="@+id/editTextRegisterPhone"
+                style="@style/modifiedNewEditText"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Mobile Number"
+                android:textColorHint="@color/colorAccent"
+                android:backgroundTint="@color/colorAccent"
+                android:inputType="phone"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll3"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ll2"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_lock"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputPassword"
+            style="@style/parent"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/editTextRegisterPassword"
+                style="@style/modifiedNewEditText"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="@color/colorAccent"
+                android:backgroundTint="@color/colorAccent"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll4"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ll3"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_division"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textAccountType"
+            style="@style/parent">
+
+            <EditText
+                android:id="@+id/editTextDivision"
+                android:inputType="text"
+                android:backgroundTint="@color/colorAccent"
+                android:maxLines="1"
+                android:textColorHint="@color/colorAccent"
+                android:focusable="false"
+                android:hint="Division"
+                style="@style/modifiedNewEditText"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll5"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ll4"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_area"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textGender"
+            style="@style/parent">
+
+            <EditText
+                android:id="@+id/editTextArea"
+                android:inputType="text"
+                android:textColorHint="@color/colorAccent"
+                android:maxLines="1"
+                android:backgroundTint="@color/colorAccent"
+                android:hint="Area"
+                style="@style/modifiedNewEditText"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll6"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ll5"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_ambulance"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textAmbulanceType"
+            style="@style/parent">
+
+            <EditText
+                android:id="@+id/editTextAmbulanceType"
+                android:inputType="text"
+                android:backgroundTint="@color/colorAccent"
+                android:maxLines="1"
+                android:textColorHint="@color/colorAccent"
+                android:focusable="false"
+                android:hint="Ambulance Type"
+                style="@style/modifiedNewEditText"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ll7"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/ll6"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/image_fair"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_fair"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputFair"
+            style="@style/parent">
+
+            <EditText
+                android:id="@+id/editTextAmbulanceFair"
+                style="@style/modifiedNewEditText"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Ambulance Fair (Tk Per Hour)"
+                android:textColorHint="@color/colorAccent"
+                android:backgroundTint="@color/colorAccent"
+                android:inputType="number"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ll8"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/ll7"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_ambulance"/>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent">
+
+            <EditText
+                android:id="@+id/editTextVehicleRegistrationNo"
+                style="@style/modifiedNewEditText"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Ambulance Registration No"
+                android:textColorHint="@color/colorAccent"
+                android:backgroundTint="@color/colorAccent"
+                android:inputType="number"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ll9"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/ll8"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_facility"/>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent">
+
+            <EditText
+                android:id="@+id/editTextFacility"
+                style="@style/modifiedNewEditText"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Ambulance Facility"
+                android:textColorHint="@color/colorAccent"
+                android:backgroundTint="@color/colorAccent"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ll12"
+        android:background="@android:color/white"
+        android:layout_below="@+id/ll9"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorBack"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Add Ambulance Photo">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/getImage"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ll12">
+        <ImageView
+            android:id="@+id/viewImage"
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:src="@drawable/addpicture"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/cirRegisterButton"
+        style="@style/registerButton"
+        android:text="Register"
+        android:layout_below="@+id/getImage"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="12"
+        android:id="@+id/ll10"
+        android:layout_below="@+id/cirRegisterButton"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already a user?"
+            android:layout_weight="6"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll11"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/ll10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:text="Do you have an account?" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="Login" />
+    </LinearLayout>
+</RelativeLayout>
+
+
+</ScrollView>

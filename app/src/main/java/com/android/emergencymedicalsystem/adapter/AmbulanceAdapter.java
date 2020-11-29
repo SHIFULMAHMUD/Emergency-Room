@@ -68,6 +68,7 @@ public class AmbulanceAdapter extends RecyclerView.Adapter<AmbulanceAdapter.MyVi
             i.putExtra("division", ambulances.get(getAdapterPosition()).getDivision());
             i.putExtra("area", ambulances.get(getAdapterPosition()).getArea());
             i.putExtra("img", ambulances.get(getAdapterPosition()).getImage());
+            i.putExtra("token", ambulances.get(getAdapterPosition()).getToken());
             context.startActivity(i);
         }
     }

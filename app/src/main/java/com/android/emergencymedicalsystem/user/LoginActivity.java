@@ -97,7 +97,7 @@ public class LoginActivity extends AppCompatActivity implements TextWatcher,
         setContentView(R.layout.activity_login);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Emergency Medical Service");
+        getSupportActionBar().setTitle("EMS Plus");
         if (ContextCompat.checkSelfPermission(LoginActivity.this,
                 Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
             if (Build.VERSION.SDK_INT>=23) //Android MarshMellow Version or above
@@ -290,26 +290,10 @@ public class LoginActivity extends AppCompatActivity implements TextWatcher,
                     SharedPreferences.Editor editor = sp.edit();
                     //Adding values to editor
                     editor.putString(Constant.CELL_SHARED_PREF, cell);
-
+                    editor.putString(Constant.LATITUDE_SHARED_PREF, lat);
+                    editor.putString(Constant.LONGITUDE_SHARED_PREF, lng);
                     //Saving values to editor
                     editor.commit();
-
-                    //Creating editor to store values to shared preferences
-                    SharedPreferences.Editor editor1 = sp.edit();
-                    //Adding values to editor
-                    editor1.putString(Constant.LATITUDE_SHARED_PREF, lat);
-
-                    //Saving values to editor
-                    editor1.commit();
-
-                    //Creating editor to store values to shared preferences
-                    SharedPreferences.Editor editor2 = sp.edit();
-                    //Adding values to editor
-                    editor2.putString(Constant.LONGITUDE_SHARED_PREF, lng);
-
-                    //Saving values to editor
-                    editor2.commit();
-
 
                     Toasty.success(LoginActivity.this, message, Toasty.LENGTH_SHORT).show();
 

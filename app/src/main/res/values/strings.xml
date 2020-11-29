@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">Emergency Medical Service</string>
+    <string name="app_name">EMS Plus</string>
     <string name="title_activity_covid_test_center">Map</string>
     <string name="title_activity_maps">Map</string>
+    <string-array name="text">
+        <item>Ride Started</item>
+        <item>Counting Ride Time . . .</item>
+    </string-array>
 </resources>

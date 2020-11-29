@@ -5,10 +5,17 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 import es.dmoral.toasty.Toasty;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 import com.android.emergencymedicalsystem.ConnectionDetector;
+import com.android.emergencymedicalsystem.Constant;
 import com.android.emergencymedicalsystem.MyCustomPagerAdapter;
 import com.android.emergencymedicalsystem.R;
+import com.android.emergencymedicalsystem.model.Ambulance;
+import com.android.emergencymedicalsystem.remote.ApiClient;
+import com.android.emergencymedicalsystem.remote.ApiInterface;
 import com.android.emergencymedicalsystem.user.ambulance.AmbulanceActivity;
 import com.android.emergencymedicalsystem.user.bloodbank.BloodBankActivity;
 import com.android.emergencymedicalsystem.user.blooddonor.BloodDonorActivity;
@@ -16,22 +23,29 @@ import com.android.emergencymedicalsystem.user.covid.CovidActivity;
 import com.android.emergencymedicalsystem.user.hospital.HospitalActivity;
 import com.android.emergencymedicalsystem.user.nurse.NurseActivity;
 import com.android.emergencymedicalsystem.user.payment.PaymentActivity;
+import com.android.emergencymedicalsystem.user.payment.RidePaymentActivity;
 import com.android.emergencymedicalsystem.user.profile.ProfileActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
     ViewPager viewPager;
+    private ApiInterface apiInterface;
     int images[] = {R.drawable.imgone, R.drawable.imgtwo, R.drawable.imgthree};
     MyCustomPagerAdapter myCustomPagerAdapter;
+    String getCell,fair,time,finalfair;
     int currentPage = 0,NUM_PAGES=4;
     final long DELAY_MS = 1000;//delay in milliseconds before task is to be executed
     final long PERIOD_MS = 5000; // time in milliseconds between successive task executions.
@@ -45,7 +59,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Emergency Medical Service");
+        getSupportActionBar().setTitle("EMS Plus");
+        apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
         //Internet connection checker
         ConnectionDetector cd = new ConnectionDetector(getApplicationContext());
         // Check if Internet present
@@ -53,6 +68,11 @@ public class MainActivity extends AppCompatActivity {
             // Internet Connection is not present
             Toasty.error(MainActivity.this, "No Internet Connection", Toasty.LENGTH_LONG).show();
         }
+        //Fetching cell from shared preferences
+        SharedPreferences sharedPreferences;
+        sharedPreferences =getSharedPreferences(Constant.SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        getCell = sharedPreferences.getString(Constant.CELL_SHARED_PREF, "Not Available");
+
         viewPager = (ViewPager)findViewById(R.id.viewPager);
         sliderDotspanel = (LinearLayout) findViewById(R.id.SliderDots);
         nurseLayout=findViewById(R.id.nurseLayout);
@@ -157,6 +177,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this, LoginActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 finish();
             }
@@ -190,5 +211,43 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    /*public void getFairData(String cell) {
+        apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
+        Call<List<Ambulance>> call;
+        call = apiInterface.getFair(cell);
 
+        call.enqueue(new Callback<List<Ambulance>>() {
+            @Override
+            public void onResponse(Call<List<Ambulance>> call, Response<List<Ambulance>> response) {
+
+
+                if (response.isSuccessful() && response.body() != null) {
+
+                    List<Ambulance> fairdata;
+                    fairdata = response.body();
+
+                    if (fairdata.isEmpty() || fairdata.get(0).getTime().equals("Null")) {
+                        Toasty.error(MainActivity.this,"You have no payment !",Toasty.LENGTH_SHORT).show();
+                    } else {
+
+                        fair = fairdata.get(0).getFair();
+                        time = fairdata.get(0).getTime();
+
+                        Intent intent=new Intent(MainActivity.this, RidePaymentActivity.class);
+                        startActivity(intent);
+
+                    }
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<Ambulance>> call, Throwable t) {
+
+                Log.d("Error : ", t.toString());
+            }
+        });
+
+
+    }*/
 }

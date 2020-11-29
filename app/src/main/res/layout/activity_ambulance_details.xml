@@ -36,11 +36,8 @@ tools:context=".user.ambulance.AmbulanceDetailsActivity">
             android:layout_below="@+id/toolbar_layout"
             android:orientation="vertical">
             <ImageView
-                android:layout_marginTop="10dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
                 android:id="@+id/amb_image"
                 android:layout_height="200dp"
                 android:src="@drawable/ambulance"/>
@@ -202,6 +199,38 @@ tools:context=".user.ambulance.AmbulanceDetailsActivity">
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:id="@+id/area_tv"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_area"/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textColor="@android:color/white"
+                android:text="Distance :"/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:id="@+id/distance_tv"
+                android:autoLink="web"
                 android:textColor="@android:color/white" />
         </LinearLayout>
         <LinearLayout

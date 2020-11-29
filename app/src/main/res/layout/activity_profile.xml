@@ -55,7 +55,7 @@
         </RelativeLayout>
         <View style="@style/proifleDetailsView" />
         <LinearLayout
-            android:layout_width="360dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center"
@@ -237,11 +237,39 @@
                     android:text="Not Available"
                     />
             </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:text="Last Blood Donation Date :">
+                </TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date_tv"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:hint="dd/mm/yy">
+                </TextView>
+            </LinearLayout>
+
         </LinearLayout>
+
         <Button
             android:textColor="@color/colorBack"
             style="@style/loginButton"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="40dp"
             android:layout_marginBottom="30dp"
             android:id="@+id/updateProfileBtn"
             android:layout_gravity="center_horizontal"

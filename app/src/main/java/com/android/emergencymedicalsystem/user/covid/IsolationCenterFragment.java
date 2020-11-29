@@ -1,8 +1,10 @@
 package com.android.emergencymedicalsystem.user.covid;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,6 +30,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.List;
 
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import es.dmoral.toasty.Toasty;
 import retrofit2.Call;
@@ -42,6 +45,7 @@ public class IsolationCenterFragment extends Fragment implements OnMapReadyCallb
     SharedPreferences sharedPreferences;
     public double userLat;
     public double userLong;
+    public String kilo[] = new String[MAX_SIZE];
     public String centerId[]=new String[MAX_SIZE];
     public String centerName[]=new String[MAX_SIZE];
     public String centerCell[]=new String[MAX_SIZE];
@@ -100,6 +104,20 @@ public class IsolationCenterFragment extends Fragment implements OnMapReadyCallb
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        mMap.setMyLocationEnabled(true);
+        mMap.getUiSettings().setMyLocationButtonEnabled(true);
+
         getData("","","","","","","");
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
@@ -171,12 +189,12 @@ public class IsolationCenterFragment extends Fragment implements OnMapReadyCallb
                             Location.distanceBetween(startLatitude,startLongitude,endLatitude,endLongitude,results);
                             float distance=results[0];
                             int kilometer= (int) (distance/1000);
-
+                            kilo[i]=""+kilometer;
                             if(kilometer<=20)
 
                             {
                                 LatLng sydney = new LatLng(endLatitude,endLongitude);
-                                mMap.addMarker(new MarkerOptions().position(sydney).title(centerName[i]).snippet(centerId[i]));
+                                mMap.addMarker(new MarkerOptions().position(sydney).title(centerName[i]).snippet(centerId[i]+","+kilo[i]));
                                 mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
                                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(endLatitude,endLongitude),15.0f));
                             }

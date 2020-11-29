@@ -161,6 +161,72 @@ tools:context=".user.covid.IsolationCenterDetailActivity">
             android:layout_marginTop="25dp"
             android:orientation="horizontal"
             android:paddingLeft="5dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_area"/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textColor="@android:color/white"
+                android:text="Distance :"/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:id="@+id/distance_tv"
+                android:autoLink="web"
+                android:textColor="@android:color/white"
+                android:hint="Distance"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_web"/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textColor="@android:color/white"
+                android:text="Website / Facebook :"/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:id="@+id/web_tv"
+                android:autoLink="web"
+                android:textColor="@android:color/white"
+                android:hint="Website"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
             android:layout_marginBottom="20dp"
             android:weightSum="2"
             android:layout_width="match_parent"

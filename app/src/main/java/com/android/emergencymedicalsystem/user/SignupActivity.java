@@ -18,40 +18,62 @@ import com.android.emergencymedicalsystem.model.User;
 import com.android.emergencymedicalsystem.remote.ApiClient;
 import com.android.emergencymedicalsystem.remote.ApiInterface;
 import com.android.emergencymedicalsystem.user.nurse.NurseActivity;
+import com.android.emergencymedicalsystem.user.payment.SamplePaymentActivity;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 
 import android.Manifest;
 import android.app.AlertDialog;
+import android.app.DatePickerDialog;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Looper;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 public class SignupActivity extends AppCompatActivity {
     LinearLayout linearLayoutGotoLogin;
     private List<User> areaList;
+    public Calendar myCalendar = Calendar.getInstance();
+    public DatePickerDialog.OnDateSetListener appointment_date;
+    private int mYear, mMonth, mDay;
     ArrayList<String> areaNames  = new ArrayList<String>();
     private static final int REQUEST_CODE_LOCATION_PERMISSION = 1;
-    EditText etxtName, etxtCell, etxtPassword, etxtDivision, etxtArea, etxtBloodGroup;
+    EditText etxtName, etxtCell, etxtPassword, etxtDivision, etxtArea, etxtBloodGroup,etxtBloodDonationDate;
     Button btnSignUp;
     private ApiInterface apiInterface;
-    String text="", user_name, user_cell, user_password, user_division, user_area, user_bg, lat, lng;
+    String text="", user_name, user_cell, user_password, user_division, user_area, user_bg, lat, lng,user_token,user_donation_date;
     private ProgressDialog loading;
-
+    private static final String CHANNEL_ID = "emergency_medical_system";
+    private static final String CHANNEL_NAME= "Emergency Medical System";
+    private static final String CHANNEL_DESC = "Android Push Notification Tutorial";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,6 +81,22 @@ public class SignupActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Create New Account");
+        FirebaseInstanceId.getInstance().getInstanceId()
+                .addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
+
+                    @Override
+                    public void onComplete(@NonNull Task<InstanceIdResult> task) {
+                        if (task.isSuccessful()){
+                            user_token =task.getResult().getToken();
+                        }
+                    }
+                });
+        if (Build.VERSION.SDK_INT >=Build.VERSION_CODES.O){
+            NotificationChannel channel=new NotificationChannel(CHANNEL_ID,CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT);
+            channel.setDescription(CHANNEL_DESC);
+            NotificationManager manager=getSystemService(NotificationManager.class);
+            manager.createNotificationChannel(channel);
+        }
         //Runtime permissions
         if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
@@ -80,18 +118,35 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
         etxtName = findViewById(R.id.editTextRegisterName);
+        etxtName.setFilters(new InputFilter[] {
+                new InputFilter() {
+                    @Override
+                    public CharSequence filter(CharSequence cs, int start,
+                                               int end, Spanned spanned, int dStart, int dEnd) {
+                        // TODO Auto-generated method stub
+                        if(cs.equals("")){ // for backspace
+                            return cs;
+                        }
+                        if(cs.toString().matches("[a-zA-Z ]+")){
+                            return cs;
+                        }
+                        return "";
+                    }
+                }
+        });
         etxtCell = findViewById(R.id.editTextRegisterPhone);
         etxtPassword = findViewById(R.id.editTextRegisterPassword);
         etxtDivision = findViewById(R.id.editTextRegisterDivision);
         etxtArea = findViewById(R.id.editTextRegisterArea);
         etxtBloodGroup = findViewById(R.id.editTextBloodGroup);
+        etxtBloodDonationDate = findViewById(R.id.editTextBloodDonationDate);
         linearLayoutGotoLogin = findViewById(R.id.ll9);
         btnSignUp = findViewById(R.id.cirRegisterButton);
         etxtDivision.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                final String[] divisionList = {"Dhaka", "Chittagong"};
+                final String[] divisionList = {"Dhaka", "Chittagong","Barishal","Mymensingh","Khulna","Rajshahi","Rangpur","Sylhet"};
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(SignupActivity.this);
                 builder.setTitle("Choose Division");
@@ -103,13 +158,38 @@ public class SignupActivity extends AppCompatActivity {
                             case 0:
                                 etxtDivision.setText(divisionList[position]);
                                 text = divisionList[position];
-                                getDhkAreaData();
                                 break;
 
                             case 1:
                                 etxtDivision.setText(divisionList[position]);
                                 text = divisionList[position];
-                                getCtgAreaData();
+                                break;
+                            case 2:
+                                etxtDivision.setText(divisionList[position]);
+                                text = divisionList[position];
+                                break;
+
+                            case 3:
+                                etxtDivision.setText(divisionList[position]);
+                                text = divisionList[position];
+                                break;
+                            case 4:
+                                etxtDivision.setText(divisionList[position]);
+                                text = divisionList[position];
+                                break;
+
+                            case 5:
+                                etxtDivision.setText(divisionList[position]);
+                                text = divisionList[position];
+                                break;
+                            case 6:
+                                etxtDivision.setText(divisionList[position]);
+                                text = divisionList[position];
+                                break;
+
+                            case 7:
+                                etxtDivision.setText(divisionList[position]);
+                                text = divisionList[position];
                                 break;
                         }
                     }
@@ -130,32 +210,6 @@ public class SignupActivity extends AppCompatActivity {
 
         });
 
-        etxtArea.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(SignupActivity.this);
-                builder.setTitle("Choose Area");
-                builder.setItems(areaNames.toArray(new String[0]), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-
-                        etxtArea.setText(areaNames.get(i));
-                    }
-                });
-                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-
-                    @Override
-                    public void onClick(DialogInterface dialog, int position) {
-                        dialog.dismiss();
-                    }
-                });
-
-                AlertDialog accountTypeDialog = builder.create();
-
-                accountTypeDialog.show();
-            }
-
-        });
         etxtBloodGroup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -223,8 +277,46 @@ public class SignupActivity extends AppCompatActivity {
             }
 
         });
+        appointment_date = new DatePickerDialog.OnDateSetListener() {
+
+            @Override
+            public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                  int dayOfMonth) {
+
+                myCalendar.set(Calendar.YEAR, year);
+                myCalendar.set(Calendar.MONTH, monthOfYear);
+                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                updateLabel();
+            }
+
+        };
+
+        etxtBloodDonationDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Get Current Date
+                final Calendar c = Calendar.getInstance();
+                mYear = c.get(Calendar.YEAR);
+                mMonth = c.get(Calendar.MONTH);
+                mDay = c.get(Calendar.DAY_OF_MONTH);
 
 
+                DatePickerDialog datePickerDialog = new DatePickerDialog(SignupActivity.this,AlertDialog.THEME_DEVICE_DEFAULT_DARK,
+                        new DatePickerDialog.OnDateSetListener() {
+
+                            @Override
+                            public void onDateSet(DatePicker view, int year,
+                                                  int monthOfYear, int dayOfMonth) {
+
+                                etxtBloodDonationDate.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
+
+                            }
+                        }, mYear, mMonth, mDay);
+                datePickerDialog.show();
+
+
+    }
+        });
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -242,7 +334,7 @@ public class SignupActivity extends AppCompatActivity {
                 user_division = etxtDivision.getText().toString();
                 user_area = etxtArea.getText().toString();
                 user_bg = etxtBloodGroup.getText().toString();
-
+                user_donation_date = etxtBloodDonationDate.getText().toString();
 
                 //validation
                 if (user_name.isEmpty()) {
@@ -266,12 +358,17 @@ public class SignupActivity extends AppCompatActivity {
                     etxtDivision.requestFocus();
                     Toasty.error(SignupActivity.this, "Please select Division !", Toast.LENGTH_SHORT).show();
                 } else if (user_area.isEmpty()) {
-                    etxtArea.setError("Please select area ! ");
+                    etxtArea.setError("Area can not be empty! ");
                     etxtArea.requestFocus();
-                    Toasty.error(SignupActivity.this, "Please select Area !", Toast.LENGTH_SHORT).show();
                 } else if (user_bg.isEmpty()) {
                     etxtBloodGroup.setError("Blood Group can't be empty! ");
                     etxtBloodGroup.requestFocus();
+                    Toasty.error(SignupActivity.this, "Blood Group can't be empty! ", Toast.LENGTH_SHORT).show();
+                }
+                else if (user_donation_date.isEmpty()) {
+                    etxtBloodDonationDate.setError("Blood Donation Date can't be empty! ");
+                    etxtBloodDonationDate.requestFocus();
+                    Toasty.error(SignupActivity.this, "Blood Donation Date can't be empty! ", Toast.LENGTH_SHORT).show();
                 }
                 //Runtime permissions
                 else {
@@ -285,12 +382,18 @@ public class SignupActivity extends AppCompatActivity {
                     }
 
                     //call signup method
-                    sign_up(user_name, user_cell, user_password, user_division, user_area, user_bg, lat, lng);
+                    sign_up(user_name, user_cell, user_password, user_division, user_area, user_bg,user_donation_date, lat, lng,user_token);
                 }
             }
             }
         });
 
+    }
+    //for date input
+    private void updateLabel() {
+        String myFormat = "dd/MM/yyyy"; //In which you need put here
+        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+        etxtBloodDonationDate.setText(sdf.format(myCalendar.getTime()));
 
     }
 
@@ -305,42 +408,7 @@ public class SignupActivity extends AppCompatActivity {
             }
         }
     }
-    public void getDhkAreaData() {
-        Call<List<User>> call = apiInterface.getDhkArea();
-        call.enqueue(new Callback<List<User>>() {
-            @Override
-            public void onResponse(Call<List<User>> call, Response<List<User>> response) {
-                areaList = response.body();
-                areaNames.clear();
-                for (int i = 0; i < areaList.size(); i++) {
-                    areaNames.add(areaList.get(i).getArea());
-                }
-            }
 
-            @Override
-            public void onFailure(Call<List<User>> call, Throwable t) {
-
-            }
-        });
-    }
-    public void getCtgAreaData() {
-        Call<List<User>> call = apiInterface.getCtgArea();
-        call.enqueue(new Callback<List<User>>() {
-            @Override
-            public void onResponse(Call<List<User>> call, Response<List<User>> response) {
-                areaList = response.body();
-                areaNames.clear();
-                for (int i = 0; i < areaList.size(); i++) {
-                    areaNames.add(areaList.get(i).getArea());
-                }
-            }
-
-            @Override
-            public void onFailure(Call<List<User>> call, Throwable t) {
-
-            }
-        });
-    }
     private void getLocation() {
         final LocationRequest locationRequest = new LocationRequest();
         locationRequest.setInterval(10000);
@@ -373,14 +441,14 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     //signup method
-    private void sign_up(String name,String cell,String password,String division,String area,String blood_group,String latitude,String longitude) {
+    private void sign_up(String name,String cell,String password,String division,String area,String blood_group,String donation_date,String latitude,String longitude,String token) {
 
         loading=new ProgressDialog(this);
         loading.setMessage("Please wait....");
         loading.show();
 
         ApiInterface apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
-        Call<User> call = apiInterface.signUp(name, cell,password, division, area,blood_group,latitude,longitude);
+        Call<User> call = apiInterface.signUp(name, cell,password, division, area,blood_group,donation_date,latitude,longitude,token);
         call.enqueue(new Callback<User>() {
             @Override
             public void onResponse(Call<User> call, Response<User> response) {

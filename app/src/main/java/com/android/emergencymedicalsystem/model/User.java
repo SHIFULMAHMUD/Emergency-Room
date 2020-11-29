@@ -8,6 +8,8 @@ public class User {
     private String name;
     @SerializedName("cell")
     private String cell;
+    @SerializedName("date")
+    private String date;
     @SerializedName("password")
     private String password;
     @SerializedName("division")
@@ -69,5 +71,9 @@ public class User {
 
     public String getStatus() {
         return status;
+    }
+
+    public String getDate() {
+        return date;
     }
 }

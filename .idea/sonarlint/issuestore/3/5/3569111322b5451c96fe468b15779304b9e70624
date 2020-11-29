@@ -1,26 +1,115 @@
 
-m	java:S117—"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾Ø\8ÊØŒ´Ô.
-}
-java:S1128"[Remove this unused import 'com.android.emergencymedicalsystem.adapter.RecyclerViewAdapter'.(´ìÁîøÿÿÿÿ8õš¡´Ô.
-y
-java:S1450*"\Remove the "layoutManager" field and declare it as a local variable in the relevant methods.(üÉÙ¼8ÌÏçæÒ.
-n
-java:S1301‚"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8ÌÏçæÒ.
-¤
-java:S1186Â"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼úßÙøÿÿÿÿ8ŸÇ³Ô.
-m
-java:S1128"KRemove this unused import 'com.android.emergencymedicalsystem.model.Nurse'.(²ÄêŠşÿÿÿÿ8õš¡´Ô.
-C	java:S131Z""Add a default case to this switch.(¼œóÛüÿÿÿÿ8œ’À³Ô.
-H
-java:S1659,"&Declare "etxtArea" on a separate line.(˜ë©øÿÿÿÿ8ß‹¾³Ô.
-m
-java:S1128"KRemove this unused import 'androidx.recyclerview.widget.GridLayoutManager'.(î¼çÿüÿÿÿÿ8õš¡´Ô.
-v
-java:S2293/"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ä¯û“8Ì¦Å³Ô.
+G
+java:S1659:"+Declare "userLongitude" on a separate line.(öî‘88ò¼ıØÚ.
+b
+java:S1117Y"ERename "sharedPreferences" which hides the field declared at line 59.(½Ìúğ8ô¢ÛÚ.
 u
-java:S1128#"SRemove this unused import 'com.android.emergencymedicalsystem.user.SignupActivity'.(ĞóØİúÿÿÿÿ8Û˜Â³Ô.
+java:S1104A"SMake ambCell a static final constant or non-public and provide accessors if needed.(µª«øÿÿÿÿ8®‹ÖÚÚ.
+T
+java:S1135w"2Complete the task associated to this TODO comment.(áÃæùÿÿÿÿ8ô¢ÛÚ.
+Ÿ
+java:S1186Ş"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºÉÿ›8éÆú‘Û.
+p
+java:S3776‘"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(¾œ½8ô¢ÛÚ.
+Z
+java:S1197E"8Move the array designator from the variable to the type.(öüÎËùÿÿÿÿ8ô¢ÛÚ.
 m
-java:S1301Z"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8œ’À³Ô.
-¤
-java:S1186Ô"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼úßÙøÿÿÿÿ8ŸÇ³Ô.
-n	java:S117˜"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡ÿ‚¾8¹øŒ´Ô.
+java:S1128%"KRemove this unused import 'com.android.emergencymedicalsystem.model.Nurse'.(²ÄêŠşÿÿÿÿ8õš¡´Ô.
+P
+java:S1128".Remove this unused import 'android.view.View'.(Ø½­äşÿÿÿÿ8Í±ÿØÚ.
+Z
+java:S1197A"8Move the array designator from the variable to the type.(µª«øÿÿÿÿ8ô¢ÛÚ.
+U
+java:S1197D"8Move the array designator from the variable to the type.(µÍò•8ô¢ÛÚ.
+U
+java:S1197J"8Move the array designator from the variable to the type.(ŞØÚÄ8ô¢ÛÚ.
+t
+java:S3252v"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí8ô¢ÛÚ.
+v
+java:S1104E"TMake ambImage a static final constant or non-public and provide accessors if needed.(öüÎËùÿÿÿÿ8¨ñ‹ÛÚ.
+U
+java:S1197@"8Move the array designator from the variable to the type.(•ã÷ï8ô¢ÛÚ.
+m
+java:S1128"KRemove this unused import 'androidx.recyclerview.widget.GridLayoutManager'.(î¼çÿüÿÿÿÿ8õš¡´Ô.
+}
+java:S1128""[Remove this unused import 'com.android.emergencymedicalsystem.adapter.RecyclerViewAdapter'.(´ìÁîøÿÿÿÿ8õš¡´Ô.
+^
+java:S1128"<Remove this unused import 'android.content.DialogInterface'.(Š­›¨şÿÿÿÿ8Í±ÿØÚ.
+S
+java:S1128"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8Í±ÿØÚ.
+Z
+java:S1197G"8Move the array designator from the variable to the type.(ñ‰Ïêüÿÿÿÿ8ô¢ÛÚ.
+t	java:S1169"SRename this field "MAX_SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”üÇøşÿÿÿÿ8ò¼ıØÚ.
+u
+java:S1104B"SMake ambType a static final constant or non-public and provide accessors if needed.(¯Ğ°êşÿÿÿÿ8œÑ×ÚÚ.
+q
+java:S1104="TMake userLong a static final constant or non-public and provide accessors if needed.(°ÜŠÜ8ò¼ıØÚ.
+|
+java:S1450L"ZRemove the "progressBar" field and declare it as a local variable in the relevant methods.(â˜ˆçøÿÿÿÿ8Í±ÿØÚ.
+p
+java:S1104<"SMake userLat a static final constant or non-public and provide accessors if needed.(Æ†ú8ò¼ıØÚ.
+n
+java:S1104?"QMake ambId a static final constant or non-public and provide accessors if needed.(ß´Ôó8‹»ÕÚÚ.
+T
+java:S1128"2Remove this unused import 'android.widget.Button'.(²òıÿÿÿÿ8ò¼ıØÚ.
+Q
+java:S1128"4Remove this unused import 'android.widget.EditText'.(†Å›Ú8ò¼ıØÚ.
+Z
+java:S1197B"8Move the array designator from the variable to the type.(¯Ğ°êşÿÿÿÿ8ô¢ÛÚ.
+t
+java:S3252v"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí8ô¢ÛÚ.
+p
+java:S1104@"SMake ambName a static final constant or non-public and provide accessors if needed.(•ã÷ï8 ÛÕÚÚ.
+Z
+java:S1197I"8Move the array designator from the variable to the type.(•¦ÙÂÿÿÿÿÿ8ô¢ÛÚ.
+U
+java:S1197?"8Move the array designator from the variable to the type.(ß´Ôó8ô¢ÛÚ.
+M
+java:S11284"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ò¼ıØÚ.
+t
+java:S1104F"WMake ambFacility a static final constant or non-public and provide accessors if needed.(¢ì…³8Î•ŒÛÚ.
+g
+java:S1128&"JRemove this unused import 'com.android.emergencymedicalsystem.model.User'.(ÒÃÜƒ8Í±ÿØÚ.
+u
+java:S1104C"SMake ambFair a static final constant or non-public and provide accessors if needed.(ï•µÔøÿÿÿÿ8ìÛ‰ÛÚ.
+h
+java:S1128"FRemove this unused import 'androidx.recyclerview.widget.RecyclerView'.(Îèòçøÿÿÿÿ8ò¼ıØÚ.
+}
+java:S1128*"`Remove this unused import 'com.android.emergencymedicalsystem.user.bloodbank.BloodBankActivity'.(ÿÏ¬é8Í‚‚ÙÚ.
+V
+java:S1128"4Remove this unused import 'android.app.AlertDialog'.(ª½øşüÿÿÿÿ8Í±ÿØÚ.
+„
+java:S1128+"gRemove this unused import 'com.android.emergencymedicalsystem.user.bloodbank.BloodBankDetailsActivity'.(²éõÎ8Ï©‚ÙÚ.
+|
+java:S1104I"ZMake centerLatitude a static final constant or non-public and provide accessors if needed.(•¦ÙÂÿÿÿÿÿ8ò¼ıØÚ.
+x
+java:S1104J"[Make centerLongitude a static final constant or non-public and provide accessors if needed.(ŞØÚÄ8ò¼ıØÚ.
+U
+java:S1197F"8Move the array designator from the variable to the type.(¢ì…³8ô¢ÛÚ.
+T
+java:S1197>"8Move the array designator from the variable to the type.(ãºï8«ÿíùà.
+Z
+java:S1197H"8Move the array designator from the variable to the type.(œÚ¨şÿÿÿÿ8ô¢ÛÚ.
+Z
+java:S1197C"8Move the array designator from the variable to the type.(ï•µÔøÿÿÿÿ8ô¢ÛÚ.
+n
+java:S1301å"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8éÆú‘Û.
+q
+java:S1104D"TMake ambRegNo a static final constant or non-public and provide accessors if needed.(µÍò•8õÆ‹ÛÚ.
+z
+java:S1128!"XRemove this unused import 'com.android.emergencymedicalsystem.adapter.AmbulanceAdapter'.(ê„îÚøÿÿÿÿ8Í±ÿØÚ.
+F
+java:S1659:"*Declare "userLatitude" on a separate line.(öî‘88ò¼ıØÚ.
+u
+java:S1128)"SRemove this unused import 'com.android.emergencymedicalsystem.user.SignupActivity'.(ĞóØİúÿÿÿÿ8±«ŠÚ.
+t
+java:S1104G"RMake ambDiv a static final constant or non-public and provide accessors if needed.(ñ‰Ïêüÿÿÿÿ8˜ıŒÛÚ.
+F	java:S108 ")Either remove or fill this block of code.(à–ä¾8ô¢ÛÚ.
+o
+java:S1128"MRemove this unused import 'androidx.recyclerview.widget.LinearLayoutManager'.(ôœ¹ºıÿÿÿÿ8Í±ÿØÚ.
+l
+java:S1104>"PMake kilo a static final constant or non-public and provide accessors if needed.(ãºï8«ÿíùà.
+u
+java:S1104H"SMake ambArea a static final constant or non-public and provide accessors if needed.(œÚ¨şÿÿÿÿ8ô¢ÛÚ.
+w
+java:S1128$"URemove this unused import 'com.android.emergencymedicalsystem.model.CovidTestCenter'.(êÉ¥Èúÿÿÿÿ8—Ö´ÛÚ.

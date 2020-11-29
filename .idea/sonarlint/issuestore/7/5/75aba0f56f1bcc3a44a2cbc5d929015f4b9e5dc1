@@ -1,47 +1,57 @@
 
-q
-java:S1104)"TMake userLong a static final constant or non-public and provide accessors if needed.(°ÜŠÜ8ñÉÕ.
-s
-java:S1104,"VMake centerCell a static final constant or non-public and provide accessors if needed.(Õ™ßÅ8ñÉÕ.
-v
-java:S1104*"TMake centerId a static final constant or non-public and provide accessors if needed.(±À€­ùÿÿÿÿ8ñÉÕ.
-G
-java:S1659&"+Declare "userLongitude" on a separate line.(öî‘88ñÉÕ.
-n
-java:S1301±"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8…å·ÏÕ.
 U
-java:S1197/"8Move the array designator from the variable to the type.(ŞØÚÄ8ñÉÕ.
-o
-java:S3776i"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(¾œ½8±³ÊÕ.
+java:S11973"8Move the array designator from the variable to the type.(ŞØÚÄ8ÿŠßåÙ.
+x
+java:S11043"[Make centerLongitude a static final constant or non-public and provide accessors if needed.(ŞØÚÄ8ñÉÕ.
 p
-java:S1104("SMake userLat a static final constant or non-public and provide accessors if needed.(Æ†ú8ñÉÕ.
-U
-java:S1197-"8Move the array designator from the variable to the type.(ò„‰µ8ñÉÕ.
-t	java:S116%"SRename this field "MAX_SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”üÇøşÿÿÿÿ8ñÉÕ.
-|
-java:S14501"ZRemove the "progressBar" field and declare it as a local variable in the relevant methods.(â˜ˆçøÿÿÿÿ8±³ÊÕ.
-b
-java:S1117>"ERename "sharedPreferences" which hides the field declared at line 39.(½Ìúğ8±³ÊÕ.
-¤
-java:S1186ª"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯ÁÖ·ÿÿÿÿÿ8±³ÊÕ.
-v
-java:S1104-"YMake centerAddress a static final constant or non-public and provide accessors if needed.(ò„‰µ8ñÉÕ.
-|
-java:S1104."ZMake centerLatitude a static final constant or non-public and provide accessors if needed.(•¦ÙÂÿÿÿÿÿ8ñÉÕ.
-O
-java:S1128"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8Õ×¾ÒÕ.
-x
-java:S1104+"VMake centerName a static final constant or non-public and provide accessors if needed.(›‰ªõıÿÿÿÿ8ñÉÕ.
+java:S1104+"SMake userLat a static final constant or non-public and provide accessors if needed.(Æ†ú8ñÉÕ.
 F
-java:S1659&"*Declare "userLatitude" on a separate line.(öî‘88ñÉÕ.
-Z
-java:S1197."8Move the array designator from the variable to the type.(•¦ÙÂÿÿÿÿÿ8ñÉÕ.
-Z
-java:S1197*"8Move the array designator from the variable to the type.(±À€­ùÿÿÿÿ8ñÉÕ.
-J	java:S108x")Either remove or fill this block of code.( Àºûÿÿÿÿ8±³ÊÕ.
+java:S1659)"*Declare "userLatitude" on a separate line.(öî‘88ñÉÕ.
 U
-java:S1197,"8Move the array designator from the variable to the type.(Õ™ßÅ8ñÉÕ.
+java:S11971"8Move the array designator from the variable to the type.(ò„‰µ8ÿŠßåÙ.
+t
+java:S3252_"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí8î¾“Ú.
+¤
+java:S1186»"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯ÁÖ·ÿÿÿÿÿ8ÿŠßåÙ.
+T
+java:S1135`"2Complete the task associated to this TODO comment.(áÃæùÿÿÿÿ8î¾“Ú.
+l
+java:S1104."PMake kilo a static final constant or non-public and provide accessors if needed.(ãºï8¹ÅíåÙ.
+v
+java:S1104-"TMake centerId a static final constant or non-public and provide accessors if needed.(±À€­ùÿÿÿÿ8ñÉÕ.
+q
+java:S1104,"TMake userLong a static final constant or non-public and provide accessors if needed.(°ÜŠÜ8ñÉÕ.
+|
+java:S11042"ZMake centerLatitude a static final constant or non-public and provide accessors if needed.(•¦ÙÂÿÿÿÿÿ8ñÉÕ.
+G
+java:S1659)"+Declare "userLongitude" on a separate line.(öî‘88ñÉÕ.
+s
+java:S11040"VMake centerCell a static final constant or non-public and provide accessors if needed.(Õ™ßÅ8ñÉÕ.
+o
+java:S3776z"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(¾œ½8ÿŠßåÙ.
+b
+java:S1117B"ERename "sharedPreferences" which hides the field declared at line 42.(½Ìúğ8ÿŠßåÙ.
 x
-java:S1104/"[Make centerLongitude a static final constant or non-public and provide accessors if needed.(ŞØÚÄ8ñÉÕ.
+java:S1104/"VMake centerName a static final constant or non-public and provide accessors if needed.(›‰ªõıÿÿÿÿ8ñÉÕ.
+n
+java:S1301Â"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8…å·ÏÕ.
+t	java:S116("SRename this field "MAX_SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”üÇøşÿÿÿÿ8ñÉÕ.
 Z
-java:S1197+"8Move the array designator from the variable to the type.(›‰ªõıÿÿÿÿ8ñÉÕ.
+java:S11972"8Move the array designator from the variable to the type.(•¦ÙÂÿÿÿÿÿ8ÿŠßåÙ.
+T
+java:S1197."8Move the array designator from the variable to the type.(ãºï8¹ÅíåÙ.
+Z
+java:S1197/"8Move the array designator from the variable to the type.(›‰ªõıÿÿÿÿ8ÿŠßåÙ.
+v
+java:S11041"YMake centerAddress a static final constant or non-public and provide accessors if needed.(ò„‰µ8ñÉÕ.
+t
+java:S3252_"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí8î¾“Ú.
+K	java:S108‰")Either remove or fill this block of code.( Àºûÿÿÿÿ8ÿŠßåÙ.
+Z
+java:S1197-"8Move the array designator from the variable to the type.(±À€­ùÿÿÿÿ8ÿŠßåÙ.
+|
+java:S14505"ZRemove the "progressBar" field and declare it as a local variable in the relevant methods.(â˜ˆçøÿÿÿÿ8±³ÊÕ.
+O
+java:S1128"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8Õ×¾ÒÕ.
+U
+java:S11970"8Move the array designator from the variable to the type.(Õ™ßÅ8ÿŠßåÙ.

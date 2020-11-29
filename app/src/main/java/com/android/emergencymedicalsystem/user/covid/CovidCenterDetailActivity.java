@@ -20,8 +20,8 @@ import com.android.emergencymedicalsystem.remote.ApiInterface;
 import java.util.List;
 
 public class CovidCenterDetailActivity extends AppCompatActivity {
-    TextView name_tv,cell_tv,address_tv,facility_tv;
-    String id,name,cell,address,facility;
+    TextView name_tv,cell_tv,address_tv,facility_tv,website_tv,distance_tv;
+    String id,name,cell,address,facility,website,distance;
     private ApiInterface apiInterface;
 
     @Override
@@ -37,14 +37,19 @@ public class CovidCenterDetailActivity extends AppCompatActivity {
         cell_tv=findViewById(R.id.center_cell_tv);
         address_tv=findViewById(R.id.address_tv);
         facility_tv=findViewById(R.id.facility_tv);
+        website_tv=findViewById(R.id.web_tv);
+        distance_tv=findViewById(R.id.distance_tv);
         id = getIntent().getStringExtra("id");
+        String data[]=id.split(",");
+        distance=data[1];
+        distance_tv.setText(distance+" Km");
         // Check if Internet present
         ConnectionDetector cd = new ConnectionDetector(CovidCenterDetailActivity.this);
         if (!cd.isConnectingToInternet()) {
             // Internet Connection is not present
             Toasty.error(CovidCenterDetailActivity.this, "No Internet Connection", Toasty.LENGTH_LONG).show();
         }else {
-        getCovidCenterData(id);
+        getCovidCenterData(data[0]);
         }
     }
     public void getCovidCenterData(String id) {
@@ -72,11 +77,14 @@ public class CovidCenterDetailActivity extends AppCompatActivity {
                         cell = profileData.get(0).getCell();
                         address = profileData.get(0).getAddress();
                         facility = profileData.get(0).getFacility();
+                        website = profileData.get(0).getWebsite();
 
                         name_tv.setText(name);
                         cell_tv.setText(cell);
                         address_tv.setText(address);
                         facility_tv.setText(facility);
+                        website_tv.setText(website);
+                        distance_tv.setText(distance+" Km");
                     }
 
                 }

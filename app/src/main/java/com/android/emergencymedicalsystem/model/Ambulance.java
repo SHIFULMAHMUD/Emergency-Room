@@ -3,8 +3,16 @@ package com.android.emergencymedicalsystem.model;
 import com.google.gson.annotations.SerializedName;
 
 public class Ambulance {
+    @SerializedName("latitude")
+    private String latitude;
+    @SerializedName("longitude")
+    private String longitude;
+    @SerializedName("id")
+    private String id;
     @SerializedName("time")
     private String time;
+    @SerializedName("token")
+    private String token;
     @SerializedName("passenger_cell")
     private String passenger_cell;
     @SerializedName("name")
@@ -98,5 +106,21 @@ public class Ambulance {
 
     public String getTime() {
         return time;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public String getLongitude() {
+        return longitude;
     }
 }

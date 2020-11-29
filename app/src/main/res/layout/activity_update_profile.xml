@@ -77,8 +77,7 @@
                 android:src="@drawable/ic_bg"/>
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textBg"
-                style="@style/parent"
-                app:passwordToggleEnabled="true">
+                style="@style/parent">
 
                 <EditText
                     android:id="@+id/editTextUpdateBloodGroup"
@@ -142,8 +141,7 @@
                 android:src="@drawable/ic_division"/>
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textAccountType"
-                style="@style/parent"
-                app:passwordToggleEnabled="true">
+                style="@style/parent">
 
                 <EditText
                     android:id="@+id/editTextUpdateDivision"
@@ -175,15 +173,13 @@
                 android:src="@drawable/ic_area"/>
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textGender"
-                style="@style/parent"
-                app:passwordToggleEnabled="true">
+                style="@style/parent">
 
                 <EditText
                     android:id="@+id/editTextUpdateArea"
                     android:inputType="text"
                     android:textColorHint="@color/colorAccent"
                     android:maxLines="1"
-                    android:focusable="false"
                     android:backgroundTint="@color/colorAccent"
                     android:hint="Select Area"
                     style="@style/modifiedNewEditText"
@@ -191,13 +187,42 @@
                     android:layout_marginLeft="10dp" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll7"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/ll6"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_calendar"/>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent">
 
+                <EditText
+                    android:id="@+id/editTextUpdateDonationDate"
+                    android:inputType="text"
+                    android:focusable="false"
+                    android:textColorHint="@color/colorAccent"
+                    android:maxLines="1"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Select Last Blood Donation Date"
+                    style="@style/modifiedNewEditText"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
 
         <Button
             android:id="@+id/updateProfileButton"
             style="@style/registerButton"
             android:text="Update"
-            android:layout_below="@+id/ll6"
+            android:layout_below="@+id/ll7"
             android:layout_centerInParent="true"
             android:layout_marginTop="40dp"
             android:textSize="15sp"

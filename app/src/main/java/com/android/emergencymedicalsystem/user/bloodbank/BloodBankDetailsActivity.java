@@ -21,8 +21,8 @@ import com.android.emergencymedicalsystem.user.hospital.HospitalDetailsActivity;
 import java.util.List;
 
 public class BloodBankDetailsActivity extends AppCompatActivity {
-    TextView name_tv,cell_tv,address_tv;
-    String id,name,cell,address;
+    TextView name_tv,cell_tv,address_tv,distance_tv;
+    String id,name,cell,address,distance;
     private ApiInterface apiInterface;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,15 +36,18 @@ public class BloodBankDetailsActivity extends AppCompatActivity {
         name_tv=findViewById(R.id.center_name_tv);
         cell_tv=findViewById(R.id.center_cell_tv);
         address_tv=findViewById(R.id.address_tv);
-
+        distance_tv=findViewById(R.id.distance_tv);
         id = getIntent().getStringExtra("id");
+        String data[]=id.split(",");
+        distance=data[1];
+        distance_tv.setText(distance+" Km");
         // Check if Internet present
         ConnectionDetector cd = new ConnectionDetector(BloodBankDetailsActivity.this);
         if (!cd.isConnectingToInternet()) {
             // Internet Connection is not present
             Toasty.error(BloodBankDetailsActivity.this, "No Internet Connection", Toasty.LENGTH_LONG).show();
         }else {
-            getHospitalData(id);
+            getHospitalData(data[0]);
         }
     }
     public void getHospitalData(String id) {
@@ -75,7 +78,7 @@ public class BloodBankDetailsActivity extends AppCompatActivity {
                         name_tv.setText(name);
                         cell_tv.setText(cell);
                         address_tv.setText(address);
-
+                        distance_tv.setText(distance+" Km");
                     }
 
                 }

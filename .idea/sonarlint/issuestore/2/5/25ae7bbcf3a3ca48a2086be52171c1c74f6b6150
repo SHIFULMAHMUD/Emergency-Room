@@ -1,0 +1,116 @@
+
+<	java:S131~""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+A
+java:S16590"&Declare "etxtArea" on a separate line.(ïÌ¸¾üÿÿÿÿ
+_
+java:S1871š"IThis case's code block is the same as the block for the case on line 127.(û¿4
+A
+java:S16590"&Declare "etxtFair" on a separate line.(ïÌ¸¾üÿÿÿÿ
+e
+java:S1871ˆ"IThis case's code block is the same as the block for the case on line 127.(úâúÿÿÿÿ
+W
+java:S1874C"5Remove this use of "getInstanceId"; it is deprecated.(½íÖëûÿÿÿÿ8ÓßëÕß.
+_
+java:S1871Ÿ"IThis case's code block is the same as the block for the case on line 127.(ÒñŠ{
+i	java:S1166"TRename this field "user_cell" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãø„ì
+=	java:S131Â""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+i	java:S1166"TRename this field "user_fair" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãø„ì
+e
+java:S1871"IThis case's code block is the same as the block for the case on line 127.(‰ÆÄÎşÿÿÿÿ
+I
+java:S1874‚"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜
+h
+java:S1192‰"LDefine a constant instead of duplicating this literal "text/plain" 12 times.(¥ìœ¢ûÿÿÿÿ
+L
+java:S16590"1Declare "etxtVRegistrationNo" on a separate line.(ïÌ¸¾üÿÿÿÿ
+R
+java:S1874"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ
+=
+java:S1172ÿ"&Remove these unused method parameters.(ÿ¥º§
+d
+java:S1871²"MThis branch's code block is the same as the block for the branch on line 426.(á¢–¬
+A
+java:S16590"&Declare "etxtType" on a separate line.(ïÌ¸¾üÿÿÿÿ
+d	java:S100ÿ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ¥º§
+V
+java:S1117—"@Rename "apiInterface" which hides the field declared at line 52.(·­ˆI
+e
+java:S1871„"IThis case's code block is the same as the block for the case on line 127.(ªëÅŞúÿÿÿÿ
+=
+java:S16596"'Declare "user_area" on a separate line.(Ãø„ì
+i	java:S1166"TRename this field "user_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãø„ì
+i	java:S1166"TRename this field "user_area" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãø„ì
+e
+java:S1871‘"IThis case's code block is the same as the block for the case on line 127.(µ»ïşıÿÿÿÿ
+g	java:S117’"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥ù¯
+F
+java:S10684"0Remove this unused "apiInterface" private field.(ï¹ë›
+=
+java:S16596"'Declare "mediaPath" on a separate line.(Ãø„ì
+A
+java:S16596"+Declare "user_facility" on a separate line.(Ãø„ì
+Q
+java:S16597"6Declare "linearLayoutAmbulancePic" on a separate line.(“½¤ûşÿÿÿÿ
+i	java:S1166"TRename this field "user_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãø„ì
+L
+java:S18748"6Remove this use of "ProgressDialog"; it is deprecated.(Ï’Ú
+l	java:S117”"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä‘İÖÿÿÿÿÿ
+m
+java:S3776="RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(¨Œşÿÿÿÿ
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·è©üÿÿÿÿ
+l	java:S117‘"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î–âşıÿÿÿÿ
+e
+java:S1871Ì"IThis case's code block is the same as the block for the case on line 195.(úâúÿÿÿÿ
+j	java:S1166"URename this field "user_token" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãø„ì
+G
+java:S10682",Remove this unused "areaList" private field.(à£ÔÊøÿÿÿÿ
+R	java:S125Ã"<This block of commented-out lines of code should be removed.(èÃ…˜
+=
+java:S16596"'Declare "user_fair" on a separate line.(Ãø„ì
+E
+java:S16590"*Declare "etxtPassword" on a separate line.(ïÌ¸¾üÿÿÿÿ
+E
+java:S16596"/Declare "user_registration" on a separate line.(Ãø„ì
+m	java:S1166"XRename this field "user_password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãø„ì
+=
+java:S16596"'Declare "user_name" on a separate line.(Ãø„ì
+m	java:S1166"XRename this field "user_facility" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãø„ì
+=
+java:S16596"'Declare "user_type" on a separate line.(Ãø„ì
+q	java:S1166"\Rename this field "user_registration" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãø„ì
+E
+java:S16590"*Declare "etxtFacility" on a separate line.(ïÌ¸¾üÿÿÿÿ
+e
+java:S1871–"IThis case's code block is the same as the block for the case on line 127.(ÌÊëÎüÿÿÿÿ
+m	java:S1166"XRename this field "user_division" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãø„ì
+l	java:S117•"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†…è¦şÿÿÿÿ
+A
+java:S16596"+Declare "user_division" on a separate line.(Ãø„ì
+k	java:S1166"VRename this field "user_status" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãø„ì
+g	java:S117Œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÀæà
+A
+java:S16596"+Declare "user_password" on a separate line.(Ãø„ì
+l	java:S117‹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾š¢İıÿÿÿÿ
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘Ñ•ºùÿÿÿÿ
+A
+java:S16590"&Declare "etxtCell" on a separate line.(ïÌ¸¾üÿÿÿÿ
+S	java:S107ÿ"=Method has 11 parameters, which is greater than 7 authorized.(ÿ¥º§
+e
+java:S1871È"IThis case's code block is the same as the block for the case on line 195.(ªëÅŞúÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†—ø
+>
+java:S16596"(Declare "user_token" on a separate line.(Ãø„ì
+q
+java:S14504"[Remove the "apiInterface" field and declare it as a local variable in the relevant methods.(ï¹ë›
+?
+java:S16596")Declare "user_status" on a separate line.(Ãø„ì
+E
+java:S16590"*Declare "etxtDivision" on a separate line.(ïÌ¸¾üÿÿÿÿ
+\
+java:S1874C":Remove this use of "FirebaseInstanceId"; it is deprecated.(½íÖëûÿÿÿÿ8ÓßëÕß.
+o
+java:S22933"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ä¯û“
+g	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™¨ï›
+=
+java:S16596"'Declare "user_cell" on a separate line.(Ãø„ì
+l	java:S117“"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à»ƒÏüÿÿÿÿ

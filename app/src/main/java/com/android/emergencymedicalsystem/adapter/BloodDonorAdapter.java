@@ -37,6 +37,7 @@ public class BloodDonorAdapter extends RecyclerView.Adapter<BloodDonorAdapter.My
     public void onBindViewHolder(@NonNull final BloodDonorAdapter.MyViewHolder holder, final int position) {
         holder.name.setText(donors.get(position).getName());
         holder.group.setText(donors.get(position).getBlood());
+        holder.date.setText(donors.get(position).getDate());
         holder.cell.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,13 +53,14 @@ public class BloodDonorAdapter extends RecyclerView.Adapter<BloodDonorAdapter.My
     public int getItemCount() { return donors.size(); }
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView name,group;
+        TextView name,group,date;
         ImageView cell;
         public MyViewHolder(View itemView) {
             super(itemView);
             name=itemView.findViewById(R.id.name);
             cell = itemView.findViewById(R.id.cell);
             group = itemView.findViewById(R.id.blood_group);
+            date = itemView.findViewById(R.id.blood_donation_date);
             itemView.setOnClickListener(this);
         }
 
@@ -71,6 +73,7 @@ public class BloodDonorAdapter extends RecyclerView.Adapter<BloodDonorAdapter.My
             i.putExtra("div", donors.get(getAdapterPosition()).getDivision());
             i.putExtra("area", donors.get(getAdapterPosition()).getArea());
             i.putExtra("status", donors.get(getAdapterPosition()).getStatus());
+            i.putExtra("date", donors.get(getAdapterPosition()).getDate());
             context.startActivity(i);
         }
     }

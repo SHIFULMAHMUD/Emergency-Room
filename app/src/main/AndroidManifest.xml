@@ -15,7 +15,9 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning"
         tools:targetApi="m">
+        <activity android:name=".user.payment.SamplePaymentActivity"></activity>
         <activity android:name=".user.payment.PaymentActivity" />
+        <activity android:name=".user.payment.RidePaymentActivity" />
         <activity android:name=".user.bloodbank.BloodBankDetailsActivity" />
         <activity android:name=".user.bloodbank.BloodBankActivity" />
         <activity android:name=".user.hospital.HospitalDetailsActivity" />
@@ -32,6 +34,15 @@
         <activity android:name=".user.SignupActivity" />
         <activity android:name=".user.LoginActivity" />
         <activity android:name=".user.MainActivity" />
+        <activity android:name=".driver.AmbulanceDetailsActivity" />
+        <activity android:name=".driver.DriverLoginActivity" />
+        <activity android:name=".driver.DriverSignupActivity" />
+        <activity android:name=".driver.RideActivity" />
+        <activity android:name=".DriverMainActivity" />
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".DriverSplashActivity" />
+        <activity android:name=".driver.UpdateProfileActivity" />
         <activity android:name=".user.profile.ProfileActivity" />
         <activity android:name=".user.profile.UpdateProfileActivity" />
         <activity android:name=".SplashActivity">
@@ -45,6 +56,14 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
+        <service
+            android:name=".notification.MyFirebaseService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
 
         <uses-library
             android:name="org.apache.http.legacy"

@@ -35,9 +35,9 @@ import retrofit2.Response;
 public class ProfileActivity extends AppCompatActivity {
     private List<User> contactsList;
     private ApiInterface apiInterface;
-    String getCell,userName,userCell,userPassword,userArea,userDivision,userBloodGroup,userBloodStatus;
+    String getCell,userName,userCell,userPassword,userArea,userDivision,userBloodGroup,userBloodStatus,userBloodDonationDate;
     Button updateBtn;
-    TextView nameTv,cellTv,divisionTv,areaTv,bloodTv;
+    TextView nameTv,cellTv,divisionTv,areaTv,bloodTv,donationDateTv;
     RadioGroup radioGroup;
     RadioButton radioButtonAvailable,radioButtonNotAvailable;
     String string_rb;
@@ -57,6 +57,7 @@ public class ProfileActivity extends AppCompatActivity {
         divisionTv=findViewById(R.id.division_tv);
         areaTv=findViewById(R.id.area_tv);
         bloodTv=findViewById(R.id.blood_group_tv);
+        donationDateTv=findViewById(R.id.date_tv);
         updateBtn=findViewById(R.id.updateProfileBtn);
         radioButtonAvailable=findViewById(R.id.rb1);
         radioButtonNotAvailable=findViewById(R.id.rb2);
@@ -171,6 +172,7 @@ public class ProfileActivity extends AppCompatActivity {
                 intent.putExtra("blood",userBloodGroup);
                 intent.putExtra("division",userDivision);
                 intent.putExtra("area",userArea);
+                intent.putExtra("date",userBloodDonationDate);
                 startActivity(intent);
             }
         });
@@ -240,7 +242,9 @@ public class ProfileActivity extends AppCompatActivity {
                         userDivision = profileData.get(0).getDivision();
                         userArea = profileData.get(0).getArea();
                         userBloodGroup = profileData.get(0).getBlood();
+                        userBloodDonationDate = profileData.get(0).getDate();
                         userBloodStatus = profileData.get(0).getStatus();
+
                         if (userBloodStatus.equals("Available")){
                             radioButtonAvailable.setChecked(true);
                         }
@@ -252,6 +256,7 @@ public class ProfileActivity extends AppCompatActivity {
                         divisionTv.setText(userDivision);
                         areaTv.setText(userArea);
                         bloodTv.setText(userBloodGroup);
+                        donationDateTv.setText(userBloodDonationDate);
                     }
 
                 }

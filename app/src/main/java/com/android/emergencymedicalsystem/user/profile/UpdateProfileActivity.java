@@ -1,6 +1,7 @@
 package com.android.emergencymedicalsystem.user.profile;
 
 import android.app.AlertDialog;
+import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -10,6 +11,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 
 import com.android.emergencymedicalsystem.model.User;
@@ -21,6 +23,7 @@ import com.android.emergencymedicalsystem.R;
 import com.android.emergencymedicalsystem.user.SignupActivity;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,12 +34,15 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class UpdateProfileActivity extends AppCompatActivity {
-    EditText name_et, password_et, blood_group_et,division_et,area_et;
+    EditText name_et, password_et, blood_group_et,division_et,area_et,donation_date_et;
     Button update_btn;
+    public Calendar myCalendar = Calendar.getInstance();
+    public DatePickerDialog.OnDateSetListener appointment_date;
+    private int mYear, mMonth, mDay;
     private ApiInterface apiInterface;
     private List<User> areaList;
     ArrayList<String> areaNames  = new ArrayList<String>();
-    String getCell,text,name,password,blood_group,division,area;
+    String getCell,text,name,password,blood_group,division,area,date;
     private ProgressDialog loading;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,22 +69,25 @@ public class UpdateProfileActivity extends AppCompatActivity {
         blood_group_et=findViewById(R.id.editTextUpdateBloodGroup);
         division_et=findViewById(R.id.editTextUpdateDivision);
         area_et=findViewById(R.id.editTextUpdateArea);
+        donation_date_et=findViewById(R.id.editTextUpdateDonationDate);
         name = getIntent().getStringExtra("name");
         password = getIntent().getStringExtra("pass");
         blood_group = getIntent().getStringExtra("blood");
         division = getIntent().getStringExtra("division");
         area = getIntent().getStringExtra("area");
+        date = getIntent().getStringExtra("date");
         name_et.setText(name);
         password_et.setText(password);
         blood_group_et.setText(blood_group);
         division_et.setText(division);
         area_et.setText(area);
+        donation_date_et.setText(date);
         apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
         division_et.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                final String[] divisionList = {"Dhaka", "Chittagong"};
+                final String[] divisionList = {"Dhaka", "Chittagong","Barishal","Mymensingh","Khulna","Rajshahi","Rangpur","Sylhet"};
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(UpdateProfileActivity.this);
                 builder.setTitle("Choose Division");
@@ -90,13 +99,38 @@ public class UpdateProfileActivity extends AppCompatActivity {
                             case 0:
                                 division_et.setText(divisionList[position]);
                                 text = divisionList[position];
-                                getDhkAreaData();
                                 break;
 
                             case 1:
                                 division_et.setText(divisionList[position]);
                                 text = divisionList[position];
-                                getCtgAreaData();
+                                break;
+                            case 2:
+                                division_et.setText(divisionList[position]);
+                                text = divisionList[position];
+                                break;
+
+                            case 3:
+                                division_et.setText(divisionList[position]);
+                                text = divisionList[position];
+                                break;
+                            case 4:
+                                division_et.setText(divisionList[position]);
+                                text = divisionList[position];
+                                break;
+
+                            case 5:
+                                division_et.setText(divisionList[position]);
+                                text = divisionList[position];
+                                break;
+                            case 6:
+                                division_et.setText(divisionList[position]);
+                                text = divisionList[position];
+                                break;
+
+                            case 7:
+                                division_et.setText(divisionList[position]);
+                                text = divisionList[position];
                                 break;
                         }
                     }
@@ -116,33 +150,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
             }
 
         });
-        area_et.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                AlertDialog.Builder builder = new AlertDialog.Builder(UpdateProfileActivity.this);
-                builder.setTitle("Choose Area");
-                builder.setItems(areaNames.toArray(new String[0]), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-
-                        area_et.setText(areaNames.get(i));
-                    }
-                });
-                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-
-                    @Override
-                    public void onClick(DialogInterface dialog, int position) {
-                        dialog.dismiss();
-                    }
-                });
-
-                AlertDialog accountTypeDialog = builder.create();
-
-                accountTypeDialog.show();
-            }
-
-        });
         blood_group_et.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -210,7 +218,32 @@ public class UpdateProfileActivity extends AppCompatActivity {
             }
 
         });
+        donation_date_et.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Get Current Date
+                final Calendar c = Calendar.getInstance();
+                mYear = c.get(Calendar.YEAR);
+                mMonth = c.get(Calendar.MONTH);
+                mDay = c.get(Calendar.DAY_OF_MONTH);
 
+
+                DatePickerDialog datePickerDialog = new DatePickerDialog(UpdateProfileActivity.this,AlertDialog.THEME_DEVICE_DEFAULT_DARK,
+                        new DatePickerDialog.OnDateSetListener() {
+
+                            @Override
+                            public void onDateSet(DatePicker view, int year,
+                                                  int monthOfYear, int dayOfMonth) {
+
+                                donation_date_et.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
+
+                            }
+                        }, mYear, mMonth, mDay);
+                datePickerDialog.show();
+
+
+            }
+        });
 
         update_btn=findViewById(R.id.updateProfileButton);
         update_btn.setOnClickListener(new View.OnClickListener() {
@@ -231,6 +264,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
                                 String blood = blood_group_et.getText().toString();
                                 String division = division_et.getText().toString();
                                 String area = area_et.getText().toString();
+                                String date = donation_date_et.getText().toString();
 
                                 //validation
 
@@ -258,11 +292,15 @@ public class UpdateProfileActivity extends AppCompatActivity {
                                 else if (area.isEmpty()) {
                                     area_et.setError("Area can't be empty! ");
                                     area_et.requestFocus();
-                                    Toasty.error(UpdateProfileActivity.this,"Please select your area ! ",Toasty.LENGTH_SHORT).show();
+                                }
+                                else if (date.isEmpty()) {
+                                    donation_date_et.setError("Blood Donation Date can't be empty! ");
+                                    donation_date_et.requestFocus();
+                                    Toasty.error(UpdateProfileActivity.this,"Please select last blood donation date ! ",Toasty.LENGTH_SHORT).show();
                                 }
                                 else {
                                     //call login method
-                                    updateProfile(name,cell,password, blood,division,area);
+                                    updateProfile(name,cell,password, blood,division,area,date);
                                 }
 
                                 break;
@@ -288,7 +326,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
         });
 
     }
-    public void getDhkAreaData() {
+    /*public void getDhkAreaData() {
         Call<List<User>> call = apiInterface.getDhkArea();
         call.enqueue(new Callback<List<User>>() {
             @Override
@@ -323,8 +361,8 @@ public class UpdateProfileActivity extends AppCompatActivity {
 
             }
         });
-    }
-    private void updateProfile(String name,String cell,String password,String blood,String division,String area) {
+    }*/
+    private void updateProfile(String name,String cell,String password,String blood,String division,String area, String date) {
 
         loading=new ProgressDialog(this);
         loading.setMessage("Please wait....");
@@ -332,7 +370,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
 
         ApiInterface apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
 
-        Call<User> call = apiInterface.updateProfile(name,cell,password,blood,division,area);
+        Call<User> call = apiInterface.updateProfile(name,cell,password,blood,division,area,date);
         call.enqueue(new Callback<User>() {
             @Override
             public void onResponse(Call<User> call, Response<User> response) {

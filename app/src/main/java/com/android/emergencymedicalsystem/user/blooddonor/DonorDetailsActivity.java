@@ -13,8 +13,8 @@ import com.android.emergencymedicalsystem.R;
 import com.android.emergencymedicalsystem.user.nurse.NurseDetailsActivity;
 
 public class DonorDetailsActivity extends AppCompatActivity {
-    String name, group,cell, division,area,status;
-    TextView name_tv,group_tv,cell_tv,div_tv,area_tv,status_tv;
+    String name, group,cell, division,area,status,date;
+    TextView name_tv,group_tv,cell_tv,div_tv,area_tv,status_tv,date_tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +37,7 @@ public class DonorDetailsActivity extends AppCompatActivity {
         division = getIntent().getStringExtra("div");
         area = getIntent().getStringExtra("area");
         status = getIntent().getStringExtra("status");
+        date = getIntent().getStringExtra("date");
 
         name_tv=findViewById(R.id.donor_name_tv);
         cell_tv=findViewById(R.id.donor_cell_tv);
@@ -44,6 +45,7 @@ public class DonorDetailsActivity extends AppCompatActivity {
         div_tv=findViewById(R.id.donor_div_tv);
         area_tv=findViewById(R.id.donor_area_tv);
         status_tv=findViewById(R.id.status_tv);
+        date_tv=findViewById(R.id.date_tv);
 
         name_tv.setText(name);
         cell_tv.setText(cell);
@@ -51,6 +53,7 @@ public class DonorDetailsActivity extends AppCompatActivity {
         div_tv.setText(division);
         area_tv.setText(area);
         status_tv.setText(status);
+        date_tv.setText(date);
     }
     //for back button
     @Override

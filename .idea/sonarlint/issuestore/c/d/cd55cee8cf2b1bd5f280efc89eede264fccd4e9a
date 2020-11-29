@@ -1,0 +1,72 @@
+
+g
+java:S1301Ä"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
+R
+java:S1874›"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùþÿÿÿÿ
+<	java:S131o""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+C
+java:S1659-"(Declare "divisionTv" on a separate line.(Í¿÷Éûÿÿÿÿ
+D	java:S108„")Either remove or fill this block of code.(¦Ýãúÿÿÿÿ
+V
+java:S1117Ÿ"@Rename "apiInterface" which hides the field declared at line 42.(·­ˆI
+s	java:S116."YRename this field "animation_text" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Áýúûÿÿÿÿ
+i	java:S116+"URename this field "start_time" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö…ô[
+Q	java:S125z"<This block of commented-out lines of code should be removed.(Í˜ÅÐ
+D	java:S108Ú")Either remove or fill this block of code.(¦Ýãúÿÿÿÿ
+W	java:S125µ"<This block of commented-out lines of code should be removed.(ª„×Çøÿÿÿÿ
+;
+java:S1659+"&Declare "userName" on a separate line.(ö…ô[
+@
+java:S1659+"+Declare "userLongitude" on a separate line.(ö…ô[
+?
+java:S1659-"$Declare "areaTv" on a separate line.(Í¿÷Éûÿÿÿÿ
+g
+java:S1128"JRemove this unused import 'com.android.emergencymedicalsystem.model.User'.(ÒÃÜƒ8òé•Öß.
+=	java:S131ª""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+<
+java:S1659+"'Declare "userToken" on a separate line.(ö…ô[
+g
+java:S1301ª"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ
+=
+java:S1659+"(Declare "start_time" on a separate line.(ö…ô[
+I
+java:S1874¨"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜
+@
+java:S1659+"+Declare "passengerCell" on a separate line.(ö…ô[
+c
+java:S1192‘"GDefine a constant instead of duplicating this literal "Cancel" 3 times.(çÄÝöøÿÿÿÿ
+B
+java:S1659)"'Declare "subminBtn" on a separate line.(Ô¬ž øÿÿÿÿ
+f
+java:S1301o"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ
+R
+java:S1874§"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùþÿÿÿÿ
+L
+java:S1874/"6Remove this use of "ProgressDialog"; it is deprecated.(Ï’ŽÚ
+g
+java:S1301à"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ
+D
+java:S1659)")Declare "locationBtn" on a separate line.(Ô¬ž øÿÿÿÿ
+m
+java:S37762"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(ž¨Œþÿÿÿÿ
+>
+java:S1659,"#Declare "date2" on a separate line.(žæªëýÿÿÿÿ
+a
+java:S1192P"KDefine a constant instead of duplicating this literal "hh-mm-ss a" 3 times.(Ó‹µÕ
+I
+java:S1874œ"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜
+?
+java:S1659)"$Declare "endBtn" on a separate line.(Ô¬ž øÿÿÿÿ
+V
+java:S1117«"@Rename "apiInterface" which hides the field declared at line 42.(·­ˆI
+;
+java:S1659+"&Declare "userCell" on a separate line.(ö…ô[
+?
+java:S1659+"*Declare "userDivision" on a separate line.(ö…ô[
+?
+java:S1659-"$Declare "cellTv" on a separate line.(Í¿÷Éûÿÿÿÿ
+?
+java:S1659+"*Declare "userLatitude" on a separate line.(ö…ô[
+=	java:S131à""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+;
+java:S1659+"&Declare "userArea" on a separate line.(ö…ô[

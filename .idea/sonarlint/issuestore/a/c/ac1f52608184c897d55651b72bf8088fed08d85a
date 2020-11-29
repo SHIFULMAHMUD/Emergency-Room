@@ -1,0 +1,42 @@
+
+F
+java:S1659/"+Declare "passenger_lng" on a separate line.(ßµ¸øÿÿÿÿ
+r	java:S116/"XRename this field "passenger_lng" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßµ¸øÿÿÿÿ
+k	java:S117r"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è¶Åıÿÿÿÿ
+H
+java:S1659."-Declare "driverLongitude" on a separate line.(Íá£Ìûÿÿÿÿ
+C
+java:S1659/"(Declare "driver_lat" on a separate line.(ßµ¸øÿÿÿÿ
+[
+java:S1124+"EReorder the modifiers to comply with the Java Language Specification.( ±ÔÑ
+F
+java:S2093ƒ"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+o	java:S116/"URename this field "driver_lng" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßµ¸øÿÿÿÿ
+g
+java:S1301÷"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
+H
+java:S3398"-Move this method into "TaskDirectionRequest".(·ôØ±úÿÿÿÿ
+C
+java:S1659/"(Declare "driver_lng" on a separate line.(ßµ¸øÿÿÿÿ
+r	java:S116/"XRename this field "passenger_lat" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßµ¸øÿÿÿÿ
+S
+java:S1117Ö"7Rename "lat" which hides the field declared at line 46.(…íõ­úÿÿÿÿ
+F
+java:S3740Î"/Provide the parametrized type for this generic.(Şš» 
+k
+java:S2259Ÿ"OA "NullPointerException" could be thrown; "httpURLConnection" is nullable here.(µ»“ÿÿÿÿÿ
+m
+java:S3252W"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí
+m
+java:S3252W"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí
+o	java:S116/"URename this field "driver_lat" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßµ¸øÿÿÿÿ
+F
+java:S3740Ò"/Provide the parametrized type for this generic.(¨¸ìÚ
+M
+java:S1135X"2Complete the task associated to this TODO comment.(áÃæùÿÿÿÿ
+<
+java:S1659."!Declare "lng" on a separate line.(Íá£Ìûÿÿÿÿ
+G
+java:S1659.",Declare "driverLatitude" on a separate line.(Íá£Ìûÿÿÿÿ
+{
+java:S1149Œ"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ì­ŠÜúÿÿÿÿ

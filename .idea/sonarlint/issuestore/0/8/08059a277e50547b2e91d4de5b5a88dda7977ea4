@@ -1,0 +1,73 @@
+
+<
+java:S1659$"&Declare "userArea" on a separate line.(×Û†ÿ
+q
+java:S1450%"[Remove the "apiInterface" field and declare it as a local variable in the relevant methods.(ï¹ë›
+i	java:S116""TRename this field "amb_image" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©É Ì
+;
+java:S1659'"%Declare "fair_tv" on a separate line.(ŒÂÕÓ
+g	java:S116'"RRename this field "area_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÂÕÓ
+L
+java:S1874&"6Remove this use of "ProgressDialog"; it is deprecated.(Ï’ŽÚ
+@
+java:S1659$"*Declare "userPassword" on a separate line.(×Û†ÿ
+C	java:S108k")Either remove or fill this block of code.(¦Ýãúÿÿÿÿ
+<
+java:S1659$"&Declare "userCell" on a separate line.(×Û†ÿ
+A
+java:S1659!"&Declare "division" on a separate line.(÷ÓÎøÿÿÿÿ
+k	java:S116'"VRename this field "facility_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÂÕÓ
+;
+java:S1659'"%Declare "pass_tv" on a separate line.(ŒÂÕÓ
+;
+java:S1659'"%Declare "cell_tv" on a separate line.(ŒÂÕÓ
+=
+java:S1659'"'Declare "reg_no_tv" on a separate line.(ŒÂÕÓ
+@
+java:S1659$"*Declare "userFacility" on a separate line.(×Û†ÿ
+g
+java:S1301•"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
+i	java:S116'"TRename this field "reg_no_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÂÕÓ
+@
+java:S1659$"*Declare "userDivision" on a separate line.(×Û†ÿ
+g
+java:S1128"JRemove this unused import 'com.android.emergencymedicalsystem.model.User'.(ÒÃÜƒ8ÛÓóÊß.
+;
+java:S1659'"%Declare "area_tv" on a separate line.(ŒÂÕÓ
+g	java:S116'"RRename this field "type_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÂÕÓ
+=
+java:S1659$"'Declare "userRegNo" on a separate line.(×Û†ÿ
+f	java:S116'"QRename this field "div_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÂÕÓ
+k	java:S116!"QRename this field "reg_no" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷ÓÎøÿÿÿÿ
+A
+java:S1068&"+Remove this unused "loading" private field.(Ï’ŽÚ
+A
+java:S1659!"&Declare "facility" on a separate line.(÷ÓÎøÿÿÿÿ
+g	java:S116'"RRename this field "cell_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÂÕÓ
+g	java:S116'"RRename this field "pass_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÂÕÓ
+<
+java:S1659$"&Declare "userType" on a separate line.(×Û†ÿ
+=
+java:S1659$"'Declare "userImage" on a separate line.(×Û†ÿ
+=
+java:S1659!""Declare "cell" on a separate line.(÷ÓÎøÿÿÿÿ
+?
+java:S1659'")Declare "facility_tv" on a separate line.(ŒÂÕÓ
+:
+java:S1659'"$Declare "div_tv" on a separate line.(ŒÂÕÓ
+?
+java:S1659!"$Declare "reg_no" on a separate line.(÷ÓÎøÿÿÿÿ
+<
+java:S1659$"&Declare "userFair" on a separate line.(×Û†ÿ
+=
+java:S1659!""Declare "type" on a separate line.(÷ÓÎøÿÿÿÿ
+g	java:S116'"RRename this field "name_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÂÕÓ
+g	java:S116'"RRename this field "fair_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÂÕÓ
+;
+java:S1659'"%Declare "type_tv" on a separate line.(ŒÂÕÓ
+=
+java:S1659!""Declare "fair" on a separate line.(÷ÓÎøÿÿÿÿ
+=
+java:S1659!""Declare "area" on a separate line.(÷ÓÎøÿÿÿÿ
+<
+java:S1659$"&Declare "userName" on a separate line.(×Û†ÿ

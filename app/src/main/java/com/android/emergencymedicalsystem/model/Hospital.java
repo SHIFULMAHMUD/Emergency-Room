@@ -5,6 +5,8 @@ import com.google.gson.annotations.SerializedName;
 public class Hospital {
     @SerializedName("id")
     private String id;
+    @SerializedName("website")
+    private String website;
     @SerializedName("name")
     private String name;
     @SerializedName("cell")
@@ -38,5 +40,9 @@ public class Hospital {
 
     public String getId() {
         return id;
+    }
+
+    public String getWebsite() {
+        return website;
     }
 }

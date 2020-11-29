@@ -1,0 +1,100 @@
+
+n
+java:S1192Ê"KDefine a constant instead of duplicating this literal "dd/MM/yyyy" 5 times.(‘öüøÿÿÿÿ8³Åî×à.
+r	java:S117e"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Äùéùøÿÿÿÿ8³Åî×à.
+_
+java:S1874É"ARemove this use of "THEME_DEVICE_DEFAULT_DARK"; it is deprecated.(š×é8³Åî×à.
+~
+java:S1192}"\Define a constant instead of duplicating this literal "Please enter full address !" 3 times.(·­£ñÿÿÿÿÿ8³Åî×à.
+s	java:S117â"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñËÕùÿÿÿÿ8³Åî×à.
+s	java:S117§"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁƒÇèøÿÿÿÿ8³Åî×à.
+s
+java:S3252ü"PUse static access with "android.view.ViewGroup$LayoutParams" for "MATCH_PARENT".(ÒÖœªşÿÿÿÿ8³Åî×à.
+n	java:S117†"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éëËÿ8³Åî×à.
+n	java:S117‡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”ÃãÌ8¾«î×à.
+D
+java:S1659/"'Declare "amount_Et" on a separate line.(Œ„ò¯8£ò¬à.
+Y
+java:S1874‡"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ8³Åî×à.
+s	java:S117§"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁƒÇèøÿÿÿÿ8³Åî×à.
+o	java:S116/"SRename this field "txt_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8£ò¬à.
+s
+java:S11044"VMake myCalendar a static final constant or non-public and provide accessors if needed.(ê©À8£ò¬à.
+n
+java:S3252§"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ØªØ8¾«î×à.
+y
+java:S11045"\Make appointment_date a static final constant or non-public and provide accessors if needed.(ñÇ¯›8£ò¬à.
+O
+java:S1128"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8ûì×à.
+g
+java:S1128""JRemove this unused import 'com.android.emergencymedicalsystem.model.User'.(ÒÃÜƒ8ã®××à.
+D
+java:S1659/"'Declare "mobile_Et" on a separate line.(Œ„ò¯8£ò¬à.
+P
+java:S1874¸"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜8¾«î×à.
+J
+java:S16596"-Declare "radioButtonCash" on a separate line.(ßâÓÇ8£ò¬à.
+k
+java:S1192Ù"HDefine a constant instead of duplicating this literal "Error! " 3 times.(ÀüŠşÿÿÿÿ8³Åî×à.
+n	java:S117Ö"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±´öí8³Åî×à.
+Y
+java:S1874·"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ8³Åî×à.
+n
+java:S1301´"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8³Åî×à.
+]
+java:S1117‹"@Rename "apiInterface" which hides the field declared at line 51.(·­ˆI8³Åî×à.
+s
+java:S3252Ó"PUse static access with "android.view.ViewGroup$LayoutParams" for "MATCH_PARENT".(ÒÖœªşÿÿÿÿ8³Åî×à.
+Y
+java:S1874ß"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ8³Åî×à.
+t	java:S116/"XRename this field "donor_name_Et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8£ò¬à.
+I
+java:S16592"'Declare "finalfair" on a separate line.(ÙÎ‰–úÿÿÿÿ8£ò¬à.
+q
+java:S1128 "ORemove this unused import 'com.android.emergencymedicalsystem.model.Ambulance'.(ô¨Ö…úÿÿÿÿ8ûì×à.
+p	java:S116/"TRename this field "mobile_Et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8£ò¬à.
+I
+java:S16596",Declare "radioButtontwo" on a separate line.(ßâÓÇ8£ò¬à.
+s	java:S117†"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ›„èøÿÿÿÿ8³Åî×à.
+s	java:S117©"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÖşÒüÿÿÿÿ8³Åî×à.
+s	java:S117‹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñËÕùÿÿÿÿ8³Åî×à.
+n	java:S117ÿ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îÓáÃ8³Åî×à.
+w	java:S1165"[Rename this field "appointment_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÇ¯›8£ò¬à.
+s	java:S117§"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁƒÇèøÿÿÿÿ8³Åî×à.
+„
+java:S1192v"bDefine a constant instead of duplicating this literal "Please enter valid phone number !" 3 times.(°©²æøÿÿÿÿ8³Åî×à.
+C
+java:S1659/"&Declare "txt_date" on a separate line.(Œ„ò¯8£ò¬à.
+q	java:S116/"URename this field "address_Et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8£ò¬à.
+s
+java:S3252¦"PUse static access with "android.view.ViewGroup$LayoutParams" for "MATCH_PARENT".(ÒÖœªşÿÿÿÿ8³Åî×à.
+P
+java:S1874à"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜8¾«î×à.
+A
+java:S1659/"$Declare "trx_id" on a separate line.(Œ„ò¯8£ò¬à.
+E
+java:S1659/"(Declare "comment_Et" on a separate line.(Œ„ò¯8£ò¬à.
+q	java:S116/"URename this field "comment_Et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8£ò¬à.
+p	java:S116/"TRename this field "amount_Et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8£ò¬à.
+X
+java:S18740"6Remove this use of "ProgressDialog"; it is deprecated.(€¸¦¤üÿÿÿÿ8£ò¬à.
+s	java:S117ª"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú¡“Åıÿÿÿÿ8¾«î×à.
+n
+java:S3252ı"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ØªØ8¾«î×à.
+m	java:S116/"QRename this field "trx_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8£ò¬à.
+P
+java:S1874ˆ"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜8¾«î×à.
+E
+java:S1659/"(Declare "address_Et" on a separate line.(Œ„ò¯8£ò¬à.
+s	java:S117ˆ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Ó»Ïùÿÿÿÿ8ÿâó¬à.
+k
+java:S1192Æ"HDefine a constant instead of duplicating this literal "success" 3 times.(¾„”æüÿÿÿÿ8³Åî×à.
+n
+java:S1192¸"PDefine a constant instead of duplicating this literal "Please wait...." 3 times.(¤¾š˜8³Åî×à.
+n
+java:S3252Ô"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ØªØ8¾«î×à.
+_
+java:S1874è"ARemove this use of "THEME_DEVICE_DEFAULT_DARK"; it is deprecated.(š×é8³Åî×à.
+M
+java:S1128+"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ûì×à.
+n	java:S117«"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À˜¨‹8ÿâó¬à.

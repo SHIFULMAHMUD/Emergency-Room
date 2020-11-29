@@ -2,14 +2,17 @@ package com.android.emergencymedicalsystem.user.bloodbank;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
 import es.dmoral.toasty.Toasty;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -41,6 +44,7 @@ public class BloodBankActivity extends AppCompatActivity implements OnMapReadyCa
     public double userLat;
     public double userLong;
     public String centerId[] = new String[MAX_SIZE];
+    public String kilo[] = new String[MAX_SIZE];
     public String centerName[] = new String[MAX_SIZE];
     public String centerCell[] = new String[MAX_SIZE];
     public String centerAddress[] = new String[MAX_SIZE];
@@ -88,6 +92,19 @@ public class BloodBankActivity extends AppCompatActivity implements OnMapReadyCa
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        mMap.setMyLocationEnabled(true);
+        mMap.getUiSettings().setMyLocationButtonEnabled(true);
         getData();
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
@@ -153,10 +170,10 @@ public class BloodBankActivity extends AppCompatActivity implements OnMapReadyCa
                             Location.distanceBetween(startLatitude, startLongitude, endLatitude, endLongitude, results);
                             float distance = results[0];
                             int kilometer = (int) (distance / 1000);
-
+                            kilo[i]=""+kilometer;
                             if (kilometer <= 20) {
                                 LatLng sydney = new LatLng(endLatitude, endLongitude);
-                                mMap.addMarker(new MarkerOptions().position(sydney).title(centerName[i]).snippet(centerId[i]));
+                                mMap.addMarker(new MarkerOptions().position(sydney).title(centerName[i]).snippet(centerId[i]+","+kilo[i]));
                                 mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
                                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(endLatitude, endLongitude), 15.0f));
                             }
