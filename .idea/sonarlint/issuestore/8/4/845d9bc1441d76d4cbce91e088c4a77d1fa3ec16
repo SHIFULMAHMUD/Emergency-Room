@@ -1,24 +1,24 @@
 
-t
-java:S1128"RRemove this unused import 'com.android.emergencymedicalsystem.user.LoginActivity'.(î™îŸıÿÿÿÿ8™çÊ¤à.
-s
-java:S1128 "QRemove this unused import 'com.android.emergencymedicalsystem.user.MainActivity'.(Ğäö³ÿÿÿÿÿ8¥ù¤à.
 J
 java:S1172O"(Remove this unused method parameter "v".(­¤–şüÿÿÿÿ8ÒˆÅ¤à.
-E
-java:S1172R"(Remove this unused method parameter "v".(’½8ÒˆÅ¤à.
-j
-java:S1128"MRemove this unused import 'com.android.emergencymedicalsystem.model.Payment'.(‘²–Ş8­ĞÆ¤à.
-o	java:S1009"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ıƒşÿÿÿÿ8ÒˆÅ¤à.
-G
-java:S1659&"%Declare "getCell" on a separate line.(¤‚î¼ÿÿÿÿÿ8ß‚¥à.
-j	java:S100R"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’½8ÒˆÅ¤à.
-|
-java:S1128"ZRemove this unused import 'com.android.emergencymedicalsystem.driver.DriverLoginActivity'.(Ù°¬‡ûÿÿÿÿ8™çÊ¤à.
 n
 java:S1128"LRemove this unused import 'com.android.emergencymedicalsystem.HomeActivity'.(û»ùÿÿÿÿ8íÆ¤à.
-D
-java:S1659&""Declare "time" on a separate line.(¤‚î¼ÿÿÿÿÿ8ÈÖú¤à.
-o	java:S100O"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­¤–şüÿÿÿÿ8ÒˆÅ¤à.
+j
+java:S1128"MRemove this unused import 'com.android.emergencymedicalsystem.model.Payment'.(‘²–Ş8­ĞÆ¤à.
+E
+java:S1172R"(Remove this unused method parameter "v".(’½8ÒˆÅ¤à.
+o	java:S1009"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ıƒşÿÿÿÿ8ÒˆÅ¤à.
+j	java:S100R"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’½8ÒˆÅ¤à.
+t
+java:S1128"RRemove this unused import 'com.android.emergencymedicalsystem.user.LoginActivity'.(î™îŸıÿÿÿÿ8™çÊ¤à.
 n
 java:S1301€"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8ÂÖ±úà.
+D
+java:S1659&""Declare "time" on a separate line.(¤‚î¼ÿÿÿÿÿ8ÈÖú¤à.
+G
+java:S1659&"%Declare "getCell" on a separate line.(¤‚î¼ÿÿÿÿÿ8ß‚¥à.
+o	java:S100O"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­¤–şüÿÿÿÿ8ÒˆÅ¤à.
+s
+java:S1128 "QRemove this unused import 'com.android.emergencymedicalsystem.user.MainActivity'.(Ğäö³ÿÿÿÿÿ8¥ù¤à.
+|
+java:S1128"ZRemove this unused import 'com.android.emergencymedicalsystem.driver.DriverLoginActivity'.(Ù°¬‡ûÿÿÿÿ8™çÊ¤à.

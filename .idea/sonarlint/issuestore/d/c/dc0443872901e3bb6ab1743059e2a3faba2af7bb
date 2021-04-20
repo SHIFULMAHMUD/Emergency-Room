@@ -1,89 +1,89 @@
 
-K	java:S108ì")Either remove or fill this block of code.(¦İãúÿÿÿÿ8ÓÎÖ“Û.
-l	java:S117p"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÇ½68íàÙ.
-r	java:S1160"QRename this field "div_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŸ’ şÿÿÿÿ8ßè¹·Ô.
-S
-java:S1874/"6Remove this use of "ProgressDialog"; it is deprecated.(Ï’Ú8è·úÍÔ.
 Ÿ
 java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºÉÿ›8ÓÎÖ“Û.
-]
-java:S1117¹"@Rename "apiInterface" which hides the field declared at line 44.(·­ˆI8à Ø“Û.
-w	java:S1160"VRename this field "facility_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŸ’ şÿÿÿÿ8ÛÇ¹·Ô.
-Y	java:S125×"<This block of commented-out lines of code should be removed.(âÌ³Å8ç‚ÂàÙ.
-y
-java:S1128#"\Remove this unused import 'com.android.emergencymedicalsystem.user.profile.ProfileActivity'.(°Ş¶8ÉÎÕÎÔ.
-F
-java:S16590"$Declare "div_tv" on a separate line.(ÁŸ’ şÿÿÿÿ8ßè¹·Ô.
-G
-java:S16590"%Declare "area_tv" on a separate line.(ÁŸ’ şÿÿÿÿ8×“º·Ô.
-G
-java:S16590"%Declare "cell_tv" on a separate line.(ÁŸ’ şÿÿÿÿ8Ñé³·Ô.
-p
-java:S1128"NRemove this unused import 'com.android.emergencymedicalsystem.model.Hospital'.(ª¥úŒşÿÿÿÿ8ú÷ß“Û.
-@
-java:S1659*"#Declare "token" on a separate line.(§ã—ì8­çåàÙ.
-U
-java:S1117i"8Rename "cell" which hides the field declared at line 42.(û˜ĞÉ8øó·ÎÔ.
-G
-java:S16590"%Declare "fair_tv" on a separate line.(ÁŸ’ şÿÿÿÿ8™æ¸·Ô.
-„
-java:S1128$"bRemove this unused import 'com.android.emergencymedicalsystem.user.profile.UpdateProfileActivity'.(Î”Õüÿÿÿÿ8»ÇüÍÔ.
-K
-java:S16590")Declare "distance_tv" on a separate line.(ÁŸ’ şÿÿÿÿ8–Šøùà.
-C
-java:S1659*"&Declare "facility" on a separate line.(§ã—ì8Ê¶·Ô.
+Y	java:S125µ"<This block of commented-out lines of code should be removed.(œ‹è8ç‚ÂàÙ.
 a
 java:S1128"?Remove this unused import 'android.graphics.drawable.Drawable'.(Á‰º„ùÿÿÿÿ8ëÌû¸Ô.
-?
-java:S1659*""Declare "area" on a separate line.(§ã—ì8ÎÈ¶·Ô.
-?
-java:S1659*""Declare "cell" on a separate line.(§ã—ì8Ñé³·Ô.
-x
-java:S1450,"[Remove the "apiInterface" field and declare it as a local variable in the relevant methods.(ï¹ë›8à Ø“Û.
-G
-java:S16590"%Declare "type_tv" on a separate line.(ÁŸ’ şÿÿÿÿ8Ñé³·Ô.
-s	java:S1160"RRename this field "fair_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŸ’ şÿÿÿÿ8™æ¸·Ô.
-C
-java:S1659*"&Declare "distance" on a separate line.(§ã—ì8ÕÌøùà.
-u	java:S1160"TRename this field "reg_no_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŸ’ şÿÿÿÿ8á¹·Ô.
-C	java:S131d""Add a default case to this switch.(¼œóÛüÿÿÿÿ8íÎËÉÔ.
-A
-java:S1659*"$Declare "reg_no" on a separate line.(§ã—ì8‡êµ·Ô.
-m	java:S116*"QRename this field "reg_no" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ã—ì8‡êµ·Ô.
-K
-java:S16590")Declare "facility_tv" on a separate line.(ÁŸ’ şÿÿÿÿ8ÛÇ¹·Ô.
-s	java:S1160"RRename this field "area_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŸ’ şÿÿÿÿ8×“º·Ô.
-s	java:S1160"RRename this field "name_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŸ’ şÿÿÿÿ8Ñé³·Ô.
-T
-java:S1197<"8Move the array designator from the variable to the type.(€ãšw8×Èùùà.
-n
-java:S1301•"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8Õ‡½·Ô.
-P
-java:S1874"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜8è·úÍÔ.
-
-java:S1128""_Remove this unused import 'com.android.emergencymedicalsystem.user.nurse.NurseDetailsActivity'.(ÍÒ‡öıÿÿÿÿ8§Ã½·Ô.
-p	java:S100³"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷Åÿ™ùÿÿÿÿ8ç‚ÂàÙ.
-@
-java:S1659*"#Declare "image" on a separate line.(§ã—ì8Ëø¨¸Ô.
-=
-java:S1659." Declare "id" on a separate line.(Êìæ8Í‹’Û.
-s	java:S1160"RRename this field "cell_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŸ’ şÿÿÿÿ8Ñé³·Ô.
 C
 java:S1659*"&Declare "division" on a separate line.(§ã—ì8ÎÈ¶·Ô.
-p	java:S116+"TRename this field "amb_image" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©É Ì8Çõª¸Ô.
-?
-java:S1659*""Declare "type" on a separate line.(§ã—ì8Ñé³·Ô.
+=
+java:S1659." Declare "id" on a separate line.(Êìæ8Í‹’Û.
+K
+java:S16590")Declare "distance_tv" on a separate line.(ÁŸ’ şÿÿÿÿ8–Šøùà.
+Y	java:S125×"<This block of commented-out lines of code should be removed.(âÌ³Å8ç‚ÂàÙ.
+
+java:S1128""_Remove this unused import 'com.android.emergencymedicalsystem.user.nurse.NurseDetailsActivity'.(ÍÒ‡öıÿÿÿÿ8§Ã½·Ô.
 w	java:S1160"VRename this field "distance_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŸ’ şÿÿÿÿ8–Šøùà.
-m
-java:S1301d"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8íÎËÉÔ.
-]
-java:S1117"@Rename "apiInterface" which hides the field declared at line 44.(·­ˆI8à Ø“Û.
-s	java:S1160"RRename this field "type_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŸ’ şÿÿÿÿ8Ñé³·Ô.
-Y	java:S125µ"<This block of commented-out lines of code should be removed.(œ‹è8ç‚ÂàÙ.
 ?
 java:S1659*""Declare "fair" on a separate line.(§ã—ì8áç´·Ô.
+p	java:S100³"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷Åÿ™ùÿÿÿÿ8ç‚ÂàÙ.
+w	java:S1160"VRename this field "facility_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŸ’ şÿÿÿÿ8ÛÇ¹·Ô.
+C
+java:S1659*"&Declare "distance" on a separate line.(§ã—ì8ÕÌøùà.
+s	java:S1160"RRename this field "type_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŸ’ şÿÿÿÿ8Ñé³·Ô.
+U
+java:S1117i"8Rename "cell" which hides the field declared at line 42.(û˜ĞÉ8øó·ÎÔ.
+]
+java:S1117¹"@Rename "apiInterface" which hides the field declared at line 44.(·­ˆI8à Ø“Û.
+]
+java:S1117"@Rename "apiInterface" which hides the field declared at line 44.(·­ˆI8à Ø“Û.
+n
+java:S1301•"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8Õ‡½·Ô.
+s	java:S1160"RRename this field "fair_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŸ’ şÿÿÿÿ8™æ¸·Ô.
 I
 java:S16590"'Declare "reg_no_tv" on a separate line.(ÁŸ’ şÿÿÿÿ8á¹·Ô.
+s	java:S1160"RRename this field "area_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŸ’ şÿÿÿÿ8×“º·Ô.
+C	java:S131d""Add a default case to this switch.(¼œóÛüÿÿÿÿ8íÎËÉÔ.
+@
+java:S1659*"#Declare "token" on a separate line.(§ã—ì8­çåàÙ.
+?
+java:S1659*""Declare "type" on a separate line.(§ã—ì8Ñé³·Ô.
+G
+java:S16590"%Declare "area_tv" on a separate line.(ÁŸ’ şÿÿÿÿ8×“º·Ô.
 Y	java:S125À"<This block of commented-out lines of code should be removed.(¸„ÒĞ8ç‚ÂàÙ.
+T
+java:S1197<"8Move the array designator from the variable to the type.(€ãšw8×Èùùà.
+G
+java:S16590"%Declare "cell_tv" on a separate line.(ÁŸ’ şÿÿÿÿ8Ñé³·Ô.
+G
+java:S16590"%Declare "fair_tv" on a separate line.(ÁŸ’ şÿÿÿÿ8™æ¸·Ô.
+m	java:S116*"QRename this field "reg_no" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ã—ì8‡êµ·Ô.
+?
+java:S1659*""Declare "cell" on a separate line.(§ã—ì8Ñé³·Ô.
+F
+java:S16590"$Declare "div_tv" on a separate line.(ÁŸ’ şÿÿÿÿ8ßè¹·Ô.
+u	java:S1160"TRename this field "reg_no_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŸ’ şÿÿÿÿ8á¹·Ô.
+l	java:S117p"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÇ½68íàÙ.
+m
+java:S1301d"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8íÎËÉÔ.
+y
+java:S1128#"\Remove this unused import 'com.android.emergencymedicalsystem.user.profile.ProfileActivity'.(°Ş¶8ÉÎÕÎÔ.
+s	java:S1160"RRename this field "name_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŸ’ şÿÿÿÿ8Ñé³·Ô.
+?
+java:S1659*""Declare "area" on a separate line.(§ã—ì8ÎÈ¶·Ô.
+G
+java:S16590"%Declare "type_tv" on a separate line.(ÁŸ’ şÿÿÿÿ8Ñé³·Ô.
+r	java:S1160"QRename this field "div_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŸ’ şÿÿÿÿ8ßè¹·Ô.
+p
+java:S1128"NRemove this unused import 'com.android.emergencymedicalsystem.model.Hospital'.(ª¥úŒşÿÿÿÿ8ú÷ß“Û.
+A
+java:S1659*"$Declare "reg_no" on a separate line.(§ã—ì8‡êµ·Ô.
+x
+java:S1450,"[Remove the "apiInterface" field and declare it as a local variable in the relevant methods.(ï¹ë›8à Ø“Û.
 Y
 java:S1874Œ"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ8Ş¿÷ÍÔ.
+„
+java:S1128$"bRemove this unused import 'com.android.emergencymedicalsystem.user.profile.UpdateProfileActivity'.(Î”Õüÿÿÿÿ8»ÇüÍÔ.
+@
+java:S1659*"#Declare "image" on a separate line.(§ã—ì8Ëø¨¸Ô.
+s	java:S1160"RRename this field "cell_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŸ’ şÿÿÿÿ8Ñé³·Ô.
+S
+java:S1874/"6Remove this use of "ProgressDialog"; it is deprecated.(Ï’Ú8è·úÍÔ.
+K	java:S108ì")Either remove or fill this block of code.(¦İãúÿÿÿÿ8ÓÎÖ“Û.
+K
+java:S16590")Declare "facility_tv" on a separate line.(ÁŸ’ şÿÿÿÿ8ÛÇ¹·Ô.
+C
+java:S1659*"&Declare "facility" on a separate line.(§ã—ì8Ê¶·Ô.
+P
+java:S1874"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜8è·úÍÔ.
+p	java:S116+"TRename this field "amb_image" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©É Ì8Çõª¸Ô.

@@ -1,73 +1,73 @@
 
-C	java:S131W""Add a default case to this switch.(¼œóÛüÿÿÿÿ8ÆõŞ¯Ñ.
-n
-java:S1301š"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8ª€ô¯Ñ.
-m	java:S117;"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªä²Ô8Õ¼àšÑ.
-r	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£¢Ë›şÿÿÿÿ8Õ¼àšÑ.
-}
-java:S1128"[Remove this unused import 'com.android.emergencymedicalsystem.adapter.RecyclerViewAdapter'.(´ìÁîøÿÿÿÿ8µëÕ–Ñ.
-u
-java:S1128"SRemove this unused import 'com.android.emergencymedicalsystem.user.SignupActivity'.(ĞóØİúÿÿÿÿ8ö¯Ñ.
-n	java:S117Å"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷üåÎ8×ºïšÑ.
-T
-java:S1128"7Remove this unused import 'android.app.ProgressDialog'.(¶ÍÔÓ8ºœ›Ñ.
-j
-java:S1871j"HThis case's code block is the same as the block for the case on line 93.(µ»ïşıÿÿÿÿ8ÆõŞ¯Ñ.
-Z
-java:S1854q"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
-n
-java:S1301À"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8×ºïšÑ.
-j
-java:S1871a"HThis case's code block is the same as the block for the case on line 93.(úâúÿÿÿÿ8‡°î¯Ñ.
-U
-java:S1854Z"8Remove this useless assignment to local variable "text".(üüäµ8Şªë¯Ñ.
-i
-java:S1192"GDefine a constant instead of duplicating this literal "Cancel" 3 times.(çÄİöøÿÿÿÿ8ª€ô¯Ñ.
-j
-java:S1871f"HThis case's code block is the same as the block for the case on line 93.(‰ÆÄÎşÿÿÿÿ8ÆõŞ¯Ñ.
-V
-java:S1854"8Remove this useless assignment to local variable "text".(ŠÛ¤Å8¹ª÷¯Ñ.
-D	java:S131š""Add a default case to this switch.(¼œóÛüÿÿÿÿ8ª€ô¯Ñ.
-t
-java:S37763"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(ËÄ•åûÿÿÿÿ8ÆõŞ¯Ñ.
-m
-java:S1128"KRemove this unused import 'androidx.recyclerview.widget.GridLayoutManager'.(î¼çÿüÿÿÿÿ8µëÕ–Ñ.
 Z
 java:S1854l"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
-Z
-java:S1854_"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
-Z
-java:S1854h"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
-Z
-java:S1854u"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
-D	java:S131À""Add a default case to this switch.(¼œóÛüÿÿÿÿ8×ºïšÑ.
-^	java:S125“"<This block of commented-out lines of code should be removed.(ş•»³øÿÿÿÿ8©ã˜›Ñ.
-m	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú¶Ú¹8Õ¼àšÑ.
+j
+java:S1871a"HThis case's code block is the same as the block for the case on line 93.(úâúÿÿÿÿ8‡°î¯Ñ.
+r	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£¢Ë›şÿÿÿÿ8Õ¼àšÑ.
 j
 java:S1871o"HThis case's code block is the same as the block for the case on line 93.(ÌÊëÎüÿÿÿÿ8ÆõŞ¯Ñ.
+n
+java:S1301š"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8ª€ô¯Ñ.
+j
+java:S1871f"HThis case's code block is the same as the block for the case on line 93.(‰ÆÄÎşÿÿÿÿ8ÆõŞ¯Ñ.
+C	java:S131W""Add a default case to this switch.(¼œóÛüÿÿÿÿ8ÆõŞ¯Ñ.
 m	java:S117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯Ê˜8Õ¼àšÑ.
+t
+java:S37763"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(ËÄ•åûÿÿÿÿ8ÆõŞ¯Ñ.
+D	java:S131À""Add a default case to this switch.(¼œóÛüÿÿÿÿ8×ºïšÑ.
+n
+java:S1301À"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8×ºïšÑ.
 m	java:S117<"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜±˜æ8Õ¼àšÑ.
+m
+java:S1128"KRemove this unused import 'androidx.recyclerview.widget.GridLayoutManager'.(î¼çÿüÿÿÿÿ8µëÕ–Ñ.
+m
+java:S1128"KRemove this unused import 'com.android.emergencymedicalsystem.model.Nurse'.(²ÄêŠşÿÿÿÿ8µëÕ–Ñ.
 M
 java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8µëÕ–Ñ.
+d
+java:S1871x"HThis case's code block is the same as the block for the case on line 93.(ÒñŠ{8ÜĞî¯Ñ.
+[
+java:S1854¢"8Remove this useless assignment to local variable "text".(²·û¢ÿÿÿÿÿ8¹ª÷¯Ñ.
+j
+java:S1871j"HThis case's code block is the same as the block for the case on line 93.(µ»ïşıÿÿÿÿ8ÆõŞ¯Ñ.
+u
+java:S1128"SRemove this unused import 'com.android.emergencymedicalsystem.user.SignupActivity'.(ĞóØİúÿÿÿÿ8ö¯Ñ.
+U
+java:S1854Z"8Remove this useless assignment to local variable "text".(üüäµ8Şªë¯Ñ.
+}
+java:S1128"[Remove this unused import 'com.android.emergencymedicalsystem.adapter.RecyclerViewAdapter'.(´ìÁîøÿÿÿÿ8µëÕ–Ñ.
+Z
+java:S1854c"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
+i
+java:S1192"GDefine a constant instead of duplicating this literal "Cancel" 3 times.(çÄİöøÿÿÿÿ8ª€ô¯Ñ.
+^	java:S125“"<This block of commented-out lines of code should be removed.(ş•»³øÿÿÿÿ8©ã˜›Ñ.
+T
+java:S1128"7Remove this unused import 'android.app.ProgressDialog'.(¶ÍÔÓ8ºœ›Ñ.
+Z
+java:S1854u"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
+Z
+java:S1854z"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
+D	java:S131š""Add a default case to this switch.(¼œóÛüÿÿÿÿ8ª€ô¯Ñ.
+m	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶®â®8Õ¼àšÑ.
+Z
+java:S1854_"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
+Y
+java:S1128"7Remove this unused import 'android.widget.ProgressBar'.(³ñÿŸùÿÿÿÿ8Î·Ô–Ñ.
+r	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çØ¤úÿÿÿÿ8‚ñšÑ.
+d
+java:S1871s"HThis case's code block is the same as the block for the case on line 93.(û¿48ÆõŞ¯Ñ.
+m	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú¶Ú¹8Õ¼àšÑ.
+n	java:S117Å"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷üåÎ8×ºïšÑ.
+Z
+java:S1854q"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
+V
+java:S1854"8Remove this useless assignment to local variable "text".(ŠÛ¤Å8¹ª÷¯Ñ.
+h
+java:S1128 "FRemove this unused import 'androidx.recyclerview.widget.RecyclerView'.(Îèòçøÿÿÿÿ8Î·Ô–Ñ.
 >
 java:S1185."(Remove this method to simply inherit it.(ßìê¯
 Z
-java:S1854z"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
-[
-java:S1854¢"8Remove this useless assignment to local variable "text".(²·û¢ÿÿÿÿÿ8¹ª÷¯Ñ.
-m
-java:S1128"KRemove this unused import 'com.android.emergencymedicalsystem.model.Nurse'.(²ÄêŠşÿÿÿÿ8µëÕ–Ñ.
-Z
-java:S1854c"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
-m	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶®â®8Õ¼àšÑ.
-r	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çØ¤úÿÿÿÿ8‚ñšÑ.
+java:S1854h"8Remove this useless assignment to local variable "text".(Ç—äĞÿÿÿÿÿ8Şªë¯Ñ.
 o
 java:S1128"MRemove this unused import 'androidx.recyclerview.widget.LinearLayoutManager'.(ôœ¹ºıÿÿÿÿ8Õ–Ñ.
-d
-java:S1871x"HThis case's code block is the same as the block for the case on line 93.(ÒñŠ{8ÜĞî¯Ñ.
-Y
-java:S1128"7Remove this unused import 'android.widget.ProgressBar'.(³ñÿŸùÿÿÿÿ8Î·Ô–Ñ.
-h
-java:S1128 "FRemove this unused import 'androidx.recyclerview.widget.RecyclerView'.(Îèòçøÿÿÿÿ8Î·Ô–Ñ.
-d
-java:S1871s"HThis case's code block is the same as the block for the case on line 93.(û¿48ÆõŞ¯Ñ.
+m	java:S117;"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªä²Ô8Õ¼àšÑ.

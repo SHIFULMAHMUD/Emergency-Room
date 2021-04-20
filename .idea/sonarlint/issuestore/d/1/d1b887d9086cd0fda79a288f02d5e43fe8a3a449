@@ -1,53 +1,53 @@
 
-R	java:S125û"<This block of commented-out lines of code should be removed.(âÌ³Å
-<
-java:S1659*"&Declare "ridetime" on a separate line.(Ö©‘¢
-?
-java:S1659&")Declare "userRequest" on a separate line.(¬’§š
-C	java:S108z")Either remove or fill this block of code.(¦İãúÿÿÿÿ
-D	java:S108 ")Either remove or fill this block of code.(¦İãúÿÿÿÿ
-V
-java:S1117ô"@Rename "apiInterface" which hides the field declared at line 43.(·­ˆI
->
-java:S1659'"(Declare "profileBtn" on a separate line.(ìÅÙª
-=
-java:S1659)"'Declare "finalfair" on a separate line.(å¯Õ×
-R	java:S125Ù"<This block of commented-out lines of code should be removed.(œ‹è
-P
-java:S1161Z":Add the "@Override" annotation above this method signature(Ôö§ó
-g
-java:S1128"JRemove this unused import 'com.android.emergencymedicalsystem.model.User'.(ÒÃÜƒ8ÍğÖÖß.
-<
-java:S1659&"&Declare "userCell" on a separate line.(¬’§š
-R	java:S125ä"<This block of commented-out lines of code should be removed.(¸„ÒĞ
-@
-java:S1659"$Declare "reject" on a separate line.(Ê§ó¾üÿÿÿÿ
-=
-java:S1659&"'Declare "userToken" on a separate line.(¬’§š
-D	java:S108Ã")Either remove or fill this block of code.(¦İãúÿÿÿÿ
-L
-java:S1874,"6Remove this use of "ProgressDialog"; it is deprecated.(Ï’Ú
-`
-java:S1192"IDefine a constant instead of duplicating this literal "Error : " 4 times.(‘ˆ Á
-I
-java:S1874É"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜
-I
-java:S1874ñ"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜
 >
 java:S1659&"(Declare "userStatus" on a separate line.(¬’§š
-R
-java:S1874ğ"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ
-i	java:S100”"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ßçúşÿÿÿÿ
-f
-java:S1301`"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
-=
-java:S1659*"'Declare "totalfair" on a separate line.(Ö©‘¢
-V
-java:S1117Ì"@Rename "apiInterface" which hides the field declared at line 43.(·­ˆI
-i	java:S100×"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷Åÿ™ùÿÿÿÿ
+L
+java:S1874,"6Remove this use of "ProgressDialog"; it is deprecated.(Ï’Ú
+I
+java:S1874É"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜
 V
 java:S1117İ"@Rename "apiInterface" which hides the field declared at line 43.(·­ˆI
+R	java:S125û"<This block of commented-out lines of code should be removed.(âÌ³Å
+R	java:S125ä"<This block of commented-out lines of code should be removed.(¸„ÒĞ
+?
+java:S1659&")Declare "userRequest" on a separate line.(¬’§š
+P
+java:S1161Z":Add the "@Override" annotation above this method signature(Ôö§ó
+<
+java:S1659&"&Declare "userCell" on a separate line.(¬’§š
+>
+java:S1659'"(Declare "profileBtn" on a separate line.(ìÅÙª
+i	java:S100”"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ßçúşÿÿÿÿ
+V
+java:S1117ô"@Rename "apiInterface" which hides the field declared at line 43.(·­ˆI
+V
+java:S1117Ì"@Rename "apiInterface" which hides the field declared at line 43.(·­ˆI
+=
+java:S1659)"'Declare "finalfair" on a separate line.(å¯Õ×
+=
+java:S1659&"'Declare "userToken" on a separate line.(¬’§š
+@
+java:S1659"$Declare "reject" on a separate line.(Ê§ó¾üÿÿÿÿ
+R	java:S125Ù"<This block of commented-out lines of code should be removed.(œ‹è
+I
+java:S1874ñ"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜
+f
+java:S1301`"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
+D	java:S108 ")Either remove or fill this block of code.(¦İãúÿÿÿÿ
+<
+java:S1659*"&Declare "ridetime" on a separate line.(Ö©‘¢
 R
 java:S1874È"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ
+D	java:S108Ã")Either remove or fill this block of code.(¦İãúÿÿÿÿ
 8
 java:S1659)""Declare "time" on a separate line.(å¯Õ×
+=
+java:S1659*"'Declare "totalfair" on a separate line.(Ö©‘¢
+R
+java:S1874ğ"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ
+`
+java:S1192"IDefine a constant instead of duplicating this literal "Error : " 4 times.(‘ˆ Á
+C	java:S108z")Either remove or fill this block of code.(¦İãúÿÿÿÿ
+g
+java:S1128"JRemove this unused import 'com.android.emergencymedicalsystem.model.User'.(ÒÃÜƒ8ÍğÖÖß.
+i	java:S100×"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷Åÿ™ùÿÿÿÿ

@@ -2,8 +2,8 @@ package com.android.emergencymedicalsystem;
 
 public class Constant {
 
-    public static final String BASE_URL = "http://finalproject24.com/emergency_service/android/";
-    public static final String IMAGE_URL = "http://finalproject24.com/emergency_service/android/my_images/";
+    public static final String BASE_URL = "http://oddomi.com/emergency_service/android/";
+    public static final String IMAGE_URL = "http://oddomi.com/emergency_service/android/my_images/";
     public static final String KEY_NAME="name";
     public static final String KEY_FILE= "file";
     public static final String KEY_TYPE="type";

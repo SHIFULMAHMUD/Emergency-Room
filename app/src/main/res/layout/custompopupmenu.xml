@@ -55,7 +55,7 @@ android:layout_gravity="center">
             android:layout_height="wrap_content"
             android:text="User"
             android:textStyle="bold"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textColor="@android:color/white"/>
     </LinearLayout>
     <LinearLayout
@@ -70,8 +70,8 @@ android:layout_gravity="center">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Driver"
-            android:textSize="18sp"
+            android:text="Ambulance Driver"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@android:color/white"/>
 

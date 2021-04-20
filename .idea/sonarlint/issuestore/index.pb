@@ -39,8 +39,6 @@ y
 Iapp/src/test/java/com/android/emergencymedicalsystem/ExampleUnitTest.java,d\2\d2fad1abcd6f3bdc92cdaad81e3791e30ab19232
 ~
 Napp/src/main/java/com/android/emergencymedicalsystem/MyCustomPagerAdapter.java,4\6\46ed17d9e997df6f22890d8ac0920e5c35108b80
-P
- app/src/main/res/anim/fadein.xml,0\1\01456fbc1690837f1d4180798243b8d90a1804d7
 Q
 !app/src/main/res/anim/fadeout.xml,6\4\642b02d561129ba6758c81d88e47d32a92974317
 X
@@ -73,8 +71,6 @@ Z
 -app/src/main/res/drawable/register_btn_bk.xml,b\7\b7a889a6f9005663810981c7d2bb361d361639c2
 h
 8app/src/main/res/drawable-v24/ic_launcher_foreground.xml,0\7\078508c831007ccb3938b355f0d30a8368f99a8d
-P
- app/src/main/res/font/bungee.xml,8\b\8b0f7e442769d7469da4d901146282ddf8b75652
 N
 app/src/main/res/font/lato.xml,a\a\aadca3981defb3d298217d39d37364c4b83ab55a
 X
@@ -95,8 +91,6 @@ b
 2app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml,8\e\8e27ba16c655f421171956147d0fde89b7d25d17
 h
 8app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml,6\e\6ec7d34b130497a10dc92abcde9b313d370a89df
-V
-&app/src/main/res/values/font_certs.xml,8\7\8721b09acc6dcb831485a758e527a36efbbce1ff
 b
 2app/src/main/res/values/ic_launcher_background.xml,1\8\18ccc38e5dffe10da3d8b454d3093a0a4ba78749
 ^
@@ -150,8 +144,6 @@ a
 1app/src/main/res/layout/fragment_covid_result.xml,a\d\adc35d172b009d5b4d9fabebf0c677b8de18bcee
 e
 5app/src/main/res/layout/fragment_isolation_center.xml,6\0\609351e039bce4ad166524959c6ac59bf8479200
-f
-6app/src/main/res/layout/fragment_sample_collection.xml,f\7\f78cfff96e7fbc89e06646bde36840a586fc2313
 W
 'app/src/main/res/layout/result_item.xml,d\c\dcca4fe47f2eb0650b2d46e395b68f485e3eb244
 †
@@ -208,8 +200,6 @@ V
 &app/src/main/res/drawable/ic_close.xml,6\4\644f9468389d2aeed02a1a3e76fb48f81fce06b2
 [
 +app/src/main/res/layout/dialog_form_two.xml,8\0\80fbbd25612333d14f40a324f94a670944e5c144
-R
-"app/src/main/res/values/colors.xml,9\6\969faa2a5d9f5e8390e958d2c07f2cfd54676e6b
 ˆ
 Xapp/src/main/java/com/android/emergencymedicalsystem/notification/MyFirebaseService.java,5\f\5faa657e9564f57059b134d3d1649621a6a4cbc2
 y
@@ -238,3 +228,49 @@ Lapp/src/main/java/com/android/emergencymedicalsystem/DriverMainActivity.java,d
 Zapp/src/main/java/com/android/emergencymedicalsystem/user/payment/RidePaymentActivity.java,3\f\3f99fcf8123714608aa13eaac30996bee305313e
 Œ
 \app/src/main/java/com/android/emergencymedicalsystem/user/payment/SamplePaymentActivity.java,b\0\b01ec358b9b523115316e61464cd8165ecc26e63
+U
+%app/src/main/res/drawable/ic_fair.xml,3\8\38c2b0b9189e77460b2897a6f4b423fb70d904dd
+W
+'app/src/main/res/drawable/ic_logout.xml,3\7\37db27c220e57516140aa331048644f295f9d2db
+T
+$app/src/main/res/drawable/ic_web.xml,1\0\103336595f1d1943780335389f97a676a6d20d9b
+^
+.app/src/main/res/layout/activity_ambulance.xml,c\d\cd6adb42cd9b859c66d31e10be71b59dfa0cd316
+f
+6app/src/main/res/layout/activity_ambulance_details.xml,e\f\ef35907b6edde64c5bf9fe7afb08e7385e9f8ac8
+g
+7app/src/main/res/layout/activity_blood_bank_details.xml,6\9\69fd3fbbe4cd8317869573399bf21a55d31b1578
+b
+2app/src/main/res/layout/activity_donor_details.xml,b\a\ba130390d8716db2493410e1c53eb9e125c19e64
+a
+1app/src/main/res/layout/activity_driver_login.xml,0\7\078765b14d17a24b341d7553977173f01a74c106
+b
+2app/src/main/res/layout/activity_driver_splash.xml,8\e\8e845eff8235241bf0eb434ebe16da177d12900f
+e
+5app/src/main/res/layout/activity_hospital_details.xml,7\a\7a0b7ad018fb919911470b98cae62ba7c49a43b7
+l
+<app/src/main/res/layout/activity_isolation_center_detail.xml,f\5\f57edc006268ec8f23ea383ba229adec2fc9178c
+`
+0app/src/main/res/layout/activity_main_driver.xml,f\5\f5bad0b00adb97a3effae5f0b0387164f65d3067
+Y
+)app/src/main/res/layout/activity_maps.xml,7\7\773a0511f0fbef0bddfce437cffca83a066ef58c
+\
+,app/src/main/res/layout/activity_payment.xml,8\5\85622b9160ca807c7b5442d4dce9241e5fd61a0e
+a
+1app/src/main/res/layout/activity_ride_payment.xml,7\a\7a3972c3b8845f4cdb89dfe31319bb0c3fd6c47f
+c
+3app/src/main/res/layout/activity_sample_payment.xml,8\0\80daa9b93f079023131259fdc62bf9f5e11ab074
+[
++app/src/main/res/layout/activity_signup.xml,8\c\8cef76296ca4ccac50a757962e9155057bf545c3
+c
+3app/src/main/res/layout/activity_update_profile.xml,2\e\2e5cf45c47aafa41f819d49255e8aa6d64622009
+Z
+*app/src/main/res/layout/ambulance_item.xml,9\9\99c7594ad501465bf0e97a4d71cd3d6f4fd62c3f
+W
+'app/src/main/res/layout/dialog_cash.xml,1\3\134eb28d4bcde431532df443117eb18fd5884bab
+Z
+*app/src/main/res/layout/request_dialog.xml,d\3\d3fef0ea2edcce40d7b3a40638264ca53b4c4654
+S
+#app/src/main/res/values/strings.xml,d\2\d2281fbb3027de2722081a53408dd77628bf080e
+O
+app/src/debug/res/menu/item.xml,b\f\bff111ed9ea37203d4dffb247f6a854a665fe25c

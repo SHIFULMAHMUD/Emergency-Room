@@ -1,47 +1,51 @@
 
-C	java:S131~""Add a default case to this switch.(¼œóÛüÿÿÿÿ8ö’ÜÔ.
-]
-java:S1117¸"@Rename "apiInterface" which hides the field declared at line 37.(·­ˆI8§â–ÜÔ.
-J
-java:S1659&"-Declare "userBloodStatus" on a separate line.(Œ›İæ8û³æİÔ.
-?
-java:S1659("$Declare "cellTv" on a separate line.(Ç•®¿ùÿÿÿÿ
-<
-java:S1659&"&Declare "userName" on a separate line.(Œ›İæ
-M
-java:S1068$"0Remove this unused "contactsList" private field.(ãì›¼8É¾ÄÛÔ.
-<
-java:S1659&"&Declare "userCell" on a separate line.(Œ›İæ
-C	java:S131V""Add a default case to this switch.(¼œóÛüÿÿÿÿ8ƒñÌÛÔ.
-F
-java:S1659("$Declare "areaTv" on a separate line.(Ç•®¿ùÿÿÿÿ8¦éÊÀÑ.
-K	java:S108è")Either remove or fill this block of code.(¦İãúÿÿÿÿ8É¾ÄÛÔ.
-I
-java:S1659&",Declare "userBloodGroup" on a separate line.(Œ›İæ8ÏÉÀÑ.
 @
-java:S1659&"*Declare "userPassword" on a separate line.(Œ›İæ
-Y
-java:S1874´"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ8§â–ÜÔ.
+java:S1659("$Declare "areaTv" on a separate line.(ùÀ B8¦éÊÀÑ.
 S
 java:S1874,"6Remove this use of "ProgressDialog"; it is deprecated.(Ï’Ú8Âñ™ÜÔ.
-J
-java:S1659("(Declare "divisionTv" on a separate line.(Ç•®¿ùÿÿÿÿ8²¬ËÀÑ.
-m
-java:S1301V"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8ƒñÌÛÔ.
-g
-java:S1301‘"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
-G
-java:S1659("%Declare "bloodTv" on a separate line.(Ç•®¿ùÿÿÿÿ8¬åËÀÑ.
-S
-java:S1128"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8ğ’ñÀÑ.
-C
-java:S1659&"&Declare "userArea" on a separate line.(Œ›İæ8œ¿ÈÀÑ.
+]
+java:S1117º"@Rename "apiInterface" which hides the field declared at line 37.(·­ˆI8§â–ÜÔ.
+D
+java:S1659("(Declare "divisionTv" on a separate line.(ùÀ B8²¬ËÀÑ.
+9
+java:S1659("$Declare "cellTv" on a separate line.(ùÀ B
+C	java:S131W""Add a default case to this switch.(¼œóÛüÿÿÿÿ8ƒñÌÛÔ.
+O
+java:S1659&"-Declare "userBloodStatus" on a separate line.(›¾üüşÿÿÿÿ8û³æİÔ.
+A
+java:S1659&"&Declare "userName" on a separate line.(›¾üüşÿÿÿÿ
 R
 java:S1659*"5Declare "radioButtonNotAvailable" on a separate line.(ÜÓÑÒ8¨ †ÜÔ.
-P
-java:S1874µ"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜8Âñ™ÜÔ.
-p	java:S116+"TRename this field "string_rb" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æõñ8€’ÄÛÔ.
 m
-java:S1301~"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8ö’ÜÔ.
-G
-java:S1659&"*Declare "userDivision" on a separate line.(Œ›İæ8âèÈÀÑ.
+java:S1301W"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8ƒñÌÛÔ.
+U
+java:S1659&"3Declare "userBloodDonationDate" on a separate line.(›¾üüşÿÿÿÿ8£Áá.
+P
+java:S1874·"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜8Âñ™ÜÔ.
+M
+java:S1068$"0Remove this unused "contactsList" private field.(ãì›¼8É¾ÄÛÔ.
+p	java:S116+"TRename this field "string_rb" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æõñ8€’ÄÛÔ.
+K	java:S108ê")Either remove or fill this block of code.(¦İãúÿÿÿÿ8É¾ÄÛÔ.
+C	java:S131""Add a default case to this switch.(¼œóÛüÿÿÿÿ8ö’ÜÔ.
+Y
+java:S1874¶"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ8§â–ÜÔ.
+m
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ8ö’ÜÔ.
+H
+java:S1659&"&Declare "userArea" on a separate line.(›¾üüşÿÿÿÿ8œ¿ÈÀÑ.
+A
+java:S1659&"&Declare "userCell" on a separate line.(›¾üüşÿÿÿÿ
+S
+java:S1128"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8ğ’ñÀÑ.
+N
+java:S1659&",Declare "userBloodGroup" on a separate line.(›¾üüşÿÿÿÿ8ÏÉÀÑ.
+n
+java:S1301–"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8…öŞá.
+L
+java:S1659&"*Declare "userDivision" on a separate line.(›¾üüşÿÿÿÿ8âèÈÀÑ.
+A
+java:S1659("%Declare "bloodTv" on a separate line.(ùÀ B8¬åËÀÑ.
+H
+java:S1659(",Declare "donationDateTv" on a separate line.(ùÀ B8…ı½á.
+E
+java:S1659&"*Declare "userPassword" on a separate line.(›¾üüşÿÿÿÿ

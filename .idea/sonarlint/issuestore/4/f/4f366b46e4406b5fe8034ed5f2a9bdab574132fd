@@ -1,112 +1,132 @@
 
-D
-java:S1659="'Declare "user_area" on a separate line.(Îü¤8±Ç„ËÏ.
-N
-java:S10687",Remove this unused "areaList" private field.(à£ÔÊøÿÿÿÿ8œÀ¤Ù.
-L
-java:S1659:"*Declare "etxtDivision" on a separate line.(¨µ€¦ùÿÿÿÿ8şŒ×ÊÏ.
-q	java:S116="URename this field "user_token" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îü¤8ªåŠàÙ.
-l
-java:S1871©"IThis case's code block is the same as the block for the case on line 146.(ÌÊëÎüÿÿÿÿ8éüÙ.
-^	java:S107¡"<Method has 9 parameters, which is greater than 7 authorized.(¸õ¶ëşÿÿÿÿ8§‹‰åÑ.
-l
-java:S1871—"IThis case's code block is the same as the block for the case on line 146.(ªëÅŞúÿÿÿÿ8éüÙ.
-D
-java:S1659="'Declare "user_cell" on a separate line.(Îü¤8ÑÅ¹ÊÏ.
-H
-java:S1659="+Declare "user_division" on a separate line.(Îü¤8›„ËÏ.
-n	java:S116="RRename this field "user_bg" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îü¤8•ñ„ËÏ.
-p	java:S100¡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸õ¶ëşÿÿÿÿ8§‹‰åÑ.
-H
-java:S1659:"&Declare "etxtCell" on a separate line.(¨µ€¦ùÿÿÿÿ8ÑÅ¹ÊÏ.
-D
-java:S1659="'Declare "user_name" on a separate line.(Îü¤8ÑÅ¹ÊÏ.
-N
-java:S1659:",Declare "etxtBloodGroup" on a separate line.(¨µ€¦ùÿÿÿÿ8„î×ÊÏ.
-l
-java:S1871›"IThis case's code block is the same as the block for the case on line 146.(úâúÿÿÿÿ8éüÙ.
-H
-java:S1659="+Declare "user_password" on a separate line.(Îü¤8ÑÅ¹ÊÏ.
-p	java:S116="TRename this field "user_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îü¤8ÑÅ¹ÊÏ.
 u
-java:S1128"XRemove this unused import 'com.android.emergencymedicalsystem.user.nurse.NurseActivity'.(ƒú¿é8Âä‡¬Ò.
-p	java:S116="TRename this field "user_cell" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îü¤8ÑÅ¹ÊÏ.
-f
-java:S1871ö"IThis case's code block is the same as the block for the case on line 214.(ÒñŠ{8Şı€åÑ.
-]
-java:S1117§"@Rename "apiInterface" which hides the field declared at line 60.(·­ˆI8§‹‰åÑ.
-L
-java:S1659:"*Declare "etxtPassword" on a separate line.(¨µ€¦ùÿÿÿÿ8ÑÅ¹ÊÏ.
-}
-java:S1128"[Remove this unused import 'com.android.emergencymedicalsystem.adapter.RecyclerViewAdapter'.(´ìÁîøÿÿÿÿ8•ÛâÑ.
-l
-java:S1871¤"IThis case's code block is the same as the block for the case on line 146.(µ»ïşıÿÿÿÿ8éüÙ.
-k
-java:S1871Â"MThis branch's code block is the same as the block for the branch on line 442.(á¢–¬8Şı€åÑ.
-s	java:S117¡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸õ¶ëşÿÿÿÿ8§‹‰åÑ.
->
-java:S1659="!Declare "lat" on a separate line.(Îü¤8‰ˆ™Ğ.
-E
-java:S1659="(Declare "user_token" on a separate line.(Îü¤8ªåŠàÙ.
-f
-java:S1871ñ"IThis case's code block is the same as the block for the case on line 214.(û¿48§‹‰åÑ.
-\
-java:S1155•">Use isEmpty() to check whether the collection is empty or not.(ß »§8§‹‰åÑ.
-l
-java:S1871Û"IThis case's code block is the same as the block for the case on line 214.(ªëÅŞúÿÿÿÿ8Şı€åÑ.
+java:S3252¡"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí8­æÇá.
 m
 java:S1128"KRemove this unused import 'androidx.recyclerview.widget.GridLayoutManager'.(î¼çÿüÿÿÿÿ8•ÛâÑ.
-H
-java:S1659:"&Declare "etxtArea" on a separate line.(¨µ€¦ùÿÿÿÿ8¶°×ÊÏ.
-l
-java:S1871ä"IThis case's code block is the same as the block for the case on line 214.(‰ÆÄÎşÿÿÿÿ8Şı€åÑ.
-v
-java:S22938"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ä¯û“8Şı€åÑ.
-T
-java:S1135s"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8×ÎíİÛ.
-u
-java:S3252†"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí8§‹‰åÑ.
-x
-java:S1450<"[Remove the "apiInterface" field and declare it as a local variable in the relevant methods.(ï¹ë›8œÀ¤Ù.
-t	java:S116="XRename this field "user_password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îü¤8ÑÅ¹ÊÏ.
-l
-java:S1871è"IThis case's code block is the same as the block for the case on line 214.(µ»ïşıÿÿÿÿ8§‹‰åÑ.
-M
-java:S1068<"0Remove this unused "apiInterface" private field.(ï¹ë›8œÀ¤Ù.
-f
-java:S1871­"IThis case's code block is the same as the block for the case on line 146.(û¿48éüÙ.
-B
-java:S1659="%Declare "user_bg" on a separate line.(Îü¤8•ñ„ËÏ.
-D	java:S131‘""Add a default case to this switch.(¼œóÛüÿÿÿÿ8éüÙ.
-U
-java:S1135‡"2Complete the task associated to this TODO comment.(áÃæùÿÿÿÿ8§‹‰åÑ.
-O
-java:S1128+"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8œ¿ÕäÑ.
-Y
-java:S1874£"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ8Şı€åÑ.
-p	java:S116="TRename this field "user_area" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îü¤8±Ç„ËÏ.
-u
-java:S3252†"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí8§‹‰åÑ.
-D	java:S131Õ""Add a default case to this switch.(¼œóÛüÿÿÿÿ8§‹‰åÑ.
-l
-java:S1871ß"IThis case's code block is the same as the block for the case on line 214.(úâúÿÿÿÿ8§‹‰åÑ.
-f
-java:S1871²"IThis case's code block is the same as the block for the case on line 146.(ÒñŠ{8éüÙ.
->
-java:S1659="!Declare "lng" on a separate line.(Îü¤8‰ˆ™Ğ.
-l
-java:S1871 "IThis case's code block is the same as the block for the case on line 146.(‰ÆÄÎşÿÿÿÿ8éüÙ.
-l
-java:S1871í"IThis case's code block is the same as the block for the case on line 214.(ÌÊëÎüÿÿÿÿ8Şı€åÑ.
-P
-java:S1874¤"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜8§‹‰åÑ.
+~	java:S116H"]Rename this field "user_donation_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù·å±ıÿÿÿÿ8Šá.
 t
-java:S3776C"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(¨Œşÿÿÿÿ8Şı€åÑ.
-S
-java:S1874>"6Remove this use of "ProgressDialog"; it is deprecated.(Ï’Ú8Şı€åÑ.
-Y	java:S125İ"<This block of commented-out lines of code should be removed.(èÃ…˜8œÀ¤Ù.
-t	java:S116="XRename this field "user_division" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îü¤8›„ËÏ.
-\
-java:S1874I":Remove this use of "FirebaseInstanceId"; it is deprecated.(½íÖëûÿÿÿÿ8óïËèà.
+java:S3776N"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(¨Œşÿÿÿÿ8Şı€åÑ.
+f
+java:S1871¾"IThis case's code block is the same as the block for the case on line 158.(ÒñŠ{8éüÙ.
+s
+java:S1104@"VMake myCalendar a static final constant or non-public and provide accessors if needed.(ê©À8°Úá.
+P
+java:S1874¿"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜8­æÇá.
+y	java:S116H"XRename this field "user_division" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù·å±ıÿÿÿÿ8›„ËÏ.
+D	java:S131""Add a default case to this switch.(¼œóÛüÿÿÿÿ8éüÙ.
+u
+java:S1128"XRemove this unused import 'com.android.emergencymedicalsystem.user.nurse.NurseActivity'.(ƒú¿é8Âä‡¬Ò.
+n	java:S117¼"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô½ø´8­æÇá.
+R
+java:S11285"5Remove this unused import 'java.text.ParseException'.(ñ®ï•8ÅÇá.
 W
-java:S1874I"5Remove this use of "getInstanceId"; it is deprecated.(½íÖëûÿÿÿÿ8óïËèà.
+java:S1874T"5Remove this use of "getInstanceId"; it is deprecated.(½íÖëûÿÿÿÿ8óïËèà.
+U
+java:S1135¢"2Complete the task associated to this TODO comment.(áÃæùÿÿÿÿ8­æÇá.
+N
+java:S1068?",Remove this unused "areaList" private field.(à£ÔÊøÿÿÿÿ8œÀ¤Ù.
+G
+java:S1659E"*Declare "etxtPassword" on a separate line.(˜ÜÌø8ÑÅ¹ÊÏ.
+f
+java:S1871¹"IThis case's code block is the same as the block for the case on line 158.(û¿48éüÙ.
+}
+java:S1128"[Remove this unused import 'com.android.emergencymedicalsystem.adapter.RecyclerViewAdapter'.(´ìÁîøÿÿÿÿ8•ÛâÑ.
+k	java:S100¼"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô½ø´8­æÇá.
+l
+java:S1871§"IThis case's code block is the same as the block for the case on line 158.(úâúÿÿÿÿ8éüÙ.
+I
+java:S1659H"'Declare "user_area" on a separate line.(Ù·å±ıÿÿÿÿ8±Ç„ËÏ.
+l
+java:S1871ë"IThis case's code block is the same as the block for the case on line 226.(úâúÿÿÿÿ8§‹‰åÑ.
+T
+java:S1135~"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8×ÎíİÛ.
+u	java:S116H"TRename this field "user_area" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù·å±ıÿÿÿÿ8±Ç„ËÏ.
+]
+java:S1117Â"@Rename "apiInterface" which hides the field declared at line 71.(·­ˆI8­æÇá.
+^
+java:S1874°"ARemove this use of "THEME_DEVICE_DEFAULT_DARK"; it is deprecated.(ô‘n8Ş‰Ôá.
+C
+java:S1659H"!Declare "lng" on a separate line.(Ù·å±ıÿÿÿÿ8‰ˆ™Ğ.
+M
+java:S1068G"0Remove this unused "apiInterface" private field.(ï¹ë›8œÀ¤Ù.
+S
+java:S1874I"6Remove this use of "ProgressDialog"; it is deprecated.(Ï’Ú8Şı€åÑ.
+„
+java:S1128"bRemove this unused import 'com.android.emergencymedicalsystem.user.payment.SamplePaymentActivity'.(·üÛŸıÿÿÿÿ8¢»¥á.
+D
+java:S1659B""Declare "mDay" on a separate line.(İ—Ûéşÿÿÿÿ8¢–Êá.
+J
+java:S1659H"(Declare "user_token" on a separate line.(Ù·å±ıÿÿÿÿ8ªåŠàÙ.
+l
+java:S1871¬"IThis case's code block is the same as the block for the case on line 158.(‰ÆÄÎşÿÿÿÿ8éüÙ.
+D	java:S131á""Add a default case to this switch.(¼œóÛüÿÿÿÿ8§‹‰åÑ.
+l
+java:S1871ğ"IThis case's code block is the same as the block for the case on line 226.(‰ÆÄÎşÿÿÿÿ8Şı€åÑ.
+l
+java:S1871ù"IThis case's code block is the same as the block for the case on line 226.(ÌÊëÎüÿÿÿÿ8Şı€åÑ.
+y
+java:S1104A"\Make appointment_date a static final constant or non-public and provide accessors if needed.(ñÇ¯›8°Úá.
+v	java:S116H"URename this field "user_token" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù·å±ıÿÿÿÿ8ªåŠàÙ.
+x
+java:S1450G"[Remove the "apiInterface" field and declare it as a local variable in the relevant methods.(ï¹ë›8œÀ¤Ù.
+C
+java:S1659E"&Declare "etxtArea" on a separate line.(˜ÜÌø8¶°×ÊÏ.
+l
+java:S1871ô"IThis case's code block is the same as the block for the case on line 226.(µ»ïşıÿÿÿÿ8§‹‰åÑ.
+l
+java:S1871ç"IThis case's code block is the same as the block for the case on line 226.(ªëÅŞúÿÿÿÿ8Şı€åÑ.
+I
+java:S1659H"'Declare "user_cell" on a separate line.(Ù·å±ıÿÿÿÿ8ÑÅ¹ÊÏ.
+M
+java:S1659H"+Declare "user_password" on a separate line.(Ù·å±ıÿÿÿÿ8ÑÅ¹ÊÏ.
+C
+java:S1659H"!Declare "lat" on a separate line.(Ù·å±ıÿÿÿÿ8‰ˆ™Ğ.
+R
+java:S1659H"0Declare "user_donation_date" on a separate line.(Ù·å±ıÿÿÿÿ8Šá.
+l
+java:S1871°"IThis case's code block is the same as the block for the case on line 158.(µ»ïşıÿÿÿÿ8éüÙ.
+\
+java:S1155°">Use isEmpty() to check whether the collection is empty or not.(ß »§8­æÇá.
+I
+java:S1659H"'Declare "user_name" on a separate line.(Ù·å±ıÿÿÿÿ8ÑÅ¹ÊÏ.
+u
+java:S3252¡"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí8­æÇá.
+C
+java:S1659E"&Declare "etxtCell" on a separate line.(˜ÜÌø8ÑÅ¹ÊÏ.
+f
+java:S1871ı"IThis case's code block is the same as the block for the case on line 226.(û¿48§‹‰åÑ.
+G
+java:S1659H"%Declare "user_bg" on a separate line.(Ù·å±ıÿÿÿÿ8•ñ„ËÏ.
+G
+java:S1659E"*Declare "etxtDivision" on a separate line.(˜ÜÌø8şŒ×ÊÏ.
+k
+java:S1871İ"MThis branch's code block is the same as the block for the branch on line 469.(á¢–¬8­æÇá.
+l
+java:S1871µ"IThis case's code block is the same as the block for the case on line 158.(ÌÊëÎüÿÿÿÿ8éüÙ.
+Y
+java:S1874¾"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ8­æÇá.
+n	java:S117¼"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô½ø´8¤áá.
+P
+java:S1659E"3Declare "etxtBloodDonationDate" on a separate line.(˜ÜÌø8ú¥„á.
+s	java:S116H"RRename this field "user_bg" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù·å±ıÿÿÿÿ8•ñ„ËÏ.
+\
+java:S1874T":Remove this use of "FirebaseInstanceId"; it is deprecated.(½íÖëûÿÿÿÿ8óïËèà.
+u	java:S116H"TRename this field "user_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù·å±ıÿÿÿÿ8ÑÅ¹ÊÏ.
+w	java:S116A"[Rename this field "appointment_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÇ¯›8°Úá.
+Z	java:S107¼"=Method has 10 parameters, which is greater than 7 authorized.(ô½ø´8­æÇá.
+O
+java:S1128-"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8œ¿ÕäÑ.
+F
+java:S1659B"$Declare "mMonth" on a separate line.(İ—Ûéşÿÿÿÿ8¢–Êá.
+u	java:S116H"TRename this field "user_cell" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù·å±ıÿÿÿÿ8ÑÅ¹ÊÏ.
+v
+java:S2293C"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ä¯û“8Şı€åÑ.
+I
+java:S1659E",Declare "etxtBloodGroup" on a separate line.(˜ÜÌø8„î×ÊÏ.
+l
+java:S1871£"IThis case's code block is the same as the block for the case on line 158.(ªëÅŞúÿÿÿÿ8éüÙ.
+y	java:S116H"XRename this field "user_password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù·å±ıÿÿÿÿ8ÑÅ¹ÊÏ.
+M
+java:S1659H"+Declare "user_division" on a separate line.(Ù·å±ıÿÿÿÿ8›„ËÏ.
+f
+java:S1871‚"IThis case's code block is the same as the block for the case on line 226.(ÒñŠ{8Şı€åÑ.

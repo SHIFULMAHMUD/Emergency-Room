@@ -21,25 +21,25 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/bungee"
         android:text="@string/app_name"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
         android:textColor="@android:color/white"
-        android:textSize="20dp"
+        android:textSize="50dp"
         android:textStyle="italic" />
 
-    <!--<TextView
+    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:text="Manage your apartment in a smart way"
+        android:textSize="18dp"
+        android:text="Location Based Emergency Medical Services"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
         android:textColor="@android:color/white"
-        android:layout_marginTop="20dp" />-->
+        android:layout_marginTop="10dp" />
 
 
 </LinearLayout>

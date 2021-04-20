@@ -1,50 +1,50 @@
 
-F
-java:S16594")Declare "donorLayout" on a separate line.(…Ä¯ô8ÛšàÔ.
-I
-java:S16594",Declare "hospitalLayout" on a separate line.(…Ä¯ô8²À‚şÔ.
-p	java:S1161"TRename this field "NUM_PAGES" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÕœ8²ÂêùÍ.
 T
 java:S1197."8Move the array designator from the variable to the type.(÷¬‹(8½¶ßùÍ.
-F
-java:S16594")Declare "nurseLayout" on a separate line.(…Ä¯ô8ÙÅÍÏ.
-J
-java:S16594"-Declare "bloodBankLayout" on a separate line.(…Ä¯ô8ó±‘ÏÕ.
+r	java:S117q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø‘—Öÿÿÿÿÿ8ôĞöùÍ.
+s
+java:S3252‹"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ÅÔŞ±ûÿÿÿÿ8ôĞöùÍ.
+>
+java:S11703"!Make this final field static too.(»‘™ï8®ÃëùÍ.
 £
 java:S1186Y"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ø´´øÿÿÿÿ8ÇÑñùÍ.
+I
+java:S16590"'Declare "finalfair" on a separate line.(Á†ûşøÿÿÿÿ8’‰¥ôÙ.
+D
+java:S16590""Declare "fair" on a separate line.(Á†ûşøÿÿÿÿ8’‰¥ôÙ.
+H
+java:S16594"+Declare "paymentLayout" on a separate line.(…Ä¯ô8§˜‹£Ö.
+Y	java:S125Ö"<This block of commented-out lines of code should be removed.(®¡ó8×¿¥à.
+F
+java:S16594")Declare "donorLayout" on a separate line.(…Ä¯ô8ÛšàÔ.
+H
+java:S16594"+Declare "profileLayout" on a separate line.(…Ä¯ô8¦èªÁÑ.
+>
+java:S11702"!Make this final field static too.(Ÿ…÷Š8®ÃëùÍ.
+F
+java:S16594")Declare "nurseLayout" on a separate line.(…Ä¯ô8ÙÅÍÏ.
+M
+java:S1068-"0Remove this unused "apiInterface" private field.(ï¹ë›8×¿¥à.
+I
+java:S16594",Declare "hospitalLayout" on a separate line.(…Ä¯ô8²À‚şÔ.
+p	java:S1163"TRename this field "PERIOD_MS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»‘™ï8®ÃëùÍ.
+p	java:S1161"TRename this field "NUM_PAGES" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÕœ8²ÂêùÍ.
+D
+java:S16591"'Declare "NUM_PAGES" on a separate line.(ñÕœ8²ÂêùÍ.
+J
+java:S16594"-Declare "bloodBankLayout" on a separate line.(…Ä¯ô8ó±‘ÏÕ.
+o	java:S1162"SRename this field "DELAY_MS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ…÷Š8®ÃëùÍ.
+G
+java:S16594"*Declare "logoutLayout" on a separate line.(…Ä¯ô8„™Å¤Ô.
+£
+java:S1186i"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™Î«şÿÿÿÿ8ÇÑñùÍ.
+s
+java:S3252‹"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ÅÔŞ±ûÿÿÿÿ8ôĞöùÍ.
+x
+java:S1450-"[Remove the "apiInterface" field and declare it as a local variable in the relevant methods.(ï¹ë›8×¿¥à.
 J
 java:S16594"-Declare "ambulanceLayout" on a separate line.(…Ä¯ô8“¦ĞêÒ.
 F
 java:S16594")Declare "covidLayout" on a separate line.(…Ä¯ô8ºç‹Ğ.
-x
-java:S1450-"[Remove the "apiInterface" field and declare it as a local variable in the relevant methods.(ï¹ë›8×¿¥à.
-D
-java:S16591"'Declare "NUM_PAGES" on a separate line.(ñÕœ8²ÂêùÍ.
-s
-java:S3252‹"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ÅÔŞ±ûÿÿÿÿ8ôĞöùÍ.
-H
-java:S16594"+Declare "paymentLayout" on a separate line.(…Ä¯ô8§˜‹£Ö.
-D
-java:S16590""Declare "fair" on a separate line.(Á†ûşøÿÿÿÿ8’‰¥ôÙ.
-I
-java:S16590"'Declare "finalfair" on a separate line.(Á†ûşøÿÿÿÿ8’‰¥ôÙ.
-£
-java:S1186i"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™Î«şÿÿÿÿ8ÇÑñùÍ.
-Y	java:S125Ö"<This block of commented-out lines of code should be removed.(®¡ó8×¿¥à.
 D
 java:S16590""Declare "time" on a separate line.(Á†ûşøÿÿÿÿ8’‰¥ôÙ.
->
-java:S11702"!Make this final field static too.(Ÿ…÷Š8®ÃëùÍ.
-s
-java:S3252‹"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ÅÔŞ±ûÿÿÿÿ8ôĞöùÍ.
-M
-java:S1068-"0Remove this unused "apiInterface" private field.(ï¹ë›8×¿¥à.
-G
-java:S16594"*Declare "logoutLayout" on a separate line.(…Ä¯ô8„™Å¤Ô.
-r	java:S117q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø‘—Öÿÿÿÿÿ8ôĞöùÍ.
-p	java:S1163"TRename this field "PERIOD_MS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»‘™ï8®ÃëùÍ.
-o	java:S1162"SRename this field "DELAY_MS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ…÷Š8®ÃëùÍ.
-H
-java:S16594"+Declare "profileLayout" on a separate line.(…Ä¯ô8¦èªÁÑ.
->
-java:S11703"!Make this final field static too.(»‘™ï8®ÃëùÍ.

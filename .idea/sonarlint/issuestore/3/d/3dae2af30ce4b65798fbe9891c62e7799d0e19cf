@@ -1,94 +1,112 @@
 
-j
-java:S1871_"HThis case's code block is the same as the block for the case on line 90.(ªëÅŞúÿÿÿÿ8ãñ³Ù.
-j	java:S116""VRename this field "password_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ãà
-t	java:S116""YRename this field "blood_group_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ãà8õë‚ŞÑ.
-f	java:S116""RRename this field "name_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ãà
-l
-java:S1871£"IThis case's code block is the same as the block for the case on line 158.(ªëÅŞúÿÿÿÿ8¿·ŞÑ.
-L
-java:S1874("6Remove this use of "ProgressDialog"; it is deprecated.(Ï’Ú
-t
-java:S3776*"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(¨Œşÿÿÿÿ8ÙšŞÑ.
-C	java:S131Y""Add a default case to this switch.(¼œóÛüÿÿÿÿ8ãñ³Ù.
-]
-java:S1117Ë"@Rename "apiInterface" which hides the field declared at line 36.(·­ˆI8‘ÃÈ®Ò.
-l
-java:S1871¬"IThis case's code block is the same as the block for the case on line 158.(‰ÆÄÎşÿÿÿÿ8ÙšŞÑ.
-l
-java:S1871µ"IThis case's code block is the same as the block for the case on line 158.(ÌÊëÎüÿÿÿÿ8ÕÃŸŞÑ.
-j
-java:S1192"GDefine a constant instead of duplicating this literal "Cancel" 3 times.(çÄİöøÿÿÿÿ8ÙšŞÑ.
-f
-java:S1871¾"IThis case's code block is the same as the block for the case on line 158.(ÒñŠ{8ÙšŞÑ.
-D	java:S131""Add a default case to this switch.(¼œóÛüÿÿÿÿ8ÙšŞÑ.
-N
-java:S1117ã"8Rename "name" which hides the field declared at line 39.(›Í·{
-<
-java:S1659'"&Declare "password" on a separate line.(ğõÑ
+V
+java:S1117‹"8Rename "date" which hides the field declared at line 45.(Ğ™ÇÌ8Î„¦á.
+g
+java:S1301ƒ"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ
+e
+java:S1871ƒ"HThis case's code block is the same as the block for the case on line 99.(ÒñŠ{8ãñ³Ù.
 R
-java:S1874Ç"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ
-A
-java:S1659""%Declare "area_et" on a separate line.(®ãà8‚Ë„ŞÑ.
-8
-java:S1659'""Declare "text" on a separate line.(ğõÑ
-g
-java:S1301ñ"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
-I
-java:S1874È"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜
-d
-java:S1871u"HThis case's code block is the same as the block for the case on line 90.(û¿48ãñ³Ù.
-8
-java:S1659'""Declare "name" on a separate line.(ğõÑ
-m	java:S116""RRename this field "area_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ãà8‚Ë„ŞÑ.
-g
-java:S1301á"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ
-j
-java:S1871h"HThis case's code block is the same as the block for the case on line 90.(‰ÆÄÎşÿÿÿÿ8ãñ³Ù.
-Y
-java:S1117ç"<Rename "division" which hides the field declared at line 39.(Ã¯g8™†¢ŞÑ.
-E
-java:S1659"")Declare "division_et" on a separate line.(®ãà8‚Ë„ŞÑ.
-j
-java:S1871q"HThis case's code block is the same as the block for the case on line 90.(ÌÊëÎüÿÿÿÿ8ãñ³Ù.
-F
-java:S1659'")Declare "blood_group" on a separate line.(ğõÑ8›ÿ…ŞÑ.
-q	java:S116""VRename this field "division_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ãà8‚Ë„ŞÑ.
-[
-java:S1117è"8Rename "area" which hides the field declared at line 39.(‚ÜŠòüÿÿÿÿ8âæ¡ŞÑ.
-i	java:S116#"URename this field "update_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ÖÑ`
-r	java:S116'"VRename this field "blood_group" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğõÑ8›ÿ…ŞÑ.
-C
-java:S1659'"&Declare "division" on a separate line.(ğõÑ8›ÿ…ŞÑ.
-d
-java:S1871z"HThis case's code block is the same as the block for the case on line 90.(ÒñŠ{8ãñ³Ù.
->
-java:S1659"")Declare "password_et" on a separate line.(®ãà
-H
-java:S1659"",Declare "blood_group_et" on a separate line.(®ãà8õë‚ŞÑ.
-v
-java:S2293&"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ä¯û“8»øÉ®Ò.
-X
-java:S1117å"<Rename "password" which hides the field declared at line 39.(Òşæâüÿÿÿÿ
-f
-java:S1871¹"IThis case's code block is the same as the block for the case on line 158.(û¿48ÙšŞÑ.
-l
-java:S1871§"IThis case's code block is the same as the block for the case on line 158.(úâúÿÿÿÿ8ÏŸŞÑ.
-l
-java:S1871°"IThis case's code block is the same as the block for the case on line 158.(µ»ïşıÿÿÿÿ8ÙšŞÑ.
-j
-java:S1871c"HThis case's code block is the same as the block for the case on line 90.(úâúÿÿÿÿ8ãñ³Ù.
-u
-java:S1128"SRemove this unused import 'com.android.emergencymedicalsystem.user.SignupActivity'.(ĞóØİúÿÿÿÿ8Ê÷Ë®Ò.
-?
-java:S1659'""Declare "area" on a separate line.(ğõÑ8›ÿ…ŞÑ.
-=	java:S131á""Add a default case to this switch.(¼œóÛüÿÿÿÿ
-j
-java:S1871l"HThis case's code block is the same as the block for the case on line 90.(µ»ïşıÿÿÿÿ8ãñ³Ù.
-x
-java:S1450$"[Remove the "apiInterface" field and declare it as a local variable in the relevant methods.(ï¹ë›8İë¶Ù.
-M
-java:S1068$"0Remove this unused "apiInterface" private field.(ï¹ë›8İë¶Ù.
+java:S1874ï"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ
+]
+java:S1117ó"@Rename "apiInterface" which hides the field declared at line 42.(·­ˆI8‘ÃÈ®Ò.
+k	java:S116%"VRename this field "password_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼™Î¿
 N
-java:S1068%",Remove this unused "areaList" private field.(à£ÔÊøÿÿÿÿ8İë¶Ù.
-Y	java:S125¡"<This block of commented-out lines of code should be removed.(èÃ…˜8İë¶Ù.
+java:S1117…"8Rename "name" which hides the field declared at line 45.(›Í·{
+C	java:S131b""Add a default case to this switch.(¼œóÛüÿÿÿÿ8ãñ³Ù.
+r	java:S116%"VRename this field "division_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼™Î¿8‚Ë„ŞÑ.
+D
+java:S1659)""Declare "mDay" on a separate line.(İ—Ûéşÿÿÿÿ8ò€œá.
+j
+java:S1871l"HThis case's code block is the same as the block for the case on line 99.(úâúÿÿÿÿ8ãñ³Ù.
+H
+java:S1659-"&Declare "division" on a separate line.(†óëÏşÿÿÿÿ8›ÿ…ŞÑ.
+[
+java:S1117Š"8Rename "area" which hides the field declared at line 45.(‚ÜŠòüÿÿÿÿ8âæ¡ŞÑ.
+K
+java:S1659-")Declare "blood_group" on a separate line.(†óëÏşÿÿÿÿ8›ÿ…ŞÑ.
+B
+java:S1659%"%Declare "area_et" on a separate line.(¼™Î¿8‚Ë„ŞÑ.
+f
+java:S1871Â"IThis case's code block is the same as the block for the case on line 167.(û¿48ÙšŞÑ.
+l
+java:S1871°"IThis case's code block is the same as the block for the case on line 167.(úâúÿÿÿÿ8ÏŸŞÑ.
+N
+java:S1068+",Remove this unused "areaList" private field.(à£ÔÊøÿÿÿÿ8İë¶Ù.
+w	java:S116-"VRename this field "blood_group" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†óëÏşÿÿÿÿ8›ÿ…ŞÑ.
+n	java:S116%"RRename this field "area_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼™Î¿8‚Ë„ŞÑ.
+A
+java:S1659-"&Declare "password" on a separate line.(†óëÏşÿÿÿÿ
+X
+java:S1117‡"<Rename "password" which hides the field declared at line 45.(Òşæâüÿÿÿÿ
+=
+java:S1659-""Declare "name" on a separate line.(†óëÏşÿÿÿÿ
+g
+java:S1301™"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
+x
+java:S1450*"[Remove the "apiInterface" field and declare it as a local variable in the relevant methods.(ï¹ë›8İë¶Ù.
+I
+java:S1659%",Declare "blood_group_et" on a separate line.(¼™Î¿8õë‚ŞÑ.
+D
+java:S1659-""Declare "area" on a separate line.(†óëÏşÿÿÿÿ8›ÿ…ŞÑ.
+D
+java:S1659-""Declare "date" on a separate line.(†óëÏşÿÿÿÿ8Èè—á.
+Y	java:S125É"<This block of commented-out lines of code should be removed.(èÃ…˜8İë¶Ù.
+D	java:S131¦""Add a default case to this switch.(¼œóÛüÿÿÿÿ8ÙšŞÑ.
+l
+java:S1871µ"IThis case's code block is the same as the block for the case on line 167.(‰ÆÄÎşÿÿÿÿ8ÙšŞÑ.
+u
+java:S1128"SRemove this unused import 'com.android.emergencymedicalsystem.user.SignupActivity'.(ĞóØİúÿÿÿÿ8¢óá.
+w	java:S116%"[Rename this field "donation_date_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼™Î¿8éÙ’á.
+?
+java:S1659%")Declare "password_et" on a separate line.(¼™Î¿
+K
+java:S1659%".Declare "donation_date_et" on a separate line.(¼™Î¿8éÙ’á.
+y
+java:S1104("\Make appointment_date a static final constant or non-public and provide accessors if needed.(ñÇ¯›8ò€œá.
+g	java:S116%"RRename this field "name_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼™Î¿
+F
+java:S1659%")Declare "division_et" on a separate line.(¼™Î¿8‚Ë„ŞÑ.
+u	java:S116%"YRename this field "blood_group_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼™Î¿8õë‚ŞÑ.
+j
+java:S1871z"HThis case's code block is the same as the block for the case on line 99.(ÌÊëÎüÿÿÿÿ8ãñ³Ù.
+s
+java:S1104'"VMake myCalendar a static final constant or non-public and provide accessors if needed.(ê©À8ò€œá.
+d
+java:S1874ç"ARemove this use of "THEME_DEVICE_DEFAULT_DARK"; it is deprecated.(–»’¥ıÿÿÿÿ8‰»á.
+=
+java:S1659-""Declare "text" on a separate line.(†óëÏşÿÿÿÿ
+v
+java:S2293,"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ä¯û“8»øÉ®Ò.
+j
+java:S1871u"HThis case's code block is the same as the block for the case on line 99.(µ»ïşıÿÿÿÿ8ãñ³Ù.
+j
+java:S1871h"HThis case's code block is the same as the block for the case on line 99.(ªëÅŞúÿÿÿÿ8ãñ³Ù.
+d
+java:S1871~"HThis case's code block is the same as the block for the case on line 99.(û¿48ãñ³Ù.
+=	java:S131ƒ""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+j
+java:S1192Š"GDefine a constant instead of duplicating this literal "Cancel" 3 times.(çÄİöøÿÿÿÿ8ÙšŞÑ.
+w	java:S116("[Rename this field "appointment_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÇ¯›8ò€œá.
+t
+java:S37760"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(¨Œşÿÿÿÿ8ÙšŞÑ.
+l
+java:S1871¬"IThis case's code block is the same as the block for the case on line 167.(ªëÅŞúÿÿÿÿ8¿·ŞÑ.
+j
+java:S1871q"HThis case's code block is the same as the block for the case on line 99.(‰ÆÄÎşÿÿÿÿ8ãñ³Ù.
+M
+java:S1068*"0Remove this unused "apiInterface" private field.(ï¹ë›8İë¶Ù.
+i	java:S116&"URename this field "update_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ÖÑ`
+F
+java:S1659)"$Declare "mMonth" on a separate line.(İ—Ûéşÿÿÿÿ8ò€œá.
+L
+java:S1874."6Remove this use of "ProgressDialog"; it is deprecated.(Ï’Ú
+f
+java:S1871Ç"IThis case's code block is the same as the block for the case on line 167.(ÒñŠ{8ÙšŞÑ.
+l
+java:S1871¾"IThis case's code block is the same as the block for the case on line 167.(ÌÊëÎüÿÿÿÿ8ÕÃŸŞÑ.
+Y
+java:S1117‰"<Rename "division" which hides the field declared at line 45.(Ã¯g8™†¢ŞÑ.
+l
+java:S1871¹"IThis case's code block is the same as the block for the case on line 167.(µ»ïşıÿÿÿÿ8ÙšŞÑ.
+I
+java:S1874ğ"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜

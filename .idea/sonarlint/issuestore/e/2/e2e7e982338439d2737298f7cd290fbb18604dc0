@@ -1,100 +1,100 @@
 
-i	java:S116"URename this field "update_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ÖÑ`
-c
-java:S1871s"HThis case's code block is the same as the block for the case on line 97.(µ»ïşıÿÿÿÿ
-e
-java:S1871­"IThis case's code block is the same as the block for the case on line 164.(úâúÿÿÿÿ
-8
-java:S1659!""Declare "fair" on a separate line.(ïÌ¾ï
-;
-java:S1659"%Declare "fair_et" on a separate line.(™ŠÃ²
-R
-java:S1874²"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ
-k	java:S116"VRename this field "password_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ŠÃ²
-g	java:S116"RRename this field "type_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ŠÃ²
-<
-java:S1659"&Declare "regno_et" on a separate line.(™ŠÃ²
-?
-java:S1659")Declare "password_et" on a separate line.(™ŠÃ²
-X
-java:S1117Ó"<Rename "password" which hides the field declared at line 33.(Òşæâüÿÿÿÿ
-V
-java:S1117¶"@Rename "apiInterface" which hides the field declared at line 32.(·­ˆI
-R	java:S125œ"<This block of commented-out lines of code should be removed.(èÃ…˜
-<
-java:S1659!"&Declare "facility" on a separate line.(ïÌ¾ï
-X
-java:S1117Ù"<Rename "facility" which hides the field declared at line 33.(Æ¦ÈÁûÿÿÿÿ
-g	java:S116"RRename this field "name_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ŠÃ²
-g	java:S116"RRename this field "area_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ŠÃ²
-]
-java:S1871|"HThis case's code block is the same as the block for the case on line 97.(û¿4
-=	java:S131£""Add a default case to this switch.(¼œóÛüÿÿÿÿ
-e
-java:S1871©"IThis case's code block is the same as the block for the case on line 164.(ªëÅŞúÿÿÿÿ
-8
-java:S1659!""Declare "type" on a separate line.(ïÌ¾ï
-k	java:S116"VRename this field "division_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ŠÃ²
-R
-java:S1117Õ"<Rename "division" which hides the field declared at line 33.(Ã¯g
-c
-java:S1871f"HThis case's code block is the same as the block for the case on line 97.(ªëÅŞúÿÿÿÿ
-;
-java:S1659"%Declare "area_et" on a separate line.(™ŠÃ²
-g
-java:S1301Ï"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ
-8
-java:S1659!""Declare "name" on a separate line.(ïÌ¾ï
-T
-java:S1117Ö"8Rename "area" which hides the field declared at line 33.(‚ÜŠòüÿÿÿÿ
-q
-java:S1450 "[Remove the "apiInterface" field and declare it as a local variable in the relevant methods.(ï¹ë›
-g	java:S116"RRename this field "fair_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ŠÃ²
-c
-java:S1871j"HThis case's code block is the same as the block for the case on line 97.(úâúÿÿÿÿ
-^
-java:S1871"HThis case's code block is the same as the block for the case on line 97.(ÒñŠ{
-F
-java:S1068 "0Remove this unused "apiInterface" private field.(ï¹ë›
-T
-java:S1117×"8Rename "type" which hides the field declared at line 33.(ĞÒŒ±ÿÿÿÿÿ
-9
-java:S1659!"#Declare "regno" on a separate line.(ïÌ¾ï
-g
-java:S1301Ü"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
-R	java:S107°"<Method has 9 parameters, which is greater than 7 authorized.(˜í”
-N
-java:S1117Ø"8Rename "fair" which hides the field declared at line 33.(ô·<
-?
-java:S1659")Declare "division_et" on a separate line.(™ŠÃ²
-h	java:S116"SRename this field "regno_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ŠÃ²
-?
-java:S1659")Declare "facility_et" on a separate line.(™ŠÃ²
-m
-java:S3776$"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(¨Œşÿÿÿÿ
 <
 java:S1659!"&Declare "division" on a separate line.(ïÌ¾ï
+k	java:S116"VRename this field "facility_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ŠÃ²
+e
+java:S1871­"IThis case's code block is the same as the block for the case on line 164.(úâúÿÿÿÿ
+9
+java:S1659!"#Declare "regno" on a separate line.(ïÌ¾ï
+N
+java:S1117Ø"8Rename "fair" which hides the field declared at line 33.(ô·<
+q
+java:S1450 "[Remove the "apiInterface" field and declare it as a local variable in the relevant methods.(ï¹ë›
 8
-java:S1659!""Declare "text" on a separate line.(ïÌ¾ï
+java:S1659!""Declare "fair" on a separate line.(ïÌ¾ï
+c
+java:S1871j"HThis case's code block is the same as the block for the case on line 97.(úâúÿÿÿÿ
+g	java:S116"RRename this field "name_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ŠÃ²
+?
+java:S1659")Declare "facility_et" on a separate line.(™ŠÃ²
+X
+java:S1117Ó"<Rename "password" which hides the field declared at line 33.(Òşæâüÿÿÿÿ
 c
 java:S1871o"HThis case's code block is the same as the block for the case on line 97.(‰ÆÄÎşÿÿÿÿ
 c
 java:S1192ˆ"GDefine a constant instead of duplicating this literal "Cancel" 3 times.(çÄİöøÿÿÿÿ
-8
-java:S1659!""Declare "area" on a separate line.(ïÌ¾ï
-=	java:S131Ï""Add a default case to this switch.(¼œóÛüÿÿÿÿ
-c
-java:S1871x"HThis case's code block is the same as the block for the case on line 97.(ÌÊëÎüÿÿÿÿ
 <
-java:S1659!"&Declare "password" on a separate line.(ïÌ¾ï
-k	java:S116"VRename this field "facility_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ŠÃ²
-L
-java:S1874""6Remove this use of "ProgressDialog"; it is deprecated.(Ï’Ú
-l	java:S117Ô"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï”† ıÿÿÿÿ
-N
-java:S1117Ñ"8Rename "name" which hides the field declared at line 33.(›Í·{
-<	java:S131`""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+java:S1659!"&Declare "facility" on a separate line.(ïÌ¾ï
+k	java:S116"VRename this field "password_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ŠÃ²
+R
+java:S1874²"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ
+R	java:S107°"<Method has 9 parameters, which is greater than 7 authorized.(˜í”
 I
 java:S1874³"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜
+R	java:S125œ"<This block of commented-out lines of code should be removed.(èÃ…˜
+g
+java:S1301Ü"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ
+m
+java:S3776$"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(¨Œşÿÿÿÿ
+?
+java:S1659")Declare "division_et" on a separate line.(™ŠÃ²
+T
+java:S1117×"8Rename "type" which hides the field declared at line 33.(ĞÒŒ±ÿÿÿÿÿ
+8
+java:S1659!""Declare "area" on a separate line.(ïÌ¾ï
+N
+java:S1117Ñ"8Rename "name" which hides the field declared at line 33.(›Í·{
+<
+java:S1659"&Declare "regno_et" on a separate line.(™ŠÃ²
 ;
 java:S1659"%Declare "type_et" on a separate line.(™ŠÃ²
+F
+java:S1068 "0Remove this unused "apiInterface" private field.(ï¹ë›
+c
+java:S1871s"HThis case's code block is the same as the block for the case on line 97.(µ»ïşıÿÿÿÿ
+e
+java:S1871©"IThis case's code block is the same as the block for the case on line 164.(ªëÅŞúÿÿÿÿ
+8
+java:S1659!""Declare "name" on a separate line.(ïÌ¾ï
+k	java:S116"VRename this field "division_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ŠÃ²
+c
+java:S1871f"HThis case's code block is the same as the block for the case on line 97.(ªëÅŞúÿÿÿÿ
+g	java:S116"RRename this field "fair_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ŠÃ²
+<	java:S131`""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+c
+java:S1871x"HThis case's code block is the same as the block for the case on line 97.(ÌÊëÎüÿÿÿÿ
+g
+java:S1301Ï"KReplace this "switch" statement by "if" statements to increase readability.(¼œóÛüÿÿÿÿ
+=	java:S131£""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+;
+java:S1659"%Declare "fair_et" on a separate line.(™ŠÃ²
+V
+java:S1117¶"@Rename "apiInterface" which hides the field declared at line 32.(·­ˆI
+^
+java:S1871"HThis case's code block is the same as the block for the case on line 97.(ÒñŠ{
+;
+java:S1659"%Declare "area_et" on a separate line.(™ŠÃ²
+8
+java:S1659!""Declare "type" on a separate line.(ïÌ¾ï
+<
+java:S1659!"&Declare "password" on a separate line.(ïÌ¾ï
+R
+java:S1117Õ"<Rename "division" which hides the field declared at line 33.(Ã¯g
+L
+java:S1874""6Remove this use of "ProgressDialog"; it is deprecated.(Ï’Ú
+=	java:S131Ï""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+?
+java:S1659")Declare "password_et" on a separate line.(™ŠÃ²
+g	java:S116"RRename this field "area_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ŠÃ²
+T
+java:S1117Ö"8Rename "area" which hides the field declared at line 33.(‚ÜŠòüÿÿÿÿ
+X
+java:S1117Ù"<Rename "facility" which hides the field declared at line 33.(Æ¦ÈÁûÿÿÿÿ
+l	java:S117Ô"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï”† ıÿÿÿÿ
+g	java:S116"RRename this field "type_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ŠÃ²
+i	java:S116"URename this field "update_btn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ÖÑ`
+]
+java:S1871|"HThis case's code block is the same as the block for the case on line 97.(û¿4
+8
+java:S1659!""Declare "text" on a separate line.(ïÌ¾ï
+h	java:S116"SRename this field "regno_et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ŠÃ²

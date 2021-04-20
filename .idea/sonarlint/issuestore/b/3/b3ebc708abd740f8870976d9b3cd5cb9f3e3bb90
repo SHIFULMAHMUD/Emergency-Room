@@ -1,21 +1,21 @@
 
-J
-java:S3740"/Provide the parametrized type for this generic.(…ó°ıÿÿÿÿ
-t
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ç£°àşÿÿÿÿ
 t
 java:S2293-"YReplace the type specification in this constructor call with the diamond operator ("<>").(‰“…¯ùÿÿÿÿ
->	java:S1089")Either remove or fill this block of code.(”ı¾
-7
-java:S1659B"!Declare "len" on a separate line.(ğŞ…¡
-<
-java:S1659C"!Declare "lng" on a separate line.(²Û¥úÿÿÿÿ
-t
-java:S2293A"YReplace the type specification in this constructor call with the diamond operator ("<>").(¯Œ¯°ûÿÿÿÿ
-9
-java:S1659F"#Declare "shift" on a separate line.(òòÌß
 :
 java:S1659F"$Declare "result" on a separate line.(òòÌß
+>	java:S1089")Either remove or fill this block of code.(”ı¾
+9
+java:S1659F"#Declare "shift" on a separate line.(òòÌß
+t
+java:S2293A"YReplace the type specification in this constructor call with the diamond operator ("<>").(¯Œ¯°ûÿÿÿÿ
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ç£°àşÿÿÿÿ
+<
+java:S1659C"!Declare "lng" on a separate line.(²Û¥úÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(…ó°ıÿÿÿÿ
+7
+java:S1659B"!Declare "len" on a separate line.(ğŞ…¡
 7
 java:S1110Y"!Remove these useless parentheses.(şÁøş
 <

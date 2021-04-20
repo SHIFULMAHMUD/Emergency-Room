@@ -1,38 +1,38 @@
 
-r	java:S116"VRename this field "distance_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ú”÷8Ø‘‹úà.
-£
-java:S1186^"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯ÁÖ·ÿÿÿÿÿ8¢»é«Ò.
-F
-java:S1659")Declare "distance_tv" on a separate line.(¤Ú”÷8Ø‘‹úà.
-x
-java:S1450"[Remove the "apiInterface" field and declare it as a local variable in the relevant methods.(ï¹ë›8âï´¼Ð.
-F
-java:S1659")Declare "facility_tv" on a separate line.(¤Ú”÷8ä‰¡¶Ð.
-B
-java:S1659"&Declare "facility" on a separate line.(ó•’u8š Ã¼Ð.
->
-java:S1659""Declare "cell" on a separate line.(ó•’u8š Ã¼Ð.
-J	java:S108G")Either remove or fill this block of code.(¦Ýãúÿÿÿÿ8¢»é«Ò.
-B
-java:S1659"%Declare "cell_tv" on a separate line.(¤Ú”÷8ä‰¡¶Ð.
-E
-java:S1659"(Declare "address_tv" on a separate line.(¤Ú”÷8ä‰¡¶Ð.
 A
 java:S1659"%Declare "address" on a separate line.(ó•’u8š Ã¼Ð.
-r	java:S116"VRename this field "facility_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ú”÷8ä‰¡¶Ð.
-m
-java:S1301g"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8¢»é«Ò.
-B
-java:S1659"&Declare "distance" on a separate line.(ó•’u8Ž’Œúà.
-A
-java:S1659"%Declare "website" on a separate line.(ó•’u8†ÃÜ˜Ú.
+J	java:S108G")Either remove or fill this block of code.(¦Ýãúÿÿÿÿ8¢»é«Ò.
+>
+java:S1659""Declare "cell" on a separate line.(ó•’u8š Ã¼Ð.
+F
+java:S1659")Declare "distance_tv" on a separate line.(¤Ú”÷8Ø‘‹úà.
 T
 java:S1197+"8Move the array designator from the variable to the type.(€ãšw8Ú¶úà.
+r	java:S116"VRename this field "facility_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ú”÷8ä‰¡¶Ð.
+£
+java:S1186^"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯ÁÖ·ÿÿÿÿÿ8¢»é«Ò.
 E
 java:S1659"(Declare "website_tv" on a separate line.(¤Ú”÷8†ÃÜ˜Ú.
+E
+java:S1659"(Declare "address_tv" on a separate line.(¤Ú”÷8ä‰¡¶Ð.
+F
+java:S1659")Declare "facility_tv" on a separate line.(¤Ú”÷8ä‰¡¶Ð.
 >
 java:S1659""Declare "name" on a separate line.(ó•’u8š Ã¼Ð.
-q	java:S116"URename this field "website_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ú”÷8†ÃÜ˜Ú.
-n	java:S116"RRename this field "name_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ú”÷8ä‰¡¶Ð.
-n	java:S116"RRename this field "cell_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ú”÷8ä‰¡¶Ð.
 q	java:S116"URename this field "address_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ú”÷8ä‰¡¶Ð.
+B
+java:S1659"&Declare "distance" on a separate line.(ó•’u8Ž’Œúà.
+x
+java:S1450"[Remove the "apiInterface" field and declare it as a local variable in the relevant methods.(ï¹ë›8âï´¼Ð.
+n	java:S116"RRename this field "cell_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ú”÷8ä‰¡¶Ð.
+A
+java:S1659"%Declare "website" on a separate line.(ó•’u8†ÃÜ˜Ú.
+B
+java:S1659"%Declare "cell_tv" on a separate line.(¤Ú”÷8ä‰¡¶Ð.
+n	java:S116"RRename this field "name_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ú”÷8ä‰¡¶Ð.
+q	java:S116"URename this field "website_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ú”÷8†ÃÜ˜Ú.
+B
+java:S1659"&Declare "facility" on a separate line.(ó•’u8š Ã¼Ð.
+r	java:S116"VRename this field "distance_tv" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ú”÷8Ø‘‹úà.
+m
+java:S1301g"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8¢»é«Ò.

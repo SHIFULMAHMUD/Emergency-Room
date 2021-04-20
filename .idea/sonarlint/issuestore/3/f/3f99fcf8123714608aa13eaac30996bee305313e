@@ -1,117 +1,117 @@
 
-p	java:S116/"TRename this field "mobile_Et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8„¾½ŸÖ.
-n
-java:S3252É"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ØªØ8çùéÅÖ.
-P
-java:S1874ß"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜8Ûäæ–Ú.
-p	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷Åÿ™ùÿÿÿÿ8ƒ´É­Û.
-q	java:S116/"URename this field "address_Et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8„¾½ŸÖ.
-s
-java:S3252™"PUse static access with "android.view.ViewGroup$LayoutParams" for "MATCH_PARENT".(ÒÖœªşÿÿÿÿ8•¾¼–Ú.
-n	java:S117©"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”ÃãÌ8á¬ĞÃÖ.
-p	java:S116/"TRename this field "amount_Et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8„¾½ŸÖ.
-d
-java:S1874ë"ARemove this use of "THEME_DEVICE_DEFAULT_DARK"; it is deprecated.(Ö†ã¸ıÿÿÿÿ8çùéÅÖ.
-C
-java:S16593"&Declare "ridetime" on a separate line.(Ö©‘¢8ÁÄ¿ÅÖ.
-n
-java:S3252š"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ØªØ8•¾¼–Ú.
-]
-java:S1117‡"@Rename "apiInterface" which hides the field declared at line 52.(·­ˆI8ƒ´É­Û.
-Y
-java:S1874®"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ8Æõ¯¢Ö.
-s	java:S117ª"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Ó»Ïùÿÿÿÿ8çùéÅÖ.
-Y
-java:S1874Ş"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ8Ûäæ–Ú.
-s	java:S117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁƒÇèøÿÿÿÿ8çùéÅÖ.
-D
-java:S1659/"'Declare "mobile_Et" on a separate line.(Œ„ò¯8„¾½ŸÖ.
-P
-java:S1874¯"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜8çùéÅÖ.
-o	java:S116/"SRename this field "txt_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8„¾½ŸÖ.
-^	java:S107¬"<Method has 9 parameters, which is greater than 7 authorized.(¤·¢¬úÿÿÿÿ8çùéÅÖ.
-m	java:S116/"QRename this field "trx_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8„¾½ŸÖ.
-o
-java:S1192…"QDefine a constant instead of duplicating this literal "Payment Received" 3 times.(¦¦†Á8÷ôë­Û.
-s	java:S117Ì"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú¡“Åıÿÿÿÿ8á¬ĞÃÖ.
-Y	java:S125"<This block of commented-out lines of code should be removed.(¸„ÒĞ8ƒ´É­Û.
-
-java:S1192…"\Define a constant instead of duplicating this literal "Please enter full address !" 3 times.(·­£ñÿÿÿÿÿ8‚Æê–Ú.
-s	java:S117û"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñËÕùÿÿÿÿ8çùéÅÖ.
-D
-java:S1659/"'Declare "amount_Et" on a separate line.(Œ„ò¯8„¾½ŸÖ.
-d
-java:S1874Š"ARemove this use of "THEME_DEVICE_DEFAULT_DARK"; it is deprecated.(Ö†ã¸ıÿÿÿÿ8çùéÅÖ.
-m	java:S117‡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÇ½68÷ôë­Û.
-J
-java:S16597"-Declare "radioButtonCash" on a separate line.(ßâÓÇ8¹§¸–Ú.
-n	java:S117ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±´öí8çùéÅÖ.
-n
-java:S1301®"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8çùéÅÖ.
-s
-java:S11045"VMake myCalendar a static final constant or non-public and provide accessors if needed.(ê©À8„¾½ŸÖ.
-y
-java:S11046"\Make appointment_date a static final constant or non-public and provide accessors if needed.(ñÇ¯›8„¾½ŸÖ.
-E
-java:S1659/"(Declare "comment_Et" on a separate line.(Œ„ò¯8„¾½ŸÖ.
-t	java:S116/"XRename this field "donor_name_Et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8„¾½ŸÖ.
-w	java:S1166"[Rename this field "appointment_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÇ¯›8„¾½ŸÖ.
-X
-java:S18740"6Remove this use of "ProgressDialog"; it is deprecated.(€¸¦¤üÿÿÿÿ8„¾½ŸÖ.
-s	java:S117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁƒÇèøÿÿÿÿ8çùéÅÖ.
-Y
-java:S1874†"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ8¤Ú¡Ö.
-m	java:S117Ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÇ½68­ßÏ­Û.
-k
-java:S1192í"HDefine a constant instead of duplicating this literal "success" 3 times.(¾„”æüÿÿÿÿ8Ûäæ–Ú.
-s	java:S117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁƒÇèøÿÿÿÿ8çùéÅÖ.
-s	java:S117¨"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñËÕùÿÿÿÿ8•¾¼–Ú.
-?
-java:S16592""Declare "fair" on a separate line.(ĞÓˆ«8‚±²ÅÖ.
 P
 java:S1874‡"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜8çùéÅÖ.
-Y	java:S125ƒ"<This block of commented-out lines of code should be removed.(œ‹è8ƒ´É­Û.
-A
-java:S1659/"$Declare "trx_id" on a separate line.(Œ„ò¯8„¾½ŸÖ.
-Y	java:S125¥"<This block of commented-out lines of code should be removed.(âÌ³Å8ƒ´É­Û.
-|
-java:S1192†"_Define a constant instead of duplicating this literal "Passenger have paid ride bill." 3 times.(œŠª8÷ôë­Û.
-s	java:S117Ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÖşÒüÿÿÿÿ8á¬ĞÃÖ.
-s
-java:S3252È"PUse static access with "android.view.ViewGroup$LayoutParams" for "MATCH_PARENT".(ÒÖœªşÿÿÿÿ8á¬ĞÃÖ.
-n	java:S117Í"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À˜¨‹8çùéÅÖ.
+n
+java:S3252š"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ØªØ8•¾¼–Ú.
 D
-java:S16593"'Declare "totalfair" on a separate line.(Ö©‘¢8”úÀÅÖ.
-s	java:S117¨"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ›„èøÿÿÿÿ8á¬ĞÃÖ.
+java:S1659/"'Declare "mobile_Et" on a separate line.(Œ„ò¯8„¾½ŸÖ.
+s	java:S117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁƒÇèøÿÿÿÿ8çùéÅÖ.
+Y	java:S125"<This block of commented-out lines of code should be removed.(¸„ÒĞ8ƒ´É­Û.
+s	java:S117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁƒÇèøÿÿÿÿ8çùéÅÖ.
+p	java:S116/"TRename this field "mobile_Et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8„¾½ŸÖ.
 ?
 java:S16592""Declare "time" on a separate line.(ĞÓˆ«8‚±²ÅÖ.
-n	java:S117“"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éëËÿ8çùéÅÖ.
-E
-java:S1659/"(Declare "address_Et" on a separate line.(Œ„ò¯8„¾½ŸÖ.
+m	java:S116/"QRename this field "trx_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8„¾½ŸÖ.
+s
+java:S3252™"PUse static access with "android.view.ViewGroup$LayoutParams" for "MATCH_PARENT".(ÒÖœªşÿÿÿÿ8•¾¼–Ú.
+E	java:S108à")Either remove or fill this block of code.(öûÇ8çùéÅÖ.
+m	java:S117µ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÇ½68Øœë­Û.
+o
+java:S1192…"QDefine a constant instead of duplicating this literal "Payment Received" 3 times.(¦¦†Á8÷ôë­Û.
+s	java:S117ª"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Ó»Ïùÿÿÿÿ8çùéÅÖ.
+n	java:S117Í"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À˜¨‹8çùéÅÖ.
+s	java:S117¨"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ›„èøÿÿÿÿ8á¬ĞÃÖ.
+s	java:S117¨"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñËÕùÿÿÿÿ8•¾¼–Ú.
+n
+java:S3252í"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ØªØ8çùéÅÖ.
 D
 java:S16592"'Declare "finalfair" on a separate line.(ĞÓˆ«8²’ÂÅÖ.
-k
-java:S1192€"HDefine a constant instead of duplicating this literal "Error! " 3 times.(ê‘Ÿ‡şÿÿÿÿ8Ûäæ–Ú.
+E
+java:S1659/"(Declare "address_Et" on a separate line.(Œ„ò¯8„¾½ŸÖ.
+p	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷Åÿ™ùÿÿÿÿ8ƒ´É­Û.
+n	java:S117©"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”ÃãÌ8á¬ĞÃÖ.
+E
+java:S1659/"(Declare "comment_Et" on a separate line.(Œ„ò¯8„¾½ŸÖ.
+C
+java:S16593"&Declare "ridetime" on a separate line.(Ö©‘¢8ÁÄ¿ÅÖ.
+C
+java:S1659/"&Declare "txt_date" on a separate line.(Œ„ò¯8„¾½ŸÖ.
+n	java:S117“"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éëËÿ8çùéÅÖ.
+r	java:S117l"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Äùéùøÿÿÿÿ8 àî–Ú.
+P
+java:S1874ß"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜8Ûäæ–Ú.
+q	java:S116/"URename this field "comment_Et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8„¾½ŸÖ.
+d
+java:S1874ë"ARemove this use of "THEME_DEVICE_DEFAULT_DARK"; it is deprecated.(Ö†ã¸ıÿÿÿÿ8çùéÅÖ.
+m	java:S117‡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÇ½68÷ôë­Û.
+^	java:S107¬"<Method has 9 parameters, which is greater than 7 authorized.(¤·¢¬úÿÿÿÿ8çùéÅÖ.
+|
+java:S1192†"_Define a constant instead of duplicating this literal "Passenger have paid ride bill." 3 times.(œŠª8÷ôë­Û.
 s
-java:S3252ì"PUse static access with "android.view.ViewGroup$LayoutParams" for "MATCH_PARENT".(ÒÖœªşÿÿÿÿ8ˆó¾ŸÖ.
-E	java:S108à")Either remove or fill this block of code.(öûÇ8çùéÅÖ.
+java:S11045"VMake myCalendar a static final constant or non-public and provide accessors if needed.(ê©À8„¾½ŸÖ.
+I
+java:S16597",Declare "radioButtontwo" on a separate line.(ßâÓÇ8„¾½ŸÖ.
+w	java:S1166"[Rename this field "appointment_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÇ¯›8„¾½ŸÖ.
+q	java:S116/"URename this field "address_Et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8„¾½ŸÖ.
 ]
 java:S1117²"@Rename "apiInterface" which hides the field declared at line 52.(·­ˆI8çùéÅÖ.
+s	java:S117Ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÖşÒüÿÿÿÿ8á¬ĞÃÖ.
+P
+java:S1874¯"2Remove this use of "setMessage"; it is deprecated.(¤¾š˜8çùéÅÖ.
+n
+java:S3252É"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ØªØ8çùéÅÖ.
+p	java:S116/"TRename this field "amount_Et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8„¾½ŸÖ.
+?
+java:S16592""Declare "fair" on a separate line.(ĞÓˆ«8‚±²ÅÖ.
+t	java:S116/"XRename this field "donor_name_Et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8„¾½ŸÖ.
+„
+java:S1192~"bDefine a constant instead of duplicating this literal "Please enter valid phone number !" 3 times.(°©²æøÿÿÿÿ8‚Æê–Ú.
+k
+java:S1192€"HDefine a constant instead of duplicating this literal "Error! " 3 times.(ê‘Ÿ‡şÿÿÿÿ8Ûäæ–Ú.
+s	java:S117û"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñËÕùÿÿÿÿ8çùéÅÖ.
 n
 java:S1192ß"PDefine a constant instead of duplicating this literal "Please wait...." 3 times.(¤¾š˜8Ûäæ–Ú.
-q	java:S116/"URename this field "comment_Et" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8„¾½ŸÖ.
+n	java:S117ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±´öí8çùéÅÖ.
+o	java:S116/"SRename this field "txt_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ„ò¯8„¾½ŸÖ.
+s	java:S117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁƒÇèøÿÿÿÿ8çùéÅÖ.
+D
+java:S1659/"'Declare "amount_Et" on a separate line.(Œ„ò¯8„¾½ŸÖ.
 @
 java:S16592"#Declare "token" on a separate line.(ĞÓˆ«8ÎÚÖ­Û.
 n
-java:S3252í"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(ØªØ8çùéÅÖ.
+java:S1301®"KReplace this "switch" statement by "if" statements to increase readability.(øå´¡ÿÿÿÿÿ8çùéÅÖ.
+y
+java:S11046"\Make appointment_date a static final constant or non-public and provide accessors if needed.(ñÇ¯›8„¾½ŸÖ.
 n
 java:S1192ì"KDefine a constant instead of duplicating this literal "dd/MM/yyyy" 5 times.(‘öüøÿÿÿÿ8çùéÅÖ.
-m	java:S117µ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÇ½68Øœë­Û.
-„
-java:S1192~"bDefine a constant instead of duplicating this literal "Please enter valid phone number !" 3 times.(°©²æøÿÿÿÿ8‚Æê–Ú.
-r	java:S117l"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Äùéùøÿÿÿÿ8 àî–Ú.
 n	java:S117œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îÓáÃ8•¾¼–Ú.
-C
-java:S1659/"&Declare "txt_date" on a separate line.(Œ„ò¯8„¾½ŸÖ.
-I
-java:S16597",Declare "radioButtontwo" on a separate line.(ßâÓÇ8„¾½ŸÖ.
+s
+java:S3252È"PUse static access with "android.view.ViewGroup$LayoutParams" for "MATCH_PARENT".(ÒÖœªşÿÿÿÿ8á¬ĞÃÖ.
+]
+java:S1117‡"@Rename "apiInterface" which hides the field declared at line 52.(·­ˆI8ƒ´É­Û.
+Y	java:S125¥"<This block of commented-out lines of code should be removed.(âÌ³Å8ƒ´É­Û.
+X
+java:S18740"6Remove this use of "ProgressDialog"; it is deprecated.(€¸¦¤üÿÿÿÿ8„¾½ŸÖ.
+Y	java:S125ƒ"<This block of commented-out lines of code should be removed.(œ‹è8ƒ´É­Û.
+J
+java:S16597"-Declare "radioButtonCash" on a separate line.(ßâÓÇ8¹§¸–Ú.
+s	java:S117Ì"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú¡“Åıÿÿÿÿ8á¬ĞÃÖ.
+Y
+java:S1874®"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ8Æõ¯¢Ö.
+m	java:S117Ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÇ½68­ßÏ­Û.
+Y
+java:S1874Ş"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ8Ûäæ–Ú.
+k
+java:S1192í"HDefine a constant instead of duplicating this literal "success" 3 times.(¾„”æüÿÿÿÿ8Ûäæ–Ú.
+A
+java:S1659/"$Declare "trx_id" on a separate line.(Œ„ò¯8„¾½ŸÖ.
+d
+java:S1874Š"ARemove this use of "THEME_DEVICE_DEFAULT_DARK"; it is deprecated.(Ö†ã¸ıÿÿÿÿ8çùéÅÖ.
+Y
+java:S1874†"6Remove this use of "ProgressDialog"; it is deprecated.(ú€˜ùşÿÿÿÿ8¤Ú¡Ö.
+
+java:S1192…"\Define a constant instead of duplicating this literal "Please enter full address !" 3 times.(·­£ñÿÿÿÿÿ8‚Æê–Ú.
+D
+java:S16593"'Declare "totalfair" on a separate line.(Ö©‘¢8”úÀÅÖ.
+s
+java:S3252ì"PUse static access with "android.view.ViewGroup$LayoutParams" for "MATCH_PARENT".(ÒÖœªşÿÿÿÿ8ˆó¾ŸÖ.
